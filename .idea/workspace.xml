@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ebd8343e-6568-4c9a-9f16-b7a69247642d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/A/BinarySearch/Medium/KClosestInSortedArray.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/A/BinarySearch/Medium/SearchInSortedMatrixI/SearchInSortedMatrixI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/A/BinarySearch/Medium/SearchInSortedMatrixI/SearchInSortedMatrixITest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/A/BinarySearch/Medium/KClosestInSortedArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/A/BinarySearch/Medium/KClosestInSortedArray/KClosestInSortedArray.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,30 +16,31 @@
     <session id="834136595">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="2" />
           <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.7" value="1" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.opened" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="5" />
+          <entry key="java" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="5" />
+          <entry key="JAVA" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="1445" />
+          <entry key="java" value="2058" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="1445" />
+          <entry key="JAVA" value="2058" />
         </counts>
       </usages-collector>
     </session>
@@ -49,19 +48,24 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/A/BinarySearch/Easy/ClassicalBinarySearch/ClassicalBinarySearch.java">
+        <entry file="file://$PROJECT_DIR$/src/A/BinarySearch/Medium/KClosestInSortedArray/KClosestInSortedArray.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1116">
-              <caret line="36" column="19" selection-start-line="36" selection-start-column="19" selection-end-line="36" selection-end-column="19" />
+            <state relative-caret-position="595">
+              <caret line="46" column="59" selection-start-line="46" selection-start-column="59" selection-end-line="46" selection-end-column="59" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/A/BinarySearch/Medium/SearchInSortedMatrixI/SearchInSortedMatrixI.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/A/BinarySearch/Medium/KClosestInSortedArray/KClosestInSortedArrayTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="690">
-              <caret line="41" column="43" selection-start-line="41" selection-start-column="43" selection-end-line="41" selection-end-column="43" />
+            <state relative-caret-position="256">
+              <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#273#274#0" expanded="true" />
+                <element signature="e#326#327#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -69,34 +73,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/A/BinarySearch/Medium/SearchInSortedMatrixI/SearchInSortedMatrixITest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
-              <caret line="22" column="20" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="20" />
-              <folding>
-                <element signature="e#340#341#0" expanded="true" />
-                <element signature="e#369#370#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/A/BinarySearch/Medium/KClosestInSortedArray.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="93">
-              <caret line="3" column="39" selection-start-line="3" selection-start-column="39" selection-end-line="3" selection-end-column="39" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/A/BinarySearch/Easy/ClassicalBinarySearch/ClassicalBinarySearchTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="279">
-              <caret line="9" column="36" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
+            <state relative-caret-position="465">
+              <caret line="26" column="20" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="20" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#377#378#0" expanded="true" />
-                <element signature="e#425#426#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -107,8 +87,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -123,10 +103,12 @@
         <option value="$PROJECT_DIR$/src/A/BinarySearch/Medium/SearchInSortedMatrixI/SearchInSortedMatrixI.java" />
         <option value="$PROJECT_DIR$/src/A/BinarySearch/Medium/SearchInSortedMatrixI/SearchInSortedMatrixITest.java" />
         <option value="$PROJECT_DIR$/src/A/BinarySearch/Medium/KClosestInSortedArray.java" />
+        <option value="$PROJECT_DIR$/src/A/BinarySearch/Medium/KClosestInSortedArray/KClosestInSortedArrayTest.java" />
+        <option value="$PROJECT_DIR$/src/A/BinarySearch/Medium/KClosestInSortedArray/KClosestInSortedArray.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="67" />
     <option name="y" value="41" />
     <option name="width" value="1887" />
@@ -138,8 +120,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -165,17 +145,35 @@
               <item name="BinarySearch" type="462c0819:PsiDirectoryNode" />
               <item name="Medium" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="LaiCode" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LaiCode" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="BinarySearch" type="462c0819:PsiDirectoryNode" />
+              <item name="Medium" type="462c0819:PsiDirectoryNode" />
+              <item name="KClosestInSortedArray" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LaiCode" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LaiCode" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="BinarySearch" type="462c0819:PsiDirectoryNode" />
+              <item name="Medium" type="462c0819:PsiDirectoryNode" />
+              <item name="SearchInSortedMatrixI" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541223024558" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542703694722" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="create.test.in.the.same.root" value="true" />
@@ -183,6 +181,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="A.BinarySearch.Medium.KClosestInSortedArray" />
       <recent name="A.BinarySearch.Medium.SearchInSortedMatrixI" />
       <recent name="A.BinarySearch.Easy.ClassicalBinarySearch" />
     </key>
@@ -202,7 +201,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.SearchInSortedMatrixITest">
+  <component name="RunManager" selected="JUnit.KClosestInSortedArrayTest">
     <configuration name="ClassicalBinarySearchTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LaiCode" />
       <extension name="coverage">
@@ -213,6 +212,20 @@
       </extension>
       <option name="PACKAGE_NAME" value="A.BinarySearch.Easy.ClassicalBinarySearch" />
       <option name="MAIN_CLASS_NAME" value="A.BinarySearch.Easy.ClassicalBinarySearch.ClassicalBinarySearchTest" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="KClosestInSortedArrayTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="LaiCode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="A.BinarySearch.Medium.KClosestInSortedArray.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="A.BinarySearch.Medium.KClosestInSortedArray" />
+      <option name="MAIN_CLASS_NAME" value="A.BinarySearch.Medium.KClosestInSortedArray.KClosestInSortedArrayTest" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -234,9 +247,11 @@
     <list>
       <item itemvalue="JUnit.ClassicalBinarySearchTest" />
       <item itemvalue="JUnit.SearchInSortedMatrixITest" />
+      <item itemvalue="JUnit.KClosestInSortedArrayTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.KClosestInSortedArrayTest" />
         <item itemvalue="JUnit.SearchInSortedMatrixITest" />
         <item itemvalue="JUnit.ClassicalBinarySearchTest" />
       </list>
@@ -276,10 +291,10 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="67" y="49" width="3773" height="2111" extended-state="7" />
+    <frame x="67" y="41" width="3773" height="2119" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25195786" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2541183" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -288,12 +303,12 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32935065" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32935065" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32987013" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.33038962" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Messages" order="10" />
@@ -311,16 +326,9 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/A/BinarySearch/Easy/ClassicalBinarySearch/ClassicalBinarySearch.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1116">
-          <caret line="36" column="19" selection-start-line="36" selection-start-column="19" selection-end-line="36" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/A/BinarySearch/Easy/ClassicalBinarySearch/ClassicalBinarySearchTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
+        <state relative-caret-position="155">
           <caret line="9" column="36" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -337,21 +345,39 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/A/BinarySearch/Easy/ClassicalBinarySearch/ClassicalBinarySearch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="36" column="19" selection-start-line="36" selection-start-column="19" selection-end-line="36" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/A/BinarySearch/Medium/SearchInSortedMatrixI/SearchInSortedMatrixITest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="22" column="20" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="20" />
+        <state relative-caret-position="465">
+          <caret line="26" column="20" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="20" />
           <folding>
-            <element signature="e#340#341#0" expanded="true" />
-            <element signature="e#369#370#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/A/BinarySearch/Medium/KClosestInSortedArray.java">
+    <entry file="file://$PROJECT_DIR$/src/A/BinarySearch/Medium/KClosestInSortedArray/KClosestInSortedArray.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="93">
-          <caret line="3" column="39" selection-start-line="3" selection-start-column="39" selection-end-line="3" selection-end-column="39" />
+        <state relative-caret-position="595">
+          <caret line="46" column="59" selection-start-line="46" selection-start-column="59" selection-end-line="46" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/A/BinarySearch/Medium/KClosestInSortedArray/KClosestInSortedArrayTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#273#274#0" expanded="true" />
+            <element signature="e#326#327#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

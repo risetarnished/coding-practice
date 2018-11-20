@@ -1,4 +1,4 @@
-package A.BinarySearch.Medium;
+package A.BinarySearch.Medium.KClosestInSortedArray;
 
 /**
  * https://app.laicode.io/app/problem/19
@@ -21,38 +21,42 @@ package A.BinarySearch.Medium;
 public class KClosestInSortedArray {
     public int[] kClosest(int[] array, int target, int k) {
         // Write your solution here
-        if (array == null || array.length == 0) {
-            return array;
+        if (array == null || array.length == 0 ||
+                k < 0 || k > array.length) {
+            return new int[] {};
         }
-        int[] result = new int[k];
-        int n = array.length;
         int left = 0;
         int right = array.length - 1;
         // Narrow down the search range to the two elements that are closest
         // to the target
         while (left + 1 < right) {
             int mid = left + (right - left) / 2;
-            if (array[mid] < target) {
-                left = mid;
-            } else {
+            if (array[mid] > target) {
                 right = mid;
-            }
-        }
-        // Go to both directions from the “center”
-        int i = 0;
-        while (i < k && left >= 0 && right < n) {
-            if (Math.abs(array[left] - target)
-                    < Math.abs(array[right] - target)) {
-                result[i++] = array[left--];
             } else {
-                result[i++] = array[right++];
+                left = mid;
             }
         }
-        while (i < k && left >= 0) {
-            result[i++] = array[left--];
+        // Compare array[left] with array[right] and put the smaller one to the result
+        // Move the left pointer to the left if it is smaller
+        // Move the right pointer to the right if it is smaller
+        int[] result = new int[k];
+        int index = 0;
+        while (index < k && left >= 0 && right < array.length) {
+            if (Math.abs(array[left] - target) <= Math.abs(array[right] - target)) {
+                // Pick the left element when there is a tie
+                result[index++] = array[left--];
+            } else {
+                result[index++] = array[right++];
+            }
         }
-        while (i < k && right < n) {
-            result[i++] = array[right++];
+        // If the left pointer has gone out of bound
+        while (index < k && right < array.length) {
+            result[index++] = array[right++];
+        }
+        // If the right pointer has gone out of bound
+        while (index < k && left >= 0) {
+            result[index++] = array[left--];
         }
         return result;
     }
