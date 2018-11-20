@@ -8,7 +8,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class SearchInSortedMatrixITest {
-    static SearchInSortedMatrixI instance;
+    private static SearchInSortedMatrixI instance;
 
     @BeforeAll
     static void setInstance() {

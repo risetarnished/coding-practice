@@ -8,7 +8,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class KClosestInSortedArrayTest {
-    static KClosestInSortedArray instance;
+    private static KClosestInSortedArray instance;
 
     @BeforeAll
     static void setInstance() {
