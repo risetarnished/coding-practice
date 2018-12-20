@@ -3,14 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ebd8343e-6568-4c9a-9f16-b7a69247642d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/A/BinarySearch/Easy/ClassicalBinarySearch/ClassicalBinarySearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/B/BinarySearch/Easy/ClassicalBinarySearch/ClassicalBinarySearch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/A/BinarySearch/Easy/ClassicalBinarySearch/ClassicalBinarySearchTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/B/BinarySearch/Easy/ClassicalBinarySearch/ClassicalBinarySearchTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/A/BinarySearch/Medium/KClosestInSortedArray/KClosestInSortedArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/B/BinarySearch/Medium/KClosestInSortedArray/KClosestInSortedArray.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/A/BinarySearch/Medium/KClosestInSortedArray/KClosestInSortedArrayTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/B/BinarySearch/Medium/KClosestInSortedArray/KClosestInSortedArrayTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/A/BinarySearch/Medium/SearchInSortedMatrixI/SearchInSortedMatrixI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/B/BinarySearch/Medium/SearchInSortedMatrixI/SearchInSortedMatrixI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/A/BinarySearch/Medium/SearchInSortedMatrixI/SearchInSortedMatrixITest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/B/BinarySearch/Medium/SearchInSortedMatrixI/SearchInSortedMatrixITest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/B/Recursion/Easy/FibonacciNumber/FibonacciNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/C/Recursion/Easy/FibonacciNumber/FibonacciNumber.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/B/Recursion/Easy/FibonacciNumber/FibonacciNumberTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/C/Recursion/Easy/FibonacciNumber/FibonacciNumberTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/A/SortingAlgorithms/Easy/SelectionSort/SelectionSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/A/SortingAlgorithms/Easy/SelectionSort/SelectionSort.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,17 +17,35 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/A/SortingAlgorithms/Easy/SelectionSort/SelectionSort.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="155">
-              <caret line="19" column="22" lean-forward="true" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
+            <state relative-caret-position="1186">
+              <caret line="43" column="8" selection-start-line="43" selection-start-column="8" selection-end-line="43" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/A/SortingAlgorithms/Medium/MergeSort/MergeSort.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="380">
+              <caret line="21" column="16" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/A/SortingAlgorithms/Medium/MergeSort/MergeSortTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="372">
+              <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/A/SortingAlgorithms/Easy/SelectionSort/SelectionSortTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1085">
-              <caret line="39" column="13" selection-start-line="39" selection-start-column="13" selection-end-line="39" selection-end-column="13" />
+            <state relative-caret-position="589">
+              <caret line="23" column="38" selection-start-line="23" selection-start-column="38" selection-end-line="23" selection-end-column="38" />
               <folding>
                 <element signature="e#282#283#0" expanded="true" />
                 <element signature="e#332#333#0" expanded="true" />
@@ -78,8 +89,11 @@
         <option value="$PROJECT_DIR$/src/B/Recursion/Easy/FibonacciNumber/FibonacciNumber.java" />
         <option value="$PROJECT_DIR$/src/B/Recursion/Medium/AToThePowerOfB/AToThePowerOfB.java" />
         <option value="$PROJECT_DIR$/src/C/Recursion/Medium/AToThePowerOfB/AToThePowerOfB.java" />
-        <option value="$PROJECT_DIR$/src/A/SortingAlgorithms/Easy/SelectionSort/SelectionSort.java" />
         <option value="$PROJECT_DIR$/src/A/SortingAlgorithms/Easy/SelectionSort/SelectionSortTest.java" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/src/A/SortingAlgorithms/Easy/SelectionSort/SelectionSort.java" />
+        <option value="$PROJECT_DIR$/src/A/SortingAlgorithms/Medium/MergeSort/MergeSort.java" />
+        <option value="$PROJECT_DIR$/src/A/SortingAlgorithms/Medium/MergeSort/MergeSortTest.java" />
       </list>
     </option>
   </component>
@@ -111,6 +125,12 @@
               <item name="LaiCode" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="LaiCode" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LaiCode" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="SortingAlgorithms" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -121,7 +141,7 @@
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545270578092" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545276609662" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="create.test.in.the.same.root" value="true" />
@@ -129,11 +149,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="A.SortingAlgorithms.Medium.MergeSort" />
       <recent name="A.SortingAlgorithms.Easy.SelectionSort" />
       <recent name="B.Recursion.Easy.FibonacciNumber" />
       <recent name="A.BinarySearch.Medium.KClosestInSortedArray" />
       <recent name="A.BinarySearch.Medium.SearchInSortedMatrixI" />
-      <recent name="A.BinarySearch.Easy.ClassicalBinarySearch" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -151,21 +171,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.SelectionSortTest">
-    <configuration name="ClassicalBinarySearchTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="LaiCode" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="A.BinarySearch.Easy.ClassicalBinarySearch.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="A.BinarySearch.Easy.ClassicalBinarySearch" />
-      <option name="MAIN_CLASS_NAME" value="A.BinarySearch.Easy.ClassicalBinarySearch.ClassicalBinarySearchTest" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.MergeSortTest">
     <configuration name="FibonacciNumberTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LaiCode" />
       <extension name="coverage">
@@ -190,6 +196,20 @@
       </extension>
       <option name="PACKAGE_NAME" value="A.BinarySearch.Medium.KClosestInSortedArray" />
       <option name="MAIN_CLASS_NAME" value="A.BinarySearch.Medium.KClosestInSortedArray.KClosestInSortedArrayTest" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MergeSortTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="LaiCode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="A.SortingAlgorithms.Medium.MergeSort.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="A.SortingAlgorithms.Medium.MergeSort" />
+      <option name="MAIN_CLASS_NAME" value="A.SortingAlgorithms.Medium.MergeSort.MergeSortTest" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -223,19 +243,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.ClassicalBinarySearchTest" />
       <item itemvalue="JUnit.FibonacciNumberTest" />
       <item itemvalue="JUnit.KClosestInSortedArrayTest" />
       <item itemvalue="JUnit.SearchInSortedMatrixITest" />
       <item itemvalue="JUnit.SelectionSortTest" />
+      <item itemvalue="JUnit.MergeSortTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MergeSortTest" />
         <item itemvalue="JUnit.SelectionSortTest" />
         <item itemvalue="JUnit.FibonacciNumberTest" />
         <item itemvalue="JUnit.KClosestInSortedArrayTest" />
         <item itemvalue="JUnit.SearchInSortedMatrixITest" />
-        <item itemvalue="JUnit.ClassicalBinarySearchTest" />
       </list>
     </recent_temporary>
   </component>
@@ -253,12 +273,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="SearchInSortedMatrixITest - 2018.11.02 at 20h 31m 12s.xml">
-      <configuration name="SearchInSortedMatrixITest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SearchInSortedMatrixITest - 2018.11.02 at 20h 31m 48s.xml">
-      <configuration name="SearchInSortedMatrixITest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="SearchInSortedMatrixITest - 2018.11.02 at 20h 36m 49s.xml">
       <configuration name="SearchInSortedMatrixITest" configurationId="JUnit" />
     </history-entry>
@@ -283,10 +297,15 @@
     <history-entry file="FibonacciNumberTest - 2018.11.20 at 00h 57m 31s.xml">
       <configuration name="FibonacciNumberTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="SelectionSortTest - 2018.12.19 at 17h 49m 14s.xml">
+      <configuration name="SelectionSortTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SelectionSortTest - 2018.12.19 at 18h 36m 19s.xml">
+      <configuration name="SelectionSortTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="41" width="3773" height="2119" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25898892" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -297,12 +316,12 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32935065" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3290735" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.33333334" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.33333334" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Messages" order="10" />
@@ -394,21 +413,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/A/SortingAlgorithms/Easy/SelectionSort/SelectionSort.java">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="19" column="22" lean-forward="true" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
+        <state relative-caret-position="93">
+          <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/A/SortingAlgorithms/Easy/SelectionSort/SelectionSortTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1085">
-          <caret line="39" column="13" selection-start-line="39" selection-start-column="13" selection-end-line="39" selection-end-column="13" />
+        <state relative-caret-position="589">
+          <caret line="23" column="38" selection-start-line="23" selection-start-column="38" selection-end-line="23" selection-end-column="38" />
           <folding>
             <element signature="e#282#283#0" expanded="true" />
             <element signature="e#332#333#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/A/SortingAlgorithms/Easy/SelectionSort/SelectionSort.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1186">
+          <caret line="43" column="8" selection-start-line="43" selection-start-column="8" selection-end-line="43" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/A/SortingAlgorithms/Medium/MergeSort/MergeSort.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="21" column="16" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/A/SortingAlgorithms/Medium/MergeSort/MergeSortTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="372">
+          <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
         </state>
       </provider>
     </entry>

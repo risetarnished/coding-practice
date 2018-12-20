@@ -36,10 +36,19 @@ public class SelectionSort {
                     minIndex = j;
                 }
             }
-            int temp = array[i];
-            array[i] = array[minIndex];
-            array[minIndex] = temp;
+            if (i != minIndex) {
+                int temp = array[i];
+                array[i] = array[minIndex];
+                array[minIndex] = temp;
+            }
         }
         return array;
     }
 }
+
+/**
+ * Time complexity: n elements to check, n - 1 elements to compare and find the current min in each iteration -->
+ * in total, there are n, n - 1, n - 2, ... , 2, 1 operations --> n * (n+1) / 2 --> O(n^2)
+ * Space complexity: O(1)
+ * Selection sort is in-place but unstable.
+ * */
