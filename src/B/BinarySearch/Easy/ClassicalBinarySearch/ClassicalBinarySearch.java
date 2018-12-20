@@ -1,4 +1,4 @@
-package A.BinarySearch.Easy.ClassicalBinarySearch;
+package B.BinarySearch.Easy.ClassicalBinarySearch;
 
 /**
  * https://app.laicode.io/app/problem/14

@@ -2,8 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ebd8343e-6568-4c9a-9f16-b7a69247642d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/A/BinarySearch/Medium/KClosestInSortedArray/KClosestInSortedArrayTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/A/BinarySearch/Medium/KClosestInSortedArray/KClosestInSortedArrayTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/A/BinarySearch/Medium/SearchInSortedMatrixI/SearchInSortedMatrixITest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/A/BinarySearch/Medium/SearchInSortedMatrixI/SearchInSortedMatrixITest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/A/BinarySearch/Easy/ClassicalBinarySearch/ClassicalBinarySearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/B/BinarySearch/Easy/ClassicalBinarySearch/ClassicalBinarySearch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/A/BinarySearch/Easy/ClassicalBinarySearch/ClassicalBinarySearchTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/B/BinarySearch/Easy/ClassicalBinarySearch/ClassicalBinarySearchTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/A/BinarySearch/Medium/KClosestInSortedArray/KClosestInSortedArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/B/BinarySearch/Medium/KClosestInSortedArray/KClosestInSortedArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/A/BinarySearch/Medium/KClosestInSortedArray/KClosestInSortedArrayTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/B/BinarySearch/Medium/KClosestInSortedArray/KClosestInSortedArrayTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/A/BinarySearch/Medium/SearchInSortedMatrixI/SearchInSortedMatrixI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/B/BinarySearch/Medium/SearchInSortedMatrixI/SearchInSortedMatrixI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/A/BinarySearch/Medium/SearchInSortedMatrixI/SearchInSortedMatrixITest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/B/BinarySearch/Medium/SearchInSortedMatrixI/SearchInSortedMatrixITest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/B/Recursion/Easy/FibonacciNumber/FibonacciNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/C/Recursion/Easy/FibonacciNumber/FibonacciNumber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/B/Recursion/Easy/FibonacciNumber/FibonacciNumberTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/C/Recursion/Easy/FibonacciNumber/FibonacciNumberTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -12,67 +19,25 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FUSProjectUsageTrigger">
-    <session id="834136595">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.closed" value="2" />
-          <entry key="project.open.time.1" value="1" />
-          <entry key="project.open.time.10" value="1" />
-          <entry key="project.open.time.7" value="1" />
-          <entry key="project.opened" value="3" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="java" value="10" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="JAVA" value="10" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="java" value="3124" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="JAVA" value="3124" />
-        </counts>
-      </usages-collector>
-    </session>
-  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/A/BinarySearch/Medium/KClosestInSortedArray/KClosestInSortedArray.java">
+        <entry file="file://$PROJECT_DIR$/src/A/SortingAlgorithms/Easy/SelectionSort/SelectionSort.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="868">
-              <caret line="28" column="28" selection-start-line="28" selection-start-column="28" selection-end-line="28" selection-end-column="28" />
+            <state relative-caret-position="155">
+              <caret line="19" column="22" lean-forward="true" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/B/Recursion/Easy/FibonacciNumber/FibonacciNumber.java">
+        <entry file="file://$PROJECT_DIR$/src/A/SortingAlgorithms/Easy/SelectionSort/SelectionSortTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="907">
-              <caret line="49" column="4" selection-start-line="49" selection-start-column="4" selection-end-line="49" selection-end-column="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/B/Recursion/Easy/FibonacciNumber/FibonacciNumberTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="589">
-              <caret line="23" column="30" selection-start-line="23" selection-start-column="30" selection-end-line="23" selection-end-column="30" />
+            <state relative-caret-position="1085">
+              <caret line="39" column="13" selection-start-line="39" selection-start-column="13" selection-end-line="39" selection-end-column="13" />
               <folding>
-                <element signature="e#268#269#0" expanded="true" />
-                <element signature="e#315#316#0" expanded="true" />
+                <element signature="e#282#283#0" expanded="true" />
+                <element signature="e#332#333#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -87,6 +52,14 @@
         <option value="JUnit5 Test Class" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>k</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>K</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -103,6 +76,10 @@
         <option value="$PROJECT_DIR$/src/A/BinarySearch/Medium/KClosestInSortedArray/KClosestInSortedArrayTest.java" />
         <option value="$PROJECT_DIR$/src/A/BinarySearch/Medium/SearchInSortedMatrixI/SearchInSortedMatrixITest.java" />
         <option value="$PROJECT_DIR$/src/B/Recursion/Easy/FibonacciNumber/FibonacciNumber.java" />
+        <option value="$PROJECT_DIR$/src/B/Recursion/Medium/AToThePowerOfB/AToThePowerOfB.java" />
+        <option value="$PROJECT_DIR$/src/C/Recursion/Medium/AToThePowerOfB/AToThePowerOfB.java" />
+        <option value="$PROJECT_DIR$/src/A/SortingAlgorithms/Easy/SelectionSort/SelectionSort.java" />
+        <option value="$PROJECT_DIR$/src/A/SortingAlgorithms/Easy/SelectionSort/SelectionSortTest.java" />
       </list>
     </option>
   </component>
@@ -120,6 +97,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -132,62 +111,25 @@
               <item name="LaiCode" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="LaiCode" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LaiCode" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="BinarySearch" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="LaiCode" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LaiCode" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="BinarySearch" type="462c0819:PsiDirectoryNode" />
-              <item name="ClassicalBinarySearch" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="LaiCode" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LaiCode" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="BinarySearch" type="462c0819:PsiDirectoryNode" />
-              <item name="Medium" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="LaiCode" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LaiCode" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="BinarySearch" type="462c0819:PsiDirectoryNode" />
-              <item name="Medium" type="462c0819:PsiDirectoryNode" />
-              <item name="KClosestInSortedArray" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="LaiCode" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LaiCode" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="BinarySearch" type="462c0819:PsiDirectoryNode" />
-              <item name="Medium" type="462c0819:PsiDirectoryNode" />
-              <item name="SearchInSortedMatrixI" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542704431612" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545270578092" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="create.test.in.the.same.root" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="A.SortingAlgorithms.Easy.SelectionSort" />
       <recent name="B.Recursion.Easy.FibonacciNumber" />
       <recent name="A.BinarySearch.Medium.KClosestInSortedArray" />
       <recent name="A.BinarySearch.Medium.SearchInSortedMatrixI" />
@@ -209,7 +151,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.FibonacciNumberTest">
+  <component name="RunManager" selected="JUnit.SelectionSortTest">
     <configuration name="ClassicalBinarySearchTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LaiCode" />
       <extension name="coverage">
@@ -266,14 +208,30 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SelectionSortTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="LaiCode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="A.SortingAlgorithms.Easy.SelectionSort.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="A.SortingAlgorithms.Easy.SelectionSort" />
+      <option name="MAIN_CLASS_NAME" value="A.SortingAlgorithms.Easy.SelectionSort.SelectionSortTest" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="JUnit.ClassicalBinarySearchTest" />
-      <item itemvalue="JUnit.SearchInSortedMatrixITest" />
-      <item itemvalue="JUnit.KClosestInSortedArrayTest" />
       <item itemvalue="JUnit.FibonacciNumberTest" />
+      <item itemvalue="JUnit.KClosestInSortedArrayTest" />
+      <item itemvalue="JUnit.SearchInSortedMatrixITest" />
+      <item itemvalue="JUnit.SelectionSortTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SelectionSortTest" />
         <item itemvalue="JUnit.FibonacciNumberTest" />
         <item itemvalue="JUnit.KClosestInSortedArrayTest" />
         <item itemvalue="JUnit.SearchInSortedMatrixITest" />
@@ -330,7 +288,7 @@
     <frame x="67" y="41" width="3773" height="2119" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2541183" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25898892" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -339,12 +297,12 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32935065" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32935065" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.33038962" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.33333334" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Messages" order="10" />
@@ -356,13 +314,11 @@
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
       <window_info anchor="right" id="Maven Projects" order="7" />
+      <window_info anchor="right" id="Maven" order="8" />
     </layout>
   </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
-  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/A/BinarySearch/Easy/ClassicalBinarySearch/ClassicalBinarySearchTest.java">
+    <entry file="file://$PROJECT_DIR$/src/B/BinarySearch/Easy/ClassicalBinarySearch/ClassicalBinarySearchTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="155">
           <caret line="9" column="36" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
@@ -374,28 +330,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/A/BinarySearch/Medium/SearchInSortedMatrixI/SearchInSortedMatrixI.java">
+    <entry file="file://$PROJECT_DIR$/src/B/BinarySearch/Medium/SearchInSortedMatrixI/SearchInSortedMatrixI.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="690">
           <caret line="41" column="43" selection-start-line="41" selection-start-column="43" selection-end-line="41" selection-end-column="43" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/A/BinarySearch/Easy/ClassicalBinarySearch/ClassicalBinarySearch.java">
+    <entry file="file://$PROJECT_DIR$/src/B/BinarySearch/Easy/ClassicalBinarySearch/ClassicalBinarySearch.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="130">
           <caret line="36" column="19" selection-start-line="36" selection-start-column="19" selection-end-line="36" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/A/BinarySearch/Medium/KClosestInSortedArray/KClosestInSortedArray.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="868">
-          <caret line="28" column="28" selection-start-line="28" selection-start-column="28" selection-end-line="28" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/A/BinarySearch/Medium/SearchInSortedMatrixI/SearchInSortedMatrixITest.java">
+    <entry file="file://$PROJECT_DIR$/src/B/BinarySearch/Medium/SearchInSortedMatrixI/SearchInSortedMatrixITest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="310">
           <caret line="10" column="47" selection-start-line="10" selection-start-column="47" selection-end-line="10" selection-end-column="47" />
@@ -405,7 +354,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/A/BinarySearch/Medium/KClosestInSortedArray/KClosestInSortedArrayTest.java">
+    <entry file="file://$PROJECT_DIR$/src/B/BinarySearch/Medium/KClosestInSortedArray/KClosestInSortedArrayTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="310">
           <caret line="10" column="46" lean-forward="true" selection-start-line="10" selection-start-column="46" selection-end-line="10" selection-end-column="46" />
@@ -417,21 +366,49 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/B/Recursion/Easy/FibonacciNumber/FibonacciNumberTest.java">
+    <entry file="file://$PROJECT_DIR$/src/B/BinarySearch/Medium/KClosestInSortedArray/KClosestInSortedArray.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="589">
-          <caret line="23" column="30" selection-start-line="23" selection-start-column="30" selection-end-line="23" selection-end-column="30" />
-          <folding>
-            <element signature="e#268#269#0" expanded="true" />
-            <element signature="e#315#316#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="532">
+          <caret line="28" column="28" selection-start-line="28" selection-start-column="28" selection-end-line="28" selection-end-column="28" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/B/Recursion/Easy/FibonacciNumber/FibonacciNumber.java">
+    <entry file="file://$PROJECT_DIR$/src/C/Recursion/Easy/FibonacciNumber/FibonacciNumber.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="907">
-          <caret line="49" column="4" selection-start-line="49" selection-start-column="4" selection-end-line="49" selection-end-column="4" />
+        <state relative-caret-position="266">
+          <caret line="14" column="14" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/C/Recursion/Easy/FibonacciNumber/FibonacciNumberTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="23" column="30" selection-start-line="23" selection-start-column="30" selection-end-line="23" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/C/Recursion/Medium/AToThePowerOfB/AToThePowerOfB.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/A/SortingAlgorithms/Easy/SelectionSort/SelectionSort.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="19" column="22" lean-forward="true" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/A/SortingAlgorithms/Easy/SelectionSort/SelectionSortTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1085">
+          <caret line="39" column="13" selection-start-line="39" selection-start-column="13" selection-end-line="39" selection-end-column="13" />
+          <folding>
+            <element signature="e#282#283#0" expanded="true" />
+            <element signature="e#332#333#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -1,4 +1,4 @@
-package A.BinarySearch.Easy.ClassicalBinarySearch;
+package B.BinarySearch.Easy.ClassicalBinarySearch;
 
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;

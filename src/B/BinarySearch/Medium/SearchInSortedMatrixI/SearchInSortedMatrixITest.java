@@ -1,4 +1,4 @@
-package A.BinarySearch.Medium.SearchInSortedMatrixI;
+package B.BinarySearch.Medium.SearchInSortedMatrixI;
 
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;

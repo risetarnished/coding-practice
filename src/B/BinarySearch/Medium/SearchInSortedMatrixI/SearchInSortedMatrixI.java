@@ -1,4 +1,4 @@
-package A.BinarySearch.Medium.SearchInSortedMatrixI;
+package B.BinarySearch.Medium.SearchInSortedMatrixI;
 
 /**
  * Description

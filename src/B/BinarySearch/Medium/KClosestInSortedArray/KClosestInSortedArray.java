@@ -1,4 +1,4 @@
-package A.BinarySearch.Medium.KClosestInSortedArray;
+package B.BinarySearch.Medium.KClosestInSortedArray;
 
 /**
  * https://app.laicode.io/app/problem/19
