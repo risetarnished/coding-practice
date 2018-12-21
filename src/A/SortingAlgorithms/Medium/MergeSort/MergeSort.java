@@ -66,3 +66,11 @@ public class MergeSort {
         }
     }
 }
+
+/**
+ * Time complexity:
+ * There are in total n elements, log(n) levels in the recursion tree --> O(n log(n))
+ *
+ * Space complexity:
+ * Merging elements number of n, n/2, n/4, ... 1 --> O(n)
+ **/
