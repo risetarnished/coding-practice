@@ -65,3 +65,22 @@ public class QueueByTwoStacks {
         }
     }
 }
+
+/**
+ * Time complexity:
+ * Enqueue: simply pushing elements onto stackOne ⇒ O(1)
+ * Dequeue:
+ * Best-case: directly pop the top of stackTwo ⇒ O(1)
+ * Worst-case: move all elements on stackOne to stackTwo and pop ⇒ O(n)
+ * Amortized:
+ * 1st call (triggers the transfer) ⇒ n * stackOne.pop() + n * stackTwo.push + 1
+ * 2nd call (directly pop) ⇒ 1
+ * 3rd call (directly pop) ⇒ 1
+ * …
+ * 1000th call (directly pop) ⇒ 1
+ * ((2n + 1) + 1 * (n - 1)) / n = 3n/n = 3
+ * Thus, amortized-time complexity of dequeue ⇒ O(3) = O(1)
+ *
+ * Space complexity:
+ * Two stacks of size n are used ⇒ O(n).
+ */
