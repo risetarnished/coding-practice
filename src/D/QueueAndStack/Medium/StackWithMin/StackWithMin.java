@@ -29,9 +29,8 @@ public class StackWithMin {
         if (stack.isEmpty()) {
             return -1;
         }
-        // If the sizes of the two stacks are the same, indicating the element being popped from the stack is the
-        // (last occurrence) of the min value, it needs to be popped from the minStack, as well.
-        if (stack.size() == minStack.size()) {
+        // If the popped elements equals to the current top of minStack, it needs to be popped from minStack, too
+        if (stack.peekFirst().equals(minStack.peekFirst())) {
             minStack.pollFirst();
         }
         return stack.pollFirst();
@@ -40,7 +39,7 @@ public class StackWithMin {
     public void push(int element) {
         // If this element is less than everything else (current min), push it onto the minStack
         // Caution: minStack can never be empty if stack is not empty
-        if (stack.isEmpty() || element < minStack.peekFirst()) {
+        if (stack.isEmpty() || element <= minStack.peekFirst()) {
             minStack.offerFirst(element);
         }
         stack.offerFirst(element);
