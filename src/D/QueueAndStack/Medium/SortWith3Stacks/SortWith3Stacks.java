@@ -53,9 +53,8 @@ public class SortWith3Stacks {
         // Upon exiting the while-loop, we have found the min value in this iteration
         // Push it onto s3 and the elements (if any) on s2 back to s1
         s3.offerFirst(min);
-        transferStack(s2, s1);
-        // Recursively sort s1 until it becomes empty
-        sort(s1, s2, s3);
+        // Trick: flip s2 and s1
+        sort(s2, s1, s3);
     }
 
     private void transferStack(LinkedList<Integer> stackOne, LinkedList<Integer> stackTwo) {
