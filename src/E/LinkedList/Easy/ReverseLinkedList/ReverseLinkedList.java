@@ -1,6 +1,6 @@
 package E.LinkedList.Easy.ReverseLinkedList;
 
-import helper.ListNode;
+import helper.ListNode.ListNode;
 
 /**
  * https://app.laicode.io/app/problem/34
