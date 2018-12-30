@@ -8,6 +8,7 @@ import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -33,7 +34,7 @@ class ReverseLinkedListTest {
     @Test
     void testNull() {
         ListNode result = reverseLinkedList.reverse(head);
-        assertEquals(null, result);
+        assertEquals(head, result);
     }
 
     @Test
@@ -48,7 +49,10 @@ class ReverseLinkedListTest {
         List<Integer> nodes = new ArrayList<>(Arrays.asList(1, 2, 3, 4, 5));
         head = ListNode.buildList(nodes);
         ListNode reversed = reverseLinkedList.reverse(head);
-        List<Integer> result = ListNode.listToArray(reversed);
-        assertEquals(new ArrayList<>(Arrays.asList(5, 4, 3, 2, 1)), result);
+//        List<Integer> result = ListNode.listToArray(reversed);
+//        assertEquals(new ArrayList<>(Arrays.asList(5, 4, 3, 2, 1)), result);
+        Collections.reverse(nodes);
+        ListNode expected = ListNode.buildList(nodes);
+        assertEquals(expected, reversed);
     }
 }
