@@ -20,7 +20,7 @@ public class InsertInSortedLinkedList {
         // Write your solution here
         ListNode newNode = new ListNode(value);
         // Case 1: insert before head
-        if (head == null || head.value > value) {
+        if (head == null || head.value >= value) {
             newNode.next = head;
             return newNode;
         }
