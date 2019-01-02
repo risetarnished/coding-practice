@@ -1,4 +1,4 @@
-package F.BinaryTree.Easy.PreorderTraversalOfBinaryTree;
+package F.BinaryTree.Medium.InorderTraversalOfBinaryTree;
 
 import helper.TreeNode.TreeNode;
 import org.junit.jupiter.api.AfterEach;
@@ -13,13 +13,13 @@ import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class PreorderTraversalOfBinaryTreeTest {
-    private static PreorderTraversalOfBinaryTree instance;
+class InorderTraversalOfBinaryTreeTest {
+    private static InorderTraversalOfBinaryTree inOrderTraversal;
     private TreeNode root;
 
     @BeforeAll
-    private static void setInstance() {
-        instance = new PreorderTraversalOfBinaryTree();
+    static void setInstance() {
+        inOrderTraversal = new InorderTraversalOfBinaryTree();
     }
 
     @BeforeEach
@@ -33,7 +33,7 @@ class PreorderTraversalOfBinaryTreeTest {
 
     @Test
     void testNull() {
-        List<Integer> result = instance.preOrder(root);
+        List<Integer> result = inOrderTraversal.inOrder(root);
         assertEquals(new ArrayList<>(), result);
     }
 
@@ -41,21 +41,21 @@ class PreorderTraversalOfBinaryTreeTest {
     @Test
     void testOneNode() {
         root = new TreeNode(0);
-        List<Integer> result = instance.preOrder(root);
+        List<Integer> result = inOrderTraversal.inOrder(root);
         assertEquals(new ArrayList<>(Collections.singletonList(0)), result);
     }
 
-    // In-order: [5, 3, 8, 1, 4, #, 11]
-    // Pre-order result: [5, 3, 1, 4, 8, 11]
+    // In-order build tree: [5, 3, 8, 1, 4, #, 11]
+    // In-order result: [1, 3, 4, 5, 8, 11]
     @Test
     void testOne() {
         List<Integer> keys = new ArrayList<>(Arrays.asList(5, 3, 8, 1, 4, null, 11));
         System.out.println("Input keys in-order: " + keys.toString());
         root = TreeNode.buildTree(keys);
-        List<Integer> result = instance.preOrder(root);
-        List<Integer> expected = new ArrayList<>(Arrays.asList(5, 3, 1, 4, 8, 11));
-        System.out.println("Expected pre-order output: " + expected.toString());
-        System.out.println("Actual pre-order output: " + result.toString());
+        List<Integer> result = inOrderTraversal.inOrder(root);
+        List<Integer> expected = new ArrayList<>(Arrays.asList(1, 3, 4, 5, 8, 11));
+        System.out.println("Expected in-order output: " + expected.toString());
+        System.out.println("Actual in-order output: " + result.toString());
         assertEquals(expected, result);
     }
 }

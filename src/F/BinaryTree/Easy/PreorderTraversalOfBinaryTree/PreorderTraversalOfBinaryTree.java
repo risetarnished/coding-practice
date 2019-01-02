@@ -1,6 +1,6 @@
 package F.BinaryTree.Easy.PreorderTraversalOfBinaryTree;
 
-import helper.ListNode.TreeNode;
+import helper.TreeNode.TreeNode;
 
 import java.util.*;
 
