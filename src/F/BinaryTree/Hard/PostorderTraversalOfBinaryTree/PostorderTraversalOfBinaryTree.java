@@ -52,12 +52,10 @@ import java.util.List;
 public class PostorderTraversalOfBinaryTree {
     public List<Integer> postOrder(TreeNode root) {
         // Write your solution here
-        /*
         List<Integer> result = new ArrayList<>();
         if (root == null) {
             return result;
         }
-        */
         /* Recursive method */
         /*
         List<Integer> left = postOrder(root.left);
@@ -69,7 +67,6 @@ public class PostorderTraversalOfBinaryTree {
         */
 
         /* Iterative method */
-        /*
         // Use a stack (of course, since we are coming back) to keep track of the root's path
         // Use a helper node to keep track of the previously visited node
         Deque<TreeNode> stack = new LinkedList<>();
@@ -113,9 +110,9 @@ public class PostorderTraversalOfBinaryTree {
             previous = current;
         }
         return result;
-        */
 
         /* Leetcode method */
+        /*
         // Use a linked list for the result such that we can add new
         // elements to the result from the head
         LinkedList<Integer> result = new LinkedList<>();
@@ -135,6 +132,7 @@ public class PostorderTraversalOfBinaryTree {
             }
         }
         return result;
+        */
     }
 }
 
