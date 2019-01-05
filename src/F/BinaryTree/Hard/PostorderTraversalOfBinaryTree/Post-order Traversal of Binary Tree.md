@@ -1,4 +1,4 @@
-<!----- Conversion time: 0.955 seconds.
+<!----- Conversion time: 0.869 seconds.
 
 
 Using this Markdown file:
@@ -11,7 +11,7 @@ Using this Markdown file:
 Conversion notes:
 
 * GD2md-html version 1.0β13
-* Fri Jan 04 2019 01:28:10 GMT-0800 (PST)
+* Fri Jan 04 2019 19:31:50 GMT-0800 (PST)
 * Source doc: https://docs.google.com/open?id=1B0O0AH5BXfjkJ_QCYxFwdx-QoWnc4nWA7PhLbfE0deg
 ----->
 
@@ -32,11 +32,11 @@ Examples
 
           /    \
 
-        3       8
+        3        8
 
-      /   \         \
+      /   \        \
 
-    1      4       11
+    1      4        11
 
 Post-order traversal is \[1, 4, 3, 11, 8, 5\]
 
@@ -56,7 +56,7 @@ The sequence \[1, 2, 3, #, #, 4\] represents the following binary tree:
 
         1
 
-       /   \
+      /   \
 
      2     3
 
@@ -100,6 +100,20 @@ The tree should not be null
         1.  when previous is current's right child (we are coming back from the right subtree)
             1.  we do not need to do any more traversing ⇒ add current to the list and remove it from the stack
     1.  now we have finish traversal from the current node, we need to go back and check the previous node ⇒ previous = current
+
+
+### Iteration - Alternative
+
+There is also an alternative iterative method provided on [LeetCode](https://leetcode.com/problems/binary-tree-postorder-traversal/solution/):
+
+
+
+*   Let's start from the root and then at each iteration pop the current node out of the stack and push its child nodes. In the implemented strategy we push nodes into stack following the order Top->Bottom and Left->Right. Since DFS postorder transversal is Bottom->Top and Left->Right the output list should be reverted after the end of loop.
+*   Basically, it is the reversed version of [Pre-order Traversal of Binary Tree](https://docs.google.com/document/d/1VVhLUDsj5bp-noWq2_N40pgw6NDYnNqiEXyNIDFyXgs/edit):
+    *   Push the root to the stack first
+    *   Do a while-loop until the stack becomes empty
+    *   Pop the stack pop element and **_add it to the head of the returning linked list_**
+    *   Try to traverse to the right subtree first because we are **_adding to the head of the returning linked list_**
 
 
 ## Solution
@@ -150,7 +164,7 @@ Space: O(height)
 
 
 
-### Iterative method
+### Iterative Method
 
 
 #### Code
@@ -215,6 +229,48 @@ public class Solution {
 Time: n nodes in the tree ⇒ O(n).
 
 Space: a stack is created ⇒ O(n).
+
+
+### Iterative Method - LeetCode Alternative
+
+
+#### Code
+
+
+```java
+public class Solution {
+    public List<Integer> postOrder(TreeNode root) {
+        // Write your solution here
+        // Use a linked list for the result such that we can add new
+        // elements to the result from the head
+        LinkedList<Integer> result = new LinkedList<>();
+        if (root == null) {
+            return result;
+        }
+        Deque<TreeNode> stack = new LinkedList<>();
+        stack.offerFirst(root);
+        while (!stack.isEmpty()) {
+            TreeNode current = stack.pollFirst();
+            result.addFirst(current.key);
+            if (current.left != null) {
+                stack.offerFirst(current.left);
+            }
+            if (current.right != null) {
+                stack.offerFirst(current.right);
+            }
+        }
+        return result;
+    }
+}
+```
+
+
+
+#### Complexity
+
+Time: we visit each node exactly once, thus the time complexity is O(n), where n is  the number of nodes, _i.e._ the size of tree.
+
+Space: depending on the tree structure, we could keep up to the entire tree, therefore, the space complexity is O(n).
 
 
 <!-- GD2md-html version 1.0β13 -->
