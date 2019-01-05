@@ -17,7 +17,7 @@ Conversion notes:
 
 
 
-## Is Binary Search Tree Or Not
+## Is Binary Search Tree or Not
 
 [https://app.laicode.io/app/problem/54](https://app.laicode.io/app/problem/54)
 
