@@ -83,7 +83,7 @@ The tree is not null or empty
 
 ## Algorithm
 
-Similar to the [Symmetric Binary Tree](https://docs.google.com/document/d/1j0kOdBO7BXmOrrkU8OyUNPB7jd74HB6eTziyMqjyrRo/edit) problem.
+Similar to the [Symmetric Binary Tree](../../Easy/SymmetricBinaryTree) problem.
 
 Instead of just comparing
 
