@@ -49,6 +49,8 @@ Coding practice problems on [LaiCode](https://www.laicode.io/)
     1.  [Symmetric Binary Tree](src/F/BinaryTree/Easy/SymmetricBinaryTree)
     1.  [Tweaked Identical Binary Tree](src/F/BinaryTree/Medium/TweakedIdenticalBinaryTree)
     1.  [Is Binary Search Tree or Not](src/F/BinaryTree/Medium/IsBinarySearchTreeOrNot)
+    1.  [Get Keys in Binary Search Tree in Given Range](src/F/BinaryTree/Easy/GetKeysInBinarySearchTreeInGivenRange)
+
 
 
 

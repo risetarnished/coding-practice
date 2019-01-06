@@ -109,7 +109,7 @@ There is also an alternative iterative method provided on [LeetCode](https://lee
 
 
 *   Let's start from the root and then at each iteration pop the current node out of the stack and push its child nodes. In the implemented strategy we push nodes into stack following the order Top->Bottom and Left->Right. Since DFS postorder transversal is Bottom->Top and Left->Right the output list should be reverted after the end of loop.
-*   Basically, it is the reversed version of [Pre-order Traversal of Binary Tree](https://docs.google.com/document/d/1VVhLUDsj5bp-noWq2_N40pgw6NDYnNqiEXyNIDFyXgs/edit):
+*   Basically, it is the reversed version of [Pre-order Traversal of Binary Tree](../../Easy/PreorderTraversalOfBinaryTree):
     *   Push the root to the stack first
     *   Do a while-loop until the stack becomes empty
     *   Pop the stack pop element and **_add it to the head of the returning linked list_**
