@@ -144,12 +144,12 @@ public class Solution {
       // The neighbors should have a different group number
       int neighborGroup = currentGroup == 0 ? 1 : 0;
       // Expand and generate all the neighbors of the current node
-      for (GraphNode neighbor : currentNode.neighbors) {
+      for (GraphNode neighbor : current.neighbors) {
         if (!groups.containsKey(neighbor)) {
           // Case 1: neighbor has not been seen before
           groups.put(neighbor, neighborGroup);
           queue.offer(neighbor);
-        } else if (group.get(neighbor) == currentGroup) {
+        } else if (groups.get(neighbor) == currentGroup) {
           // Case 2: neighbor has the same group number
           return false;
         } // Case 3: neighbor has a different group number
