@@ -275,7 +275,13 @@ class Cell implements Comparable<Cell> {
 
     @Override
     public int hashCode() {
-        return Objects.hash(row, col, val);
+        // This does not work on laicode (yet)
+        // return Objects.hash(row, col, val);
+        int hashResult = 17;
+        hashResult = 31 * hashResult + row;
+        hashResult = 31 * hashResult + col;
+        hashResult = 31 * hashResult + val;
+        return hashResult;
     }
 }
 ```
