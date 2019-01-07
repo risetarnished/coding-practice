@@ -54,6 +54,7 @@ Coding practice problems on [LaiCode](https://www.laicode.io/)
     1.  [K Smallest in Unsorted Array](src/G/HeapAndBFS/Medium/KSmallestInUnsortedArray)
     2.  [GetKeysInBinaryTreeLayerByLayer](src/G/HeapAndBFS/Easy/GetKeysInBinaryTreeLayerByLayer)
     3.  [Bipartite](src/G/HeapAndBFS/Hard/Bipartite)
+    4.  [Check if Binary Tree is Completed](src/G/HeapAndBFS/Medium/CheckIfBinaryTreeIsCompleted)
 
 
 
