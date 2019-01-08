@@ -75,19 +75,19 @@ E.g. set = "abc"
 
 input[] = "abc"
 
-                                **root (a b c)**
+                                root (a b c)
 
-                    **/                 |                \**
+                    /                 |                \
 
-                    **a(bc)            b(ac)            c(ba)**
+                 a(bc)              b(ac)              c(ba)
 
-                **/    \                /    \                /    \**
+                /    \             /    \              /    \
 
-                **b(c)    c(b)    a(c)    c(a)    b(a)    a(b)**
+             b(c)    c(b)       a(c)    c(a)        b(a)    a(b)
 
-            **|          |          |          |          |          |**
+              |       |          |        |          |        |
 
-            ** c         b         c         a         a          b**
+              c       b          c        a          a        b
 
 
 ## Solution
