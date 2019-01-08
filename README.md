@@ -58,6 +58,7 @@ Coding practice problems on [LaiCode](https://www.laicode.io/)
     5.  [Kth Smallest Number in Sorted Matrix](src/G/HeapAndBFS/Medium/KthSmallestNumberInSortedMatrix)
 8.  [DFS](src/H/DFS)
     1.  [All Subsets I](src/H/DFS/Medium/AllSubsetsI)
+    2.  [All Valid Permutations of Parentheses I](src/H/DFS/Medium/AllValidPermutationsOfParenthesesI)
 
 
 
