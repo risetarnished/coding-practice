@@ -74,6 +74,13 @@ public class CombinationsOfCoins {
             if (target % coins[index] == 0) {
                 combination.add(target / coins[index]);
                 result.add(new ArrayList<>(combination));
+                // Before returning back to the previous coin/index, we need to remove
+                // the combination of the last coin
+                // Because the remove operation on the last line will only
+                // remove one step from the combination, whereas we have added two
+                // The first termination method does not have this problem
+                // because it is not trying combinations of the last coin at this point,
+                // it has already added the combinations in the for-loop from the previous step
                 combination.remove(combination.size() - 1);
             }
             // Otherwise, ignore this combination
