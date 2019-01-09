@@ -63,6 +63,7 @@ Coding practice problems on [LaiCode](https://www.laicode.io/)
     4.  [All Permutations I](src/H/DFS/Medium/AllPermutationsI)
 9.  [HashTable](src/I/HashTable)
     1.  [Top K Frequent Words](src/I/HashTable/Medium/TopKFrequentWords)
+    2.  [Missing Number I](src/I/HashTable/Medium/MissingNumberI)
 
 
 
