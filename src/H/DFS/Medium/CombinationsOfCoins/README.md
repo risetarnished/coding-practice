@@ -215,6 +215,44 @@ public class Solution {
 ```
 
 
+**_Caution: _**
+
+_when we add a combination to the result, we did_
+
+
+```java
+result.add(new ArrayList<>(combination));
+```
+
+
+_instead of_
+
+
+```java
+result.add(combination);
+```
+
+
+_This is because_
+
+
+
+1.  _Java is passed by value_
+    1.  _the **combination** passed in is the value of the address to the object_
+    2.  _if the value/contents in the **combination** list gets changed later in the code, the **combination** in the **result** will change to the same content_
+2.  _List is mutable_
+    1.  _unlike adding a String to the result, which we simply did_
+
+        ```java
+        result.add(string);
+        ```
+
+        _because String, Integer, Double, Long, Boolean are **immutable**_
+
+    2.  _The standard of whether a **new/clone** is needed is that if this data is **immutable**_
+        1.  _if it is **immutable** ⇒ just **copy** it_
+        2.  _if it is **mutable** ⇒ **new** and **clone** it_
+
 
 ### Complexity
 

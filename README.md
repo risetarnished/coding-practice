@@ -61,6 +61,9 @@ Coding practice problems on [LaiCode](https://www.laicode.io/)
     2.  [All Valid Permutations of Parentheses I](src/H/DFS/Medium/AllValidPermutationsOfParenthesesI)
     3.  [Combinations of Coins](src/H/DFS/Medium/CombinationsOfCoins)
     4.  [All Permutations I](src/H/DFS/Medium/AllPermutationsI)
+9.  [HashTable](src/I/HashTable)
+    1.  [Top K Frequent Words](src/I/HashTable/Medium/TopKFrequentWords)
+
 
 
 
