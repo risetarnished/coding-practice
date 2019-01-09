@@ -56,6 +56,16 @@ Coding practice problems on [LaiCode](https://www.laicode.io/)
     3.  [Bipartite](src/G/HeapAndBFS/Hard/Bipartite)
     4.  [Check if Binary Tree is Completed](src/G/HeapAndBFS/Medium/CheckIfBinaryTreeIsCompleted)
     5.  [Kth Smallest Number in Sorted Matrix](src/G/HeapAndBFS/Medium/KthSmallestNumberInSortedMatrix)
+8.  [DFS](src/H/DFS)
+    1.  [All Subsets I](src/H/DFS/Medium/AllSubsetsI)
+    2.  [All Valid Permutations of Parentheses I](src/H/DFS/Medium/AllValidPermutationsOfParenthesesI)
+    3.  [Combinations of Coins](src/H/DFS/Medium/CombinationsOfCoins)
+    4.  [All Permutations I](src/H/DFS/Medium/AllPermutationsI)
+9.  [HashTable](src/I/HashTable)
+    1.  [Top K Frequent Words](src/I/HashTable/Medium/TopKFrequentWords)
+    2.  [Missing Number I](src/I/HashTable/Medium/MissingNumberI)
+    3.  [Common Numbers of Two Sorted Arrays](src/I/HashTable/Easy/CommonNumbersOfTwoSortedArrays)
+
 
 
 
