@@ -1,4 +1,4 @@
-package J.StringI.Easy.ReverseString;
+package K.StringII.Easy.ReverseString;
 
 /**
  * https://app.laicode.io/app/problem/396

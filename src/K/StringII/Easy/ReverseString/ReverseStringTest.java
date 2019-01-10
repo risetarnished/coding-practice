@@ -1,4 +1,4 @@
-package J.StringI.Easy.ReverseString;
+package K.StringII.Easy.ReverseString;
 
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
