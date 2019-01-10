@@ -67,6 +67,8 @@ Coding practice problems on [LaiCode](https://www.laicode.io/)
     3.  [Common Numbers of Two Sorted Arrays](src/I/HashTable/Easy/CommonNumbersOfTwoSortedArrays)
 10. [String I](src/J/StringI)
     1.  [Remove Certain Characters](src/J/StringI/Easy/RemoveCertainCharacters)
+    2.  [Remove Spaces](src/J/StringI/Easy/RemoveSpaces)
+
 11. [String II](src/K/StringII)
     1.  [Reverse String](src/K/StringII/Easy/ReverseString)
 
