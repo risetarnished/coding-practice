@@ -65,6 +65,8 @@ Coding practice problems on [LaiCode](https://www.laicode.io/)
     1.  [Top K Frequent Words](src/I/HashTable/Medium/TopKFrequentWords)
     2.  [Missing Number I](src/I/HashTable/Medium/MissingNumberI)
     3.  [Common Numbers of Two Sorted Arrays](src/I/HashTable/Easy/CommonNumbersOfTwoSortedArrays)
+10. [String I](src/J/StringI)
+    1.  [Reverse String](src/J/StringI/Easy/ReverseString)
 
 
 
