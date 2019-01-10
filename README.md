@@ -68,7 +68,9 @@ Coding practice problems on [LaiCode](https://www.laicode.io/)
 10. [String I](src/J/StringI)
     1.  [Remove Certain Characters](src/J/StringI/Easy/RemoveCertainCharacters)
     2.  [Remove Spaces](src/J/StringI/Easy/RemoveSpaces)
-
+    3.  [Remove Adjacent Repeated Characters I](src/J/StringI/Easy/RemoveAdjacentRepeatedCharactersI)
+    4.  [Remove Adjacent Repeated Characters IV](src/J/StringI/Hard/RemoveAdjacentRepeatedCharactersIV)
+    5.  [Determine if One String is Another's Substring](src/J/StringI/Medium/DetermineIfOneStringIsAnothersSubstring)
 11. [String II](src/K/StringII)
     1.  [Reverse String](src/K/StringII/Easy/ReverseString)
 
