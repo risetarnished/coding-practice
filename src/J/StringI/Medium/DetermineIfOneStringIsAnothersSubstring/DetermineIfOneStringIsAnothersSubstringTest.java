@@ -29,16 +29,21 @@ class DetermineIfOneStringIsAnothersSubstringTest {
     @Test
     void testNullAndEmpty() {
         assertEquals(-1, strStr.strstr(large, small));
+        assertEquals(-1, strStr.rabinKarp(large, small));
         large = "a";
         assertEquals(-1, strStr.strstr(large, small));
+        assertEquals(-1, strStr.rabinKarp(large, small));
         large = null;
         small = "a";
         assertEquals(-1, strStr.strstr(large, small));
+        assertEquals(-1, strStr.rabinKarp(large, small));
         large = "a";
         small = "aa";
         assertEquals(-1, strStr.strstr(large, small));
+        assertEquals(-1, strStr.rabinKarp(large, small));
         small = "";
         assertEquals(0, strStr.strstr(large, small));
+        assertEquals(0, strStr.rabinKarp(large, small));
     }
 
     @Test
@@ -46,10 +51,13 @@ class DetermineIfOneStringIsAnothersSubstringTest {
         large = "bcabc";
         small = "ab";
         assertEquals(2, strStr.strstr(large, small));
+        assertEquals(2, strStr.rabinKarp(large, small));
         small = "bcd";
         assertEquals(-1, strStr.strstr(large, small));
+        assertEquals(-1, strStr.rabinKarp(large, small));
         large = "mississippi";
         small = "issip";
         assertEquals(4, strStr.strstr(large, small));
+        assertEquals(4, strStr.rabinKarp(large, small));
     }
 }
