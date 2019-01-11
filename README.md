@@ -73,6 +73,8 @@ Coding practice problems on [LaiCode](https://www.laicode.io/)
     5.  [Determine if One String is Another's Substring](src/J/StringI/Medium/DetermineIfOneStringIsAnothersSubstring)
 11. [String II](src/K/StringII)
     1.  [Reverse String](src/K/StringII/Easy/ReverseString)
+    2.  [Reverse Words in a Sentence I](src/K/StringII/Medium/ReverseWordsInASentenceI)
+    3.  [Right Shift by N Characters](src/K/StringII/Easy/RightShiftByNCharacters)
 
 
 
