@@ -77,7 +77,7 @@ Coding practice problems on [LaiCode](https://www.laicode.io/)
     3.  [Right Shift by N Characters](src/K/StringII/Easy/RightShiftByNCharacters)
     4.  [String Replace](src/K/StringII/Hard/StringReplace)
     5.  [ReOrder Array](src/K/StringII/Hard/ReOrderArray)
-
+    6.  [All Permutations II](src/K/StringII/Hard/AllPermutationsII)
 
 
 
