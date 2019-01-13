@@ -75,6 +75,7 @@ Coding practice problems on [LaiCode](https://www.laicode.io/)
     1.  [Reverse String](src/K/StringII/Easy/ReverseString)
     2.  [Reverse Words in a Sentence I](src/K/StringII/Medium/ReverseWordsInASentenceI)
     3.  [Right Shift by N Characters](src/K/StringII/Easy/RightShiftByNCharacters)
+    4.  [String Replace](src/K/StringII/Hard/StringReplace)
 
 
 
