@@ -79,6 +79,8 @@ Coding practice problems on [LaiCode](https://www.laicode.io/)
     5.  [ReOrder Array](src/K/StringII/Hard/ReOrderArray)
     6.  [All Permutations II](src/K/StringII/Hard/AllPermutationsII)
     7.  [Decompress String II](src/K/StringII/Hard/DecompressStringII)
+    8.  [Longest Substring without Repeating Characters](src/K/StringII/Medium/LongestSubstringWithoutRepeatingCharacters)
+
 
 
 
