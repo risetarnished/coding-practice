@@ -81,9 +81,8 @@ Coding practice problems on [LaiCode](https://www.laicode.io/)
     7.  [Decompress String II](src/K/StringII/Hard/DecompressStringII)
     8.  [Longest Substring without Repeating Characters](src/K/StringII/Medium/LongestSubstringWithoutRepeatingCharacters)
     9.  [All Anagrams](src/K/StringII/Medium/AllAnagrams)
-
-
-
+11. [Bit Representation & Operation](src/L/Bit)
+    1.  [Power of Two](src/L/Bit/Easy/PowerOfTwo)
 
 
 <!-- GD2md-html version 1.0β13 -->
