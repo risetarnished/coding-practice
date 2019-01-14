@@ -83,6 +83,8 @@ Coding practice problems on [LaiCode](https://www.laicode.io/)
     9.  [All Anagrams](src/K/StringII/Medium/AllAnagrams)
 11. [Bit Representation & Operation](src/L/Bit)
     1.  [Power of Two](src/L/Bit/Easy/PowerOfTwo)
+    2.  [Number of Different Bits](src/L/Bit/Medium/NumberOfDifferentBits)
+
 
 
 <!-- GD2md-html version 1.0β13 -->
