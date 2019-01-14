@@ -42,6 +42,7 @@ Because we cannot know the sign of the two numbers, we have to use logical shift
 
 Straightforward method:
 
+Because we are trying to figure out the difference between bits, we should come up with the idea of exclusive or (XOR). For example, if we are to compare integer 5 and 6:
 
 
 1.  Calculate a XOR b and get a result, call it c
@@ -76,9 +77,15 @@ public class Solution {
 
 #### Time
 
-Bitwise operation considered to be O(1)
+Both inputs are integers ⇒ 32 bits
 
-But if we takt bit operation into consideration ⇒ O(n)
+XOR takes O(32)
+
+32 logical right shifts.
+
+In each shift, there is an & operation that takes O(32)
+
+Therefore, O(32 * 32)
 
 
 #### Space
