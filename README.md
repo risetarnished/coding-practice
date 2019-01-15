@@ -65,10 +65,27 @@ Coding practice problems on [LaiCode](https://www.laicode.io/)
     1.  [Top K Frequent Words](src/I/HashTable/Medium/TopKFrequentWords)
     2.  [Missing Number I](src/I/HashTable/Medium/MissingNumberI)
     3.  [Common Numbers of Two Sorted Arrays](src/I/HashTable/Easy/CommonNumbersOfTwoSortedArrays)
-
-
-
-
+10. [String I](src/J/StringI)
+    1.  [Remove Certain Characters](src/J/StringI/Easy/RemoveCertainCharacters)
+    2.  [Remove Spaces](src/J/StringI/Easy/RemoveSpaces)
+    3.  [Remove Adjacent Repeated Characters I](src/J/StringI/Easy/RemoveAdjacentRepeatedCharactersI)
+    4.  [Remove Adjacent Repeated Characters IV](src/J/StringI/Hard/RemoveAdjacentRepeatedCharactersIV)
+    5.  [Determine if One String is Another's Substring](src/J/StringI/Medium/DetermineIfOneStringIsAnothersSubstring)
+11. [String II](src/K/StringII)
+    1.  [Reverse String](src/K/StringII/Easy/ReverseString)
+    2.  [Reverse Words in a Sentence I](src/K/StringII/Medium/ReverseWordsInASentenceI)
+    3.  [Right Shift by N Characters](src/K/StringII/Easy/RightShiftByNCharacters)
+    4.  [String Replace](src/K/StringII/Hard/StringReplace)
+    5.  [ReOrder Array](src/K/StringII/Hard/ReOrderArray)
+    6.  [All Permutations II](src/K/StringII/Hard/AllPermutationsII)
+    7.  [Decompress String II](src/K/StringII/Hard/DecompressStringII)
+    8.  [Longest Substring without Repeating Characters](src/K/StringII/Medium/LongestSubstringWithoutRepeatingCharacters)
+    9.  [All Anagrams](src/K/StringII/Medium/AllAnagrams)
+11. [Bit Representation & Operation](src/L/Bit)
+    1.  [Power of Two](src/L/Bit/Easy/PowerOfTwo)
+    2.  [Number of Different Bits](src/L/Bit/Medium/NumberOfDifferentBits)
+    3.  [All Unique Characters II](src/L/Bit/Medium/AllUniqueCharactersII)
+    4.  [Hexadecimal Representation](src/L/Bit/Easy/HexadecimalRepresentation)
 
 
 <!-- GD2md-html version 1.0β13 -->
