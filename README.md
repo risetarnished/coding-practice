@@ -85,6 +85,7 @@ Coding practice problems on [LaiCode](https://www.laicode.io/)
     1.  [Power of Two](src/L/Bit/Easy/PowerOfTwo)
     2.  [Number of Different Bits](src/L/Bit/Medium/NumberOfDifferentBits)
     3.  [All Unique Characters II](src/L/Bit/Medium/AllUniqueCharactersII)
+    4.  [Hexadecimal Representation](src/L/Bit/Easy/HexadecimalRepresentation)
 
 
 <!-- GD2md-html version 1.0β13 -->
