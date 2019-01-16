@@ -112,5 +112,7 @@ Coding practice problems on [LaiCode](https://www.laicode.io/)
 13. [DFS II](src/H/DFS)
     1.  [All Subsets II](src/M/DFSII/Hard/AllSubsetsII)
 
+14. [Dynamic Programming I](src/N/DynamicProgramming)
+    1.  [Longest Ascending SubArray](src/N/DynamicProgramming/DPI/Easy/LongestAscendingSubArray)
 
 <!-- GD2md-html version 1.0β13 -->
