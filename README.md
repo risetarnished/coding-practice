@@ -38,13 +38,24 @@ Coding practice problems on [LaiCode](https://www.laicode.io/)
     6.  [K Closest in Sorted Array](src/B/BinarySearch/Medium/KClosestInSortedArray)
     7.  [Search in Unknown Sized Sorted Array](src/B/BinarySearch/Medium/SearchInUnknownSizedSortedArray)
 
-3.  [Recursion](https://drive.google.com/drive/u/0/folders/1QS77BTBwzmgRh6gHZw8pEIB2gvuEu_Fi)
-    1.  [Fibonacci Number](https://docs.google.com/document/d/1YJG1tsxLUsQWsgtmEoLLNqHtb0IS1VKTPKsWaD8etuk/edit)
-    2.  [A to the Power of B](https://docs.google.com/document/d/1_Fp6G6RVNgm88szHAwcld4vsCdTlHLcRMX73N3gozsE/edit)
+3.  [Recursion](src/C/Recursion)
+    1.  [Fibonacci Number](src/C/Recursion/Easy/FibonacciNumber)
+    2.  [A to the Power of B](src/C/Recursion/Medium/AToThePowerOfB)
 
-4.  Queue & Stack
+4.  [Queue & Stack](src/D/QueueAndStack)
+    1.  [Sort with 3 Stacks](src/D/QueueAndStack/Medium/SortWith3Stacks)
+    2.  [Queue by Two Stacks](src/D/QueueAndStack/Medium/QueueByTwoStacks)
+    3.  [Stack with min()](src/D/QueueAndStack/Medium/StackWithMin)
 
-5.  Linked List
+5.  [Linked List](src/E/LinkedList)
+    1.  [Reverse Linked List](src/E/LinkedList/Easy/ReverseLinkedList)
+    2.  [Middle Node of Linked List](src/E/LinkedList/Easy/MiddleNodeOfLinkedList)
+    3.  [Check if Linked List Has a Cycle](src/E/LinkedList/Easy/CheckIfLinkedListHasACycle)
+    4.  [Insert in Sorted Linked List](src/E/LinkedList/Easy/InsertInSortedLinkedList)
+    5.  [Merge Two Sorted Linked Lists](src/E/LinkedList/Easy/MergeTwoSortedLinkedLists)
+    6.  [Reorder Linked List](src/E/LinkedList/Hard/ReOrderLinkedList)
+    7.  [Partition Linked List](src/E/LinkedList/Medium/PartitionLinkedList)
+
 
 6.  [Binary Tree](src/F/BinaryTree)
     1.  [In-order Traversal of Binary Tree](src/F/BinaryTree/Medium/InorderTraversalOfBinaryTree)

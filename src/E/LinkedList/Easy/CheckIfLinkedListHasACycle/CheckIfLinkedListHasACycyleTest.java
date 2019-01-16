@@ -1,4 +1,4 @@
-package E.LinkedList.Easy.CheckIfLinkedListHasACycyle;
+package E.LinkedList.Easy.CheckIfLinkedListHasACycle;
 
 import helper.ListNode.ListNode;
 import org.junit.jupiter.api.AfterEach;
