@@ -48,6 +48,14 @@ Coding practice problems on [LaiCode](https://www.laicode.io/)
     3.  [Stack with min()](src/D/QueueAndStack/Medium/StackWithMin)
 
 5.  [Linked List](src/E/LinkedList)
+    1.  [Reverse Linked List](src/E/LinkedList/Easy/ReverseLinkedList)
+    2.  [Middle Node of Linked List](src/E/LinkedList/Easy/MiddleNodeOfLinkedList)
+    3.  [Check if Linked List Has a Cycle](src/E/LinkedList/Easy/CheckIfLinkedListHasACycle)
+    4.  [Insert in Sorted Linked List](src/E/LinkedList/Easy/InsertInSortedLinkedList)
+    5.  [Merge Two Sorted Linked Lists](src/E/LinkedList/Easy/MergeTwoSortedLinkedLists)
+    6.  [Reorder Linked List](src/E/LinkedList/Hard/ReOrderLinkedList)
+    7.  [Partition Linked List](src/E/LinkedList/Medium/PartitionLinkedList)
+
 
 6.  [Binary Tree](src/F/BinaryTree)
     1.  [In-order Traversal of Binary Tree](src/F/BinaryTree/Medium/InorderTraversalOfBinaryTree)
