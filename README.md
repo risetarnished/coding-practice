@@ -115,5 +115,6 @@ Coding practice problems on [LaiCode](https://www.laicode.io/)
 14. [Dynamic Programming I](src/M/DynamicProgramming/I)
     1.  [Longest Ascending SubArray](src/M/DynamicProgramming/I/Easy/LongestAscendingSubArray)
     2.  [Max Product of Cutting Rope](src/M/DynamicProgramming/I/Medium/MaxProductOfCuttingRope)
+    3.  [Array Hopper I](src/M/DynamicProgramming/I/Medium/ArrayHopperI)
 
 <!-- GD2md-html version 1.0β13 -->
