@@ -120,5 +120,6 @@ Coding practice problems on [LaiCode](https://www.laicode.io/)
 15. [Dynamic Programming II](src/M/DynamicProgramming/II)
     1.  [Array Hopper II](src/M/DynamicProgramming/II/Medium/ArrayHopperII)
     2.  [Largest SubArray Sum](src/M/DynamicProgramming/II/Medium/LargestSubArraySum)
+    3.  [Dictionary Word I](src/M/DynamicProgramming/II/Medium/DictionaryWordI)
 
 <!-- GD2md-html version 1.0β13 -->

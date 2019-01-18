@@ -7,3 +7,4 @@
 2.  [DP II](II)
     1.  [Array Hopper II](II/Medium/ArrayHopperII)
     2.  [Largest SubArray Sum](II/Medium/LargestSubArraySum)
+    3.  [Dictionary Word I](II/Medium/DictionaryWordI)
