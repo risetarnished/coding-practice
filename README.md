@@ -117,4 +117,7 @@ Coding practice problems on [LaiCode](https://www.laicode.io/)
     2.  [Max Product of Cutting Rope](src/M/DynamicProgramming/I/Medium/MaxProductOfCuttingRope)
     3.  [Array Hopper I](src/M/DynamicProgramming/I/Medium/ArrayHopperI)
 
+15. [Dynamic Programming II](src/M/DynamicProgramming/II)
+    1.  [Array Hopper II](src/M/DynamicProgramming/II/Medium/ArrayHopperII)
+
 <!-- GD2md-html version 1.0β13 -->
