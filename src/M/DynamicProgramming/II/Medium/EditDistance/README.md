@@ -125,7 +125,7 @@ class Solution {
 
 _The initialization steps can be saved to be done in the dp for loop._
 
-_However, that way, the for loop starts from 0 → m and n instead of 1 → m and n. Therefore, the time complexity and the time it really costs are both the same. _
+_However, that way, the for loop starts from 0 → m and n instead of 1 → m and n. Therefore, the time complexity and the time it really costs are both the same._
 
 _It makes the code looks neat anyway._
 
