@@ -31,7 +31,7 @@ public class EditDistance {
                 } else {
                     // Case 2:
                     // check the # of operations of
-                    // insertion, deletion, and replacement
+                    // replacement, insertion, and deletion
                     // Take the min among them
                     distance[i][j] = Math.min(distance[i - 1][j - 1],
                                               Math.min(distance[i - 1][j],
