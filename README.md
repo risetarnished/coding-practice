@@ -122,9 +122,10 @@ Coding practice problems on [LaiCode](https://www.laicode.io/)
     2.  [Largest SubArray Sum](src/M/DynamicProgramming/II/Medium/LargestSubArraySum)
     3.  [Dictionary Word I](src/M/DynamicProgramming/II/Medium/DictionaryWordI)
     4.  [Edit Distance](src/M/DynamicProgramming/II/Medium/EditDistance)
-    5.  [Largest Square of 1s](src/M/DynamicProgramming/II/Hard/LargestSquareOfOnes)
+    5.  [Largest Square of 1's](src/M/DynamicProgramming/II/Hard/LargestSquareOfOnes)
 
 16. [Dynamic Programming III](src/M/DynamicProgramming/III)
     1.  [Largest SubArray Sum](src/M/DynamicProgramming/III/Medium/LargestSubarraySum)
+    2.  [Longest Consecutive 1's](src/M/DynamicProgramming/III/Easy/LongestConsecutiveOnes)
 
 <!-- GD2md-html version 1.0β13 -->
