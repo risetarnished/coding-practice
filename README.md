@@ -128,5 +128,6 @@ Coding practice problems on [LaiCode](https://www.laicode.io/)
     1.  [Largest SubArray Sum](src/M/DynamicProgramming/III/Medium/LargestSubarraySum)
     2.  [Longest Consecutive 1's](src/M/DynamicProgramming/III/Easy/LongestConsecutiveOnes)
     3.  [Longest Cross of 1's](src/M/DynamicProgramming/III/Hard/LongestCrossOfOnes)
+    4.  [Largest X of 1's](src/M/DynamicProgramming/III/Hard/LargestXOf1s)
 
 <!-- GD2md-html version 1.0β13 -->

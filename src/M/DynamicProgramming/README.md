@@ -15,3 +15,5 @@
     1.  [Largest SubArray Sum](III/Medium/LargestSubarraySum)
     2.  [Longest Consecutive 1's](III/Easy/LongestConsecutiveOnes)
     3.  [Longest Cross of 1's](III/Hard/LongestCrossOfOnes)
+    4.  [Largest X of 1's](III/Hard/LargestXOf1s)
+    
