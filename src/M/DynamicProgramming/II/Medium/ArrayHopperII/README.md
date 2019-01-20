@@ -140,7 +140,7 @@ public class Solution {
         // Case 1
         // max # of jumps is 0 ==> jump to nowhere
         jumps[i] = -1;
-      } else if (array[i] > n - 1) {
+      } else if (i + array[i] >= n - 1) {
         // Case 2
         // max # of jumps takes us out of bounds
         jumps[i] = 1;
@@ -151,10 +151,6 @@ public class Solution {
         // take us to the end
         int minJumps = Integer.MAX_VALUE;
         for (int j = 1; j <= array[i]; j++) {
-          if (i + j > n - 1) {
-            // If we jump out of bounds, we have got it
-            break;
-          }
           if (jumps[i + j] == -1) {
             // Skip the ones that cannot make it
             continue;
