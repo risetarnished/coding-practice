@@ -131,4 +131,7 @@ Coding practice problems on [LaiCode](https://www.laicode.io/)
     4.  [Largest X of 1's](src/M/DynamicProgramming/III/Hard/LargestXOf1s)
     5.  [Largest SubMatrix Sum](src/M/DynamicProgramming/III/Hard/LargestSubMatrixSum)
 
+17. [Probability, Sampling & Randomization](src/N/Probability)
+    1.  [Perfect Shuffle](src/N/Probability/Medium/PerfectShuffle)
+
 <!-- GD2md-html version 1.0β13 -->
