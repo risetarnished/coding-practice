@@ -114,5 +114,21 @@ Coding practice problems on [LaiCode](https://www.laicode.io/)
 
 14. [Dynamic Programming I](src/M/DynamicProgramming/I)
     1.  [Longest Ascending SubArray](src/M/DynamicProgramming/I/Easy/LongestAscendingSubArray)
+    2.  [Max Product of Cutting Rope](src/M/DynamicProgramming/I/Medium/MaxProductOfCuttingRope)
+    3.  [Array Hopper I](src/M/DynamicProgramming/I/Medium/ArrayHopperI)
+
+15. [Dynamic Programming II](src/M/DynamicProgramming/II)
+    1.  [Array Hopper II](src/M/DynamicProgramming/II/Medium/ArrayHopperII)
+    2.  [Largest SubArray Sum](src/M/DynamicProgramming/II/Medium/LargestSubArraySum)
+    3.  [Dictionary Word I](src/M/DynamicProgramming/II/Medium/DictionaryWordI)
+    4.  [Edit Distance](src/M/DynamicProgramming/II/Medium/EditDistance)
+    5.  [Largest Square of 1's](src/M/DynamicProgramming/II/Hard/LargestSquareOfOnes)
+
+16. [Dynamic Programming III](src/M/DynamicProgramming/III)
+    1.  [Largest SubArray Sum](src/M/DynamicProgramming/III/Medium/LargestSubarraySum)
+    2.  [Longest Consecutive 1's](src/M/DynamicProgramming/III/Easy/LongestConsecutiveOnes)
+    3.  [Longest Cross of 1's](src/M/DynamicProgramming/III/Hard/LongestCrossOfOnes)
+    4.  [Largest X of 1's](src/M/DynamicProgramming/III/Hard/LargestXOf1s)
+    5.  [Largest SubMatrix Sum](src/M/DynamicProgramming/III/Hard/LargestSubMatrixSum)
 
 <!-- GD2md-html version 1.0β13 -->
