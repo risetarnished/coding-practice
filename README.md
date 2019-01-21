@@ -133,5 +133,6 @@ Coding practice problems on [LaiCode](https://www.laicode.io/)
 
 17. [Probability, Sampling & Randomization](src/N/Probability)
     1.  [Perfect Shuffle](src/N/Probability/Medium/PerfectShuffle)
+    2.  [Reservoir Sampling](src/N/Probability/Medium/ReservoirSampling)
 
 <!-- GD2md-html version 1.0β13 -->
