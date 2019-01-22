@@ -141,6 +141,7 @@ Coding practice problems on [LaiCode](https://www.laicode.io/)
 
 18. [Recursion II](src/C/Recursion/II)
     1.  [N Queens](src/C/Recursion/II/Medium/NQueens)
+    2.  [Spiral Order Traverse I](src/C/Recursion/II/Medium/SpiralOrderTraverseI)
 
 
 
