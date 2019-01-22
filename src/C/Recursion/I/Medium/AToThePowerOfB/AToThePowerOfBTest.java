@@ -1,4 +1,4 @@
-package C.Recursion.Medium.AToThePowerOfB;
+package C.Recursion.I.Medium.AToThePowerOfB;
 
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;

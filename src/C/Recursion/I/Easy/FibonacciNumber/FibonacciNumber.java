@@ -1,4 +1,4 @@
-package C.Recursion.Easy.FibonacciNumber;
+package C.Recursion.I.Easy.FibonacciNumber;
 
 /**
  * https://app.laicode.io/app/problem/12
