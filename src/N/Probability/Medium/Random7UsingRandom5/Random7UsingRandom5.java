@@ -26,7 +26,7 @@ public class Random7UsingRandom5 {
 }
 
 /**
- * Manually implement a RandomFive.randomt()
+ * Manually implement a RandomFive.random5()
  */
 class RandomFive {
     private static Random random;

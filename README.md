@@ -135,5 +135,7 @@ Coding practice problems on [LaiCode](https://www.laicode.io/)
     1.  [Perfect Shuffle](src/N/Probability/Medium/PerfectShuffle)
     2.  [Reservoir Sampling](src/N/Probability/Medium/ReservoirSampling)
     3.  [Random7 Using Random5](src/N/Probability/Medium/Random7UsingRandom5)
+    4.  [Random1000 Using Random5](src/N/Probability/Medium/Random1000UsingRandom5)
+
 
 <!-- GD2md-html version 1.0β13 -->
