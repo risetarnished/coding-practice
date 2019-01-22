@@ -5,5 +5,6 @@
  *
  * @author ${USER}
  * @date ${DATE}
+ */
 public class ${NAME} {
 }
