@@ -2,3 +2,4 @@
 
 1.  [N Queens](Medium/NQueens)
 2.  [Spiral Order Traverse I](Medium/SpiralOrderTraverseI)
+3.  [Spiral Order Traverse II](Medium/SpiralOrderTraverseII)

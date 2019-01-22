@@ -7,3 +7,4 @@
 2.  [Recursion II](II)
     1.  [N Queens](II/Medium/NQueens)
     2.  [Spiral Order Traverse I](II/Medium/SpiralOrderTraverseI)
+    3.  [Spiral Order Traverse II](II/Medium/SpiralOrderTraverseII)
