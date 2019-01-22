@@ -137,6 +137,7 @@ Coding practice problems on [LaiCode](https://www.laicode.io/)
     3.  [Random7 Using Random5](src/N/Probability/Medium/Random7UsingRandom5)
     4.  [Random1000 Using Random5](src/N/Probability/Medium/Random1000UsingRandom5)
     5.  [Median Tracker](src/N/Probability/Medium/MedianTracker)
+    6.  [95 Percentile](src/N/Probability/Medium/NinetyFivePercentile)
 
 
 <!-- GD2md-html version 1.0β13 -->

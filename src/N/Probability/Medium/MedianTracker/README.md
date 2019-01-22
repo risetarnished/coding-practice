@@ -161,4 +161,17 @@ The median() method only calls the peek() method of the PQ's ⇒ O(1)
 Two PQ's used ⇒ O(n)
 
 
+
+## Follow-up
+
+If there are too many elements to store in memory, how to keep track of the median?
+
+**_If something doesn't fit into memory ⇒ disk_**
+
+**_Random access on disk is slow ⇒ sorted array_**
+
+
+![alt_text](median_tracker.png "image_tooltip")
+
+
 <!-- Docs to Markdown version 1.0β14 -->
