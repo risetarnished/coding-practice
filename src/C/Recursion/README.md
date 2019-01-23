@@ -8,3 +8,5 @@
     1.  [N Queens](II/Medium/NQueens)
     2.  [Spiral Order Traverse I](II/Medium/SpiralOrderTraverseI)
     3.  [Spiral Order Traverse II](II/Medium/SpiralOrderTraverseII)
+    4.  [Lowest Common Ancestor I](II/Medium/LowestCommonAncestorI)
+

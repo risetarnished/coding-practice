@@ -143,6 +143,7 @@ Coding practice problems on [LaiCode](https://www.laicode.io/)
     1.  [N Queens](src/C/Recursion/II/Medium/NQueens)
     2.  [Spiral Order Traverse I](src/C/Recursion/II/Medium/SpiralOrderTraverseI)
     3.  [Spiral Order Traverse II](src/C/Recursion/II/Medium/SpiralOrderTraverseII)
+    4.  [Lowest Common Ancestor I](src/C/Recursion/II/Medium/LowestCommonAncestorI)
 
 
 
