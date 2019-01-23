@@ -144,6 +144,7 @@ Coding practice problems on [LaiCode](https://www.laicode.io/)
     2.  [Spiral Order Traverse I](src/C/Recursion/II/Medium/SpiralOrderTraverseI)
     3.  [Spiral Order Traverse II](src/C/Recursion/II/Medium/SpiralOrderTraverseII)
     4.  [Lowest Common Ancestor I](src/C/Recursion/II/Medium/LowestCommonAncestorI)
+    5.  [Lowest Common Ancestor II](src/C/Recursion/II/Medium/LowestCommonAncestorII)
 
 
 

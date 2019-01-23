@@ -9,4 +9,5 @@
     2.  [Spiral Order Traverse I](II/Medium/SpiralOrderTraverseI)
     3.  [Spiral Order Traverse II](II/Medium/SpiralOrderTraverseII)
     4.  [Lowest Common Ancestor I](II/Medium/LowestCommonAncestorI)
+    5.  [Lowest Common Ancestor II](II/Medium/LowestCommonAncestorII)
 
