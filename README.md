@@ -151,7 +151,7 @@ Coding practice problems on [LaiCode](https://www.laicode.io/)
     2.  [Array Deduplication II](src/N/CrossTraining/I/Medium/ArrayDeduplicationII)
     3.  [Array Deduplication III](src/N/CrossTraining/I/Medium/ArrayDeduplicationIII)
     4.  [Array Deduplication IV](src/N/CrossTraining/I/Hard/ArrayDeduplicationIV)
-
+    5.  [Move 0's to the End II](src/N/CrossTraining/I/Easy/Move0sToTheEndII)
 
 
 <!-- GD2md-html version 1.0β13 -->
