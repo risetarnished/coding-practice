@@ -150,6 +150,7 @@ Coding practice problems on [LaiCode](https://www.laicode.io/)
     1.  [Array Deduplication I](src/N/CrossTraining/I/Easy/ArrayDeduplicationI)
     2.  [Array Deduplication II](src/N/CrossTraining/I/Medium/ArrayDeduplicationII)
     3.  [Array Deduplication III](src/N/CrossTraining/I/Medium/ArrayDeduplicationIII)
+    4.  [Array Deduplication IV](src/N/CrossTraining/I/Hard/ArrayDeduplicationIV)
 
 
 
