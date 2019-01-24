@@ -39,8 +39,8 @@ Coding practice problems on [LaiCode](https://www.laicode.io/)
     7.  [Search in Unknown Sized Sorted Array](src/B/BinarySearch/Medium/SearchInUnknownSizedSortedArray)
 
 3.  [Recursion](src/C/Recursion)
-    1.  [Fibonacci Number](src/C/Recursion/Easy/FibonacciNumber)
-    2.  [A to the Power of B](src/C/Recursion/Medium/AToThePowerOfB)
+    1.  [Fibonacci Number](src/C/Recursion/I/Easy/FibonacciNumber)
+    2.  [A to the Power of B](src/C/Recursion/I/Medium/AToThePowerOfB)
 
 4.  [Queue & Stack](src/D/QueueAndStack)
     1.  [Sort with 3 Stacks](src/D/QueueAndStack/Medium/SortWith3Stacks)
@@ -138,6 +138,14 @@ Coding practice problems on [LaiCode](https://www.laicode.io/)
     4.  [Random1000 Using Random5](src/N/Probability/Medium/Random1000UsingRandom5)
     5.  [Median Tracker](src/N/Probability/Medium/MedianTracker)
     6.  [95 Percentile](src/N/Probability/Medium/NinetyFivePercentile)
+
+18. [Recursion II](src/C/Recursion/II)
+    1.  [N Queens](src/C/Recursion/II/Medium/NQueens)
+    2.  [Spiral Order Traverse I](src/C/Recursion/II/Medium/SpiralOrderTraverseI)
+    3.  [Spiral Order Traverse II](src/C/Recursion/II/Medium/SpiralOrderTraverseII)
+    4.  [Lowest Common Ancestor I](src/C/Recursion/II/Medium/LowestCommonAncestorI)
+    5.  [Lowest Common Ancestor II](src/C/Recursion/II/Medium/LowestCommonAncestorII)
+
 
 
 <!-- GD2md-html version 1.0β13 -->

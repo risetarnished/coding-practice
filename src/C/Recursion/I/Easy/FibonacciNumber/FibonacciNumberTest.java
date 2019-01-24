@@ -1,4 +1,4 @@
-package C.Recursion.Easy.FibonacciNumber;
+package C.Recursion.I.Easy.FibonacciNumber;
 
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;

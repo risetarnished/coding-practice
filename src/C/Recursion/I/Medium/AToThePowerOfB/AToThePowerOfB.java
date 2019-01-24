@@ -1,4 +1,4 @@
-package C.Recursion.Medium.AToThePowerOfB;
+package C.Recursion.I.Medium.AToThePowerOfB;
 
 /**
  * https://app.laicode.io/app/problem/13
