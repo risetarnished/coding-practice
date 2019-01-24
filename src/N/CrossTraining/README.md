@@ -7,3 +7,4 @@
 4.  [Array Deduplication IV](I/Hard/ArrayDeduplicationIV)
 5.  [Move 0's to the End II](I/Easy/Move0sToTheEndII)
 6.  [Largest and Smallest](I/Medium/LargestAndSmallest)
+7.  [Largest and Second Largest](I/Medium/LargestAndSecondLargest)

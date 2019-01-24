@@ -153,6 +153,7 @@ Coding practice problems on [LaiCode](https://www.laicode.io/)
     4.  [Array Deduplication IV](src/N/CrossTraining/I/Hard/ArrayDeduplicationIV)
     5.  [Move 0's to the End II](src/N/CrossTraining/I/Easy/Move0sToTheEndII)
     6.  [Largest and Smallest](src/N/CrossTraining/I/Medium/LargestAndSmallest)
+    7.  [Largest and Second Largest](src/N/CrossTraining/I/Medium/LargestAndSecondLargest)
 
 
 <!-- GD2md-html version 1.0β13 -->
