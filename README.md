@@ -155,6 +155,7 @@ Coding practice problems on [LaiCode](https://www.laicode.io/)
     6.  [Largest and Smallest](src/N/CrossTraining/I/Medium/LargestAndSmallest)
     7.  [Largest and Second Largest](src/N/CrossTraining/I/Medium/LargestAndSecondLargest)
     8.  [Get Keys in Binary Tree Layer by Layer Zig-Zag Order](src/N/CrossTraining/I/Medium/BinaryTreeZigZagTraversal)
+    9.  [Rotate Matrix](src/N/CrossTraining/I/Medium/RotateMatrix)
 
 
 <!-- GD2md-html version 1.0β13 -->
