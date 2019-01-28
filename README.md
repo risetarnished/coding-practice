@@ -157,5 +157,7 @@ Coding practice problems on [LaiCode](https://www.laicode.io/)
     8.  [Get Keys in Binary Tree Layer by Layer Zig-Zag Order](src/N/CrossTraining/I/Medium/BinaryTreeZigZagTraversal)
     9.  [Rotate Matrix](src/N/CrossTraining/I/Medium/RotateMatrix)
 
+20. [Cross Training II](src/N/CrossTraining/II)
+    1.  [Deep Copy Linked List with Random Pointer](src/N/CrossTraining/II/Medium/DeepCopyLinkedListWithRandomPointer)
 
 <!-- GD2md-html version 1.0β13 -->
