@@ -160,5 +160,6 @@ Coding practice problems on [LaiCode](https://www.laicode.io/)
 20. [Cross Training II](src/N/CrossTraining/II)
     1.  [Deep Copy Linked List with Random Pointer](src/N/CrossTraining/II/Medium/DeepCopyLinkedListWithRandomPointer)
     2.  [Deep Copy Undirected Graph](src/N/CrossTraining/II/Medium/DeepCopyUndirectedGraph)
+    3.  [Merge K Sorted Array](src/N/CrossTraining/II/Medium/MergeKSortedArrays)
 
 <!-- GD2md-html version 1.0β13 -->

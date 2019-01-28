@@ -14,4 +14,6 @@
 ### [Cross Training II](II)
 1.  [Deep Copy Linked List with Random Pointer](II/Medium/DeepCopyLinkedListWithRandomPointer)
 2.  [Deep Copy Undirected Graph](II/Medium/DeepCopyUndirectedGraph)
+3.  [Merge K Sorted Array](II/Medium/MergeKSortedArrays)
+
 
