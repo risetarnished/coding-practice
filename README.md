@@ -162,5 +162,6 @@ Coding practice problems on [LaiCode](https://www.laicode.io/)
     2.  [Deep Copy Undirected Graph](src/N/CrossTraining/II/Medium/DeepCopyUndirectedGraph)
     3.  [Merge K Sorted Arrays](src/N/CrossTraining/II/Medium/MergeKSortedArrays)
     4.  [Merge K Sorted Lists](src/N/CrossTraining/II/Medium/MergeKSortedLists)
+    5.  [Closest Number in Binary Search Tree](src/N/CrossTraining/II/Medium/ClosestNumberInBinarySearchTree)
 
 <!-- GD2md-html version 1.0β13 -->
