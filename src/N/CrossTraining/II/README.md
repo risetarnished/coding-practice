@@ -5,3 +5,4 @@
 3.  [Merge K Sorted Arrays](Medium/MergeKSortedArrays)
 4.  [Merge K Sorted Lists](Medium/MergeKSortedLists)
 5.  [Closest Number in Binary Search Tree](Medium/ClosestNumberInBinarySearchTree)
+6.  [Largest Number Smaller in Binary Search Tree](Medium/LargestNumberSmallerInBinarySearchTree)
