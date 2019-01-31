@@ -29,7 +29,7 @@ public class TreeNode {
     /**
      *               0  1  2  3  4  5
      * The sequence [1, 2, 3, #, #, 4] represents the following binary tree:
-     *
+     * # symbol is used to represent null
      *     1
      *
      *   /   \
@@ -39,8 +39,10 @@ public class TreeNode {
      *       /
      *
      *     4
+     *
+     * @param keys  The keys of the nodes in in-order sequence
+     * @return      A binary tree based on the in-order sequence of node's keys
      */
-    // # symbol is used to represent null
     public static TreeNode buildTree(List<Integer> keys) {
         if (keys == null || keys.isEmpty()) {
             return null;
@@ -74,12 +76,41 @@ public class TreeNode {
         return root;
     }
 
-    /* Method to build a node given an Integer key (could be null) */
     public static TreeNode buildNode(Integer key) {
         if (key == null) {
             return null;
         }
         return new TreeNode(key);
+    }
+
+    /**
+     * Find the node with a given key in a binary tree
+     * with no duplicate keys
+     *
+     * @param root  The root of the binary tree
+     * @param key   The key to look for
+     * @return      A TreeNode which has a key == key
+     */
+    public static TreeNode getNode(TreeNode root, Integer key) {
+        if (root == null || root.key == key) {
+            return root;
+        }
+        // Pre-order traversal
+        Deque<TreeNode> stack = new LinkedList<>();
+        stack.offerFirst(root);
+        while (!stack.isEmpty()) {
+            TreeNode curr = stack.pollFirst();
+            if (curr.key == key) {
+                return curr;
+            }
+            if (curr.right != null) {
+                stack.offerFirst(curr.right);
+            }
+            if (curr.left != null) {
+                stack.offerFirst(curr.left);
+            }
+        }
+        return null;
     }
 
     // Test

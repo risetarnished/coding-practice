@@ -1,0 +1,1 @@
+memberSearchIndex = [{"p":"N.Probability.Medium.NinetyFivePercentile","c":"NinetyFivePercentile","l":"NinetyFivePercentile()"},{"p":"N.Probability.Medium.NinetyFivePercentile","c":"NinetyFivePercentile","l":"percentile95(List<Integer>)","url":"percentile95-java.util.List-"}]
