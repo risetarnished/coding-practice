@@ -18,3 +18,6 @@
 4.  [Merge K Sorted Lists](II/Medium/MergeKSortedLists)
 5.  [Closest Number in Binary Search Tree](II/Medium/ClosestNumberInBinarySearchTree)
 6.  [Largest Number Smaller in Binary Search Tree](II/Medium/LargestNumberSmallerInBinarySearchTree)
+7.  [Delete in Binary Search Tree](II/Medium/DeleteInBinarySearchTree)
+
+### [Cross Training III](III)

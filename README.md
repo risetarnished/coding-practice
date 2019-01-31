@@ -164,5 +164,9 @@ Coding practice problems on [LaiCode](https://www.laicode.io/)
     4.  [Merge K Sorted Lists](src/N/CrossTraining/II/Medium/MergeKSortedLists)
     5.  [Closest Number in Binary Search Tree](src/N/CrossTraining/II/Medium/ClosestNumberInBinarySearchTree)
     6.  [Largest Number Smaller in Binary Search Tree](src/N/CrossTraining/II/Medium/LargestNumberSmallerInBinarySearchTree)
+    7.  [Delete in Binary Search Tree](src/N/CrossTraining/II/Medium/DeleteInBinarySearchTree)
+
+21. [Cross Training III](src/N/CrossTraining/III)
+
 
 <!-- GD2md-html version 1.0β13 -->
