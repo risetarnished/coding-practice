@@ -100,10 +100,7 @@ public class Solution {
     for (int i = 1; i <= n / 2; i++) {
       // We are still making comparisons
       // So we need to keep track of the history
-      // When the two numbers are equal
-      // We need to record this comparison
-      // Because the largest and second largest could be the same
-      if (array[i] >= first) {
+      if (array[i] > first) {
         updateHistory(array[i], first, history);
         first = array[i];
       } else {
@@ -147,6 +144,72 @@ first two iterations of n / 2 comparisons == O(2 * n/2) + third iteration of log
 Space:
 
 HashMap ⇒ O(n)
+
+
+
+## Alternative Method
+
+The value of the hash table created to keep track of the comparison history of the larger elements can also be implemented with a max heap that only keeps the largest element among all the smaller elements that this larger element has compared against.
+
+<larger element, max heap of size 1 that only keeps the largest element the key has compared against>
+
+
+### Code
+
+
+```java
+public class Solution {
+  public int[] largestAndSecond(int[] array) {
+    // Write your solution here
+    if (array == null || array.length <= 1) {
+      return array;
+    }
+    // Use a hash table to keep track of the comparison history:
+    // <larger element, <PriorityQueue of only one element>>
+    // larger element -> the largest element it has compared against
+    Map<Integer, PriorityQueue<Integer>> history = new HashMap<>();
+    // Compare head vs. tail and put the larger elements to the left
+    int n = array.length;
+    for (int i = 0; i < n / 2; i++) {
+      if (array[n - 1 - i] > array[i]) {
+        swap(array, i, n - 1 - i);
+      }
+      // Update the larger element's comparison history
+      updateHistory(history, array[i], array[n - 1 - i]);
+    }
+    // In the first/larger half of the array
+    // 1. look for the largest element
+    // 2. get largest element in its history directly
+    int first = array[0];
+    for (int i = 1; i <= n / 2; i++) {
+      if (array[i] > first) {
+        updateHistory(history, array[i], first);
+        first = array[i];
+      } else {
+        updateHistory(history, first, array[i]);
+      }
+    }
+    int second = history.get(first).peek();
+    return new int[] {first, second};
+  }
+
+  private void swap(int[] array, int left, int right) {
+    int temp = array[left];
+    array[left] = array[right];
+    array[right] = temp;
+  }
+
+  private void updateHistory(Map<Integer, PriorityQueue<Integer>> history,
+                             int larger, int smaller) {
+    PriorityQueue<Integer> maxHeap =
+        history.getOrDefault(
+            larger, new PriorityQueue<>(1, Collections.reverseOrder()));
+    maxHeap.offer(smaller);
+    history.put(larger, maxHeap);
+  }
+}
+```
+
 
 
 <!-- Docs to Markdown version 1.0β14 -->
