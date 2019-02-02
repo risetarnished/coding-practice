@@ -135,4 +135,31 @@ Space:
 An integer array to store the previous Fibonacci numbers ⇒ O(n)
 
 
+### Code: DP optimized
+
+The dynamic programming method can be further optimized using just two variables to store the previous two fibonacci numbers. Thus, the space complexity is optimized to O(1).
+
+
+```java
+public class Solution {
+    public long fibonacci(int K) {
+        // Write your solution here
+        if (K <= 0) {
+            return 0;
+        }
+        long prevTwo = 0;
+        long prevOne = 1;
+        long fibo = 1;
+        for (int i = 2; i <= K; i++) {
+            fibo = prevOne + prevTwo;
+            prevTwo = prevOne;
+            prevOne = fibo;
+        }
+        return fibo;
+    }
+}
+```
+
+
+
 <!-- GD2md-html version 1.0β13 -->
