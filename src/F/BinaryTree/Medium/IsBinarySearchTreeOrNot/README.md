@@ -116,7 +116,7 @@ public class Solution {
     }
     // Recursive rule:
     // For every node in the subtree, it should be in the range (min, max)
-    if (root.key <= min && root.key >= max) {
+    if (root.key <= min || root.key >= max) {
       return false;
     }
     // Update the min and max values respectively when traversing
