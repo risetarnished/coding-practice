@@ -66,15 +66,15 @@ For Example:
 
 The sequence \[1, 2, 3, #, #, 4\] represents the following binary tree:
 
-    1
+        1
 
-  /   \
+      /   \
 
- 2     3
+     2     3
 
-      /
+          /
 
-    4
+        4
 
 Medium
 

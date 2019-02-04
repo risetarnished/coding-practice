@@ -132,6 +132,60 @@ public class Solution {
 ```
 
 
+_Alternative implementation with the same complexity_
+
+
+```java
+public class Solution {
+  public int[] kSmallest(int[] array, int k) {
+    // Write your solution here
+    // Corner cases
+    if (array == null || array.length == 0) {
+      return array;
+    }
+    if (k <= 0) {
+      return new int[] {};
+    }
+    PriorityQueue<Integer> maxHeap = new PriorityQueue<>(
+      k, new Comparator<Integer>() {
+        @Override
+        public int compare(Integer one, Integer two) {
+          if (one.equals(two)) {
+            return 0;
+          }
+          return one > two ? -1 : 1;
+        }
+      }
+    );
+    for (int i = 0; i < array.length; i++) {
+      if (i < k) {
+        // For the first k elements,
+        // offer them to the heap directly
+        maxHeap.offer(array[i]);
+      } else if (array[i] < maxHeap.peek()) {
+        // For the rest (n - k) elements,
+        // compare it against the heap.top
+        maxHeap.poll();
+        maxHeap.offer(array[i]);
+      }
+    }
+    // The assumption of this problem includes
+    // k >= 0 && k <= array.length
+    // The method below ensures the result will be
+    // correct even if k > array.length
+    // Because the size of the result should be
+    // dependent on the size of the heap rather
+    // than its capacity
+    int size = maxHeap.size();
+    int[] result = new int[size];
+    for (int i = size - 1; i >= 0; i--) {
+      result[i] = maxHeap.poll();
+    }
+    return result;
+  }
+}
+```
+
 
 ### Complexity
 
