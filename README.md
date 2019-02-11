@@ -58,6 +58,7 @@ Coding practice problems on [LaiCode](https://www.laicode.io/)
     7.  [Partition Linked List](src/E/LinkedList/Medium/PartitionLinkedList)
     8.  [Add Two Numbers](src/E/LinkedList/Medium/AddTwoNumbers)
     9.  [Merge Sort Linked List](src/E/LinkedList/Medium/MergeSortLinkedList)
+    10. [Check if Linked List is Palindrome](src/E/LinkedList/Medium/CheckIfLinkedListIsPalindrome)
 
 
 6.  [Binary Tree](src/F/BinaryTree)
