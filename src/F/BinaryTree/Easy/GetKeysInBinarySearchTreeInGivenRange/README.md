@@ -126,6 +126,34 @@ public class Solution {
 ```
 
 
+_Classical Divide & Conquer method can be used, as well_
+
+
+```java
+public class Solution {
+  public List<Integer> getRange(TreeNode root, int min, int max) {
+    // Write your solution here
+    List<Integer> result = new ArrayList<>();
+    // Base case
+    if (root == null) {
+      return result;
+    }
+    // Because the result needs to be in ascending order
+    // An in-order traversal should be done
+    List<Integer> left = getRange(root.left, min, max);
+    List<Integer> right = getRange(root.right, min, max);
+    // In-order traversal result: left --> root --> right
+    result.addAll(left);
+    if (root.key >= min && root.key <= max) {
+      result.add(root.key);
+    }
+    result.addAll(right);
+    return result;
+  }
+}
+```
+
+
 
 #### Complexity
 
@@ -138,6 +166,8 @@ We may need to traverse the whole tree ⇒ O(n).
 ##### Space
 
 Because this is a BST, and the recursion tree is determined by the height of the tree ⇒ O(log(n)).
+
+The divide and conquer solution, however, created two List objects in each level ⇒ O(n * height) ⇒ best case O(n log(n)), worst cast O(n^2)
 
 
 ### Iterative Method

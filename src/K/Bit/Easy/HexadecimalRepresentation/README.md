@@ -104,7 +104,7 @@ public class Solution {
 _Bitwise method:_
 
 
-```
+```java
 public class Solution {
   public String hex(int number) {
     // Write your solution here

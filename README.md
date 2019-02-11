@@ -37,6 +37,7 @@ Coding practice problems on [LaiCode](https://www.laicode.io/)
     5.  [Last Occurrence](src/B/BinarySearch/Medium/LastOccurrence)
     6.  [K Closest in Sorted Array](src/B/BinarySearch/Medium/KClosestInSortedArray)
     7.  [Search in Unknown Sized Sorted Array](src/B/BinarySearch/Medium/SearchInUnknownSizedSortedArray)
+    8.  [Find Minimum in Rotated Sorted Array](src/B/BinarySearch/Medium/FindMinimumInRotatedSortedArray)
 
 3.  [Recursion](src/C/Recursion)
     1.  [Fibonacci Number](src/C/Recursion/I/Easy/FibonacciNumber)
@@ -55,6 +56,9 @@ Coding practice problems on [LaiCode](https://www.laicode.io/)
     5.  [Merge Two Sorted Linked Lists](src/E/LinkedList/Easy/MergeTwoSortedLinkedLists)
     6.  [Reorder Linked List](src/E/LinkedList/Hard/ReOrderLinkedList)
     7.  [Partition Linked List](src/E/LinkedList/Medium/PartitionLinkedList)
+    8.  [Add Two Numbers](src/E/LinkedList/Medium/AddTwoNumbers)
+    9.  [Merge Sort Linked List](src/E/LinkedList/Medium/MergeSortLinkedList)
+    10. [Check if Linked List is Palindrome](src/E/LinkedList/Medium/CheckIfLinkedListIsPalindrome)
 
 
 6.  [Binary Tree](src/F/BinaryTree)
@@ -66,10 +70,12 @@ Coding practice problems on [LaiCode](https://www.laicode.io/)
     6.  [Tweaked Identical Binary Tree](src/F/BinaryTree/Medium/TweakedIdenticalBinaryTree)
     7.  [Is Binary Search Tree or Not](src/F/BinaryTree/Medium/IsBinarySearchTreeOrNot)
     8.  [Get Keys in Binary Search Tree in Given Range](src/F/BinaryTree/Easy/GetKeysInBinarySearchTreeInGivenRange)
+    9.  [Binary Tree Path Sum to Target I](src/F/BinaryTree/Easy/BinaryTreePathSumToTargetI)
+
 
 7.  [Heap & Graph Search Algorithms I (BFS)](src/G/HeapAndBFS)
     1.  [K Smallest in Unsorted Array](src/G/HeapAndBFS/Medium/KSmallestInUnsortedArray)
-    2.  [GetKeysInBinaryTreeLayerByLayer](src/G/HeapAndBFS/Easy/GetKeysInBinaryTreeLayerByLayer)
+    2.  [Get Keys in Binary Tree Layer by Layer](src/G/HeapAndBFS/Easy/GetKeysInBinaryTreeLayerByLayer)
     3.  [Bipartite](src/G/HeapAndBFS/Hard/Bipartite)
     4.  [Check if Binary Tree is Completed](src/G/HeapAndBFS/Medium/CheckIfBinaryTreeIsCompleted)
     5.  [Kth Smallest Number in Sorted Matrix](src/G/HeapAndBFS/Medium/KthSmallestNumberInSortedMatrix)
@@ -156,6 +162,17 @@ Coding practice problems on [LaiCode](https://www.laicode.io/)
     7.  [Largest and Second Largest](src/N/CrossTraining/I/Medium/LargestAndSecondLargest)
     8.  [Get Keys in Binary Tree Layer by Layer Zig-Zag Order](src/N/CrossTraining/I/Medium/BinaryTreeZigZagTraversal)
     9.  [Rotate Matrix](src/N/CrossTraining/I/Medium/RotateMatrix)
+
+20. [Cross Training II](src/N/CrossTraining/II)
+    1.  [Deep Copy Linked List with Random Pointer](src/N/CrossTraining/II/Medium/DeepCopyLinkedListWithRandomPointer)
+    2.  [Deep Copy Undirected Graph](src/N/CrossTraining/II/Medium/DeepCopyUndirectedGraph)
+    3.  [Merge K Sorted Arrays](src/N/CrossTraining/II/Medium/MergeKSortedArrays)
+    4.  [Merge K Sorted Lists](src/N/CrossTraining/II/Medium/MergeKSortedLists)
+    5.  [Closest Number in Binary Search Tree](src/N/CrossTraining/II/Medium/ClosestNumberInBinarySearchTree)
+    6.  [Largest Number Smaller in Binary Search Tree](src/N/CrossTraining/II/Medium/LargestNumberSmallerInBinarySearchTree)
+    7.  [Delete in Binary Search Tree](src/N/CrossTraining/II/Medium/DeleteInBinarySearchTree)
+
+21. [Cross Training III](src/N/CrossTraining/III)
 
 
 <!-- GD2md-html version 1.0β13 -->

@@ -91,6 +91,29 @@ public class Solution {
 ```
 
 
+__**If we'd like the second node to be returned if there are two middle nodes, we could start the fast pointer from the same node pointed to by slow.**__
+**For example, 1 -> 2 -> 3 -> 4, if we want node 3 to be returned.**
+**This is the requirement on the same problem on [LeetCode](https://leetcode.com/problems/middle-of-the-linked-list/description/)**
+
+
+```java
+public class Solution {
+  public ListNode middleNode(ListNode head) {
+    if (head == null || head.next == null) {
+      return head;
+    }
+    ListNode slow = head;
+    ListNode fast = head;
+    while (fast != null && fast.next != null) {
+      slow = slow.next;
+      fast = fast.next.next;
+    }
+    return slow;
+  }
+}
+```
+
+
 
 ### Complexity
 

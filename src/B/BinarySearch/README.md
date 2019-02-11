@@ -6,3 +6,4 @@
 5.  [Last Occurrence](Medium/LastOccurrence)
 6.  [K Closest in Sorted Array](Medium/KClosestInSortedArray)
 7.  [Search in Unknown Sized Sorted Array](Medium/SearchInUnknownSizedSortedArray)
+8.  [Find Minimum in Rotated Sorted Array](Medium/FindMinimumInRotatedSortedArray)
