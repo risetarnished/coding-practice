@@ -7,3 +7,4 @@
 6.  [Reorder Linked List](Hard/ReOrderLinkedList)
 7.  [Partition Linked List](Medium/PartitionLinkedList)
 8.  [Add Two Numbers](Medium/AddTwoNumbers)
+9.  [Merge Sort Linked List](Medium/MergeSortLinkedList)
