@@ -3,3 +3,4 @@
 2.  [Merge Sort](Medium/MergeSort)
 3.  [Quick Sort](Medium/QuickSort)
 4.  [Move 0's to the End I](Easy/Move0sToTheEndI)
+5.  [Rainbow Sort](Medium/RainbowSort)
