@@ -28,6 +28,7 @@ Coding practice problems on [LaiCode](https://www.laicode.io/)
     2.  [Merge Sort](src/A/SortingAlgorithms/Medium/MergeSort)
     3.  [Quick Sort](src/A/SortingAlgorithms/Medium/QuickSort)
     4.  [Move 0's to the End I](src/A/SortingAlgorithms/Easy/Move0sToTheEndI)
+    5.  [Rainbow Sort](src/A/SortingAlgorithms/Medium/RainbowSort)
 
 2.  [Binary Search](src/B/BinarySearch)
     1.  [Classical Binary Search](src/B/BinarySearch/Easy/ClassicalBinarySearch)

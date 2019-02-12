@@ -8,3 +8,4 @@
 7.  [Partition Linked List](Medium/PartitionLinkedList)
 8.  [Add Two Numbers](Medium/AddTwoNumbers)
 9.  [Merge Sort Linked List](Medium/MergeSortLinkedList)
+10. [Check if Linked List is Palindrome](Medium/CheckIfLinkedListIsPalindrome)
