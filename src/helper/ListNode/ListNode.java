@@ -15,8 +15,8 @@ public class ListNode {
     /**
      * Build a linked list according to an input list of integers
      *
-     * @param nodes A list of node's keys used to build a linked list sequentially
-     * @return      A linked list
+     * @param nodes  A list of node's keys used to build a linked list sequentially
+     * @return       A linked list
      */
     public static ListNode buildList(List<Integer> nodes) {
         if (nodes == null || nodes.size() == 0) {
@@ -32,10 +32,36 @@ public class ListNode {
     }
 
     /**
+     * Build a linked list with a cycle at a given index
+     *
+     * @param nodes  A list of node's keys used to build a linked list sequentially
+     * @param index  The starting point of the cycle
+     */
+    public static ListNode buildCycleList(List<Integer> nodes, int index) {
+        if (nodes == null || nodes.size() == 0) {
+            return null;
+        }
+        ListNode dummy = new ListNode(0);
+        ListNode curr = dummy;
+        ListNode start = null;
+        for (int i = 0; i < nodes.size(); i++) {
+            ListNode newNode = new ListNode(nodes.get(i));
+            if (i == index) {
+                start = newNode;
+            }
+            curr.next = newNode;
+            curr = curr.next;
+        }
+        // Linked the tail to the start of the cycle
+        curr.next = start;
+        return dummy.next;
+    }
+
+    /**
      * Output a linked list in the form of a list of integers
      *
-     * @param head The head node of the linked list
-     * @return     A list of all the node's keys
+     * @param head  The head node of the linked list
+     * @return      A list of all the node's keys
      */
     public static List<Integer> listToArray(ListNode head) {
         List<Integer> result = new ArrayList<>();
