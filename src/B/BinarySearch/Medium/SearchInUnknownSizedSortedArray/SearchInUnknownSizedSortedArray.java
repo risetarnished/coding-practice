@@ -35,7 +35,7 @@ public class SearchInUnknownSizedSortedArray {
         int end = 1;
         while (end < Integer.MAX_VALUE / 2 && dict.get(end) != null && dict.get(end) < target) {
             // Narrow down the range to [current_end, 2 * current_end]
-            start = end;
+            start = end + 1;
             end *= 2;
         }
         // Classical BS from this point on
