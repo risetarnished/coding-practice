@@ -75,6 +75,7 @@ Coding practice problems on [LaiCode](https://www.laicode.io/)
     8.  [Get Keys in Binary Search Tree in Given Range](src/F/BinaryTree/Easy/GetKeysInBinarySearchTreeInGivenRange)
     9.  [Binary Tree Path Sum to Target I](src/F/BinaryTree/Easy/BinaryTreePathSumToTargetI)
     10. [Search in Binary Search Tree](src/F/BinaryTree/Easy/SearchInBinarySearchTree)
+    10. [Insert in Binary Search Tree](src/F/BinaryTree/Easy/InsertInBinarySearchTree)
 
 
 7.  [Heap & Graph Search Algorithms I (BFS)](src/G/HeapAndBFS)
