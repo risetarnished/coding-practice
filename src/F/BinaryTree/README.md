@@ -8,3 +8,5 @@
 6.  [Tweaked Identical Binary Tree](Medium/TweakedIdenticalBinaryTree)
 7.  [Is Binary Search Tree or Not](Medium/IsBinarySearchTreeOrNot)
 8.  [Get Keys in Binary Search Tree in Given Range](Easy/GetKeysInBinarySearchTreeInGivenRange)
+9.  [Binary Tree Path Sum to Target I](Easy/BinaryTreePathSumToTargetI)
+10. [Search in Binary Search Tree](Easy/SearchInBinarySearchTree)
