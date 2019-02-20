@@ -72,44 +72,42 @@ Similar problem on lintcode:
 ```java
 /*
 *  interface Dictionary {
-*      public Integer get(int index);
+*    public Integer get(int index);
 *  }
 */
 
 // You do not need to implement the Dictionary interface.
 // You can use it directly, the implementation is provided when testing your solution.
 public class Solution {
-    public int search(Dictionary dict, int target) {
-        // Write your solution here
-        if (dict == null || dict.get(0) == null) {
-            return -1;
-        }
-        int start = 0;
-        int end = 1;
-        // Try to lock down the domain that contains the target
-        while (end < Integer.MAX_VALUE / 2 && dict.get(end) != null
-                && dict.get(end) < target) {
-            start = end;
-            end = end * 2;
-        }
-        // With the start and end bounds found, look for the target
-        while (start <= end) {
-            int mid = start + (end - start) / 2;
-            if (dict.get(mid) == null) {
-                end = mid - 1;
-                continue;
-            }
-            int number = dict.get(mid);
-            if (number == target) {
-                return mid;
-            } else if (number < target) {
-                start = mid + 1;
-            } else {
-                end = mid - 1;
-            }
-        }
-        return -1;
+  public int search(Dictionary dict, int target) {
+    // Write your solution here
+    // Corner cases
+    if (dict == null || dict.get(0) == null) {
+      return -1;
     }
+    // Step 1: find the search range containing the target
+    int start = 0;
+    int end = 1;
+    while (end <= Integer.MAX_VALUE / 2 &&
+           dict.get(end) != null && dict.get(end) < target) {
+      start = end + 1;
+      end = end * 2;
+    }
+    // Step 2: look for the target in [start, end]
+    while (start <= end) {
+      int mid = start + (end - start) / 2;
+      if (dict.get(mid) == null) {
+        end = mid - 1;
+      } else if (dict.get(mid) == target) {
+        return mid;
+      } else if (dict.get(mid) < target) {
+        start = mid + 1;
+      } else {
+        end = mid - 1;
+      }
+    }
+    return -1;
+  }
 }
 ```
 
@@ -132,7 +130,7 @@ public class Solution {
         // Try to lock down the domain that contains the target
         while (end < Integer.MAX_VALUE / 2 && dict.get(end) != null
                 && dict.get(end) < target) {
-            start = end;
+            start = end + 1;
             end *= 2;
         }
         // With the start and end bounds found, look for the

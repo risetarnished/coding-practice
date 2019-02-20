@@ -48,6 +48,7 @@ Coding practice problems on [LaiCode](https://www.laicode.io/)
     1.  [Sort with 3 Stacks](src/D/QueueAndStack/Medium/SortWith3Stacks)
     2.  [Queue by Two Stacks](src/D/QueueAndStack/Medium/QueueByTwoStacks)
     3.  [Stack with min()](src/D/QueueAndStack/Medium/StackWithMin)
+    4.  [Sort with 2 Stacks](src/D/QueueAndStack/Medium/SortWith2Stacks)
 
 5.  [Linked List](src/E/LinkedList)
     1.  [Reverse Linked List](src/E/LinkedList/Easy/ReverseLinkedList)
@@ -60,6 +61,7 @@ Coding practice problems on [LaiCode](https://www.laicode.io/)
     8.  [Add Two Numbers](src/E/LinkedList/Medium/AddTwoNumbers)
     9.  [Merge Sort Linked List](src/E/LinkedList/Medium/MergeSortLinkedList)
     10. [Check if Linked List is Palindrome](src/E/LinkedList/Medium/CheckIfLinkedListIsPalindrome)
+    11. [Cycle Node in Linked List](src/E/LinkedList/Medium/CycleNodeInLinkedList)
 
 
 6.  [Binary Tree](src/F/BinaryTree)
@@ -72,6 +74,8 @@ Coding practice problems on [LaiCode](https://www.laicode.io/)
     7.  [Is Binary Search Tree or Not](src/F/BinaryTree/Medium/IsBinarySearchTreeOrNot)
     8.  [Get Keys in Binary Search Tree in Given Range](src/F/BinaryTree/Easy/GetKeysInBinarySearchTreeInGivenRange)
     9.  [Binary Tree Path Sum to Target I](src/F/BinaryTree/Easy/BinaryTreePathSumToTargetI)
+    10. [Search in Binary Search Tree](src/F/BinaryTree/Easy/SearchInBinarySearchTree)
+    10. [Insert in Binary Search Tree](src/F/BinaryTree/Easy/InsertInBinarySearchTree)
 
 
 7.  [Heap & Graph Search Algorithms I (BFS)](src/G/HeapAndBFS)

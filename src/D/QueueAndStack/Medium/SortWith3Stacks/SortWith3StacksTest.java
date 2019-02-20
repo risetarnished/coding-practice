@@ -6,13 +6,14 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
+import java.util.Deque;
 import java.util.LinkedList;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 class SortWith3StacksTest {
-    static SortWith3Stacks sortWith3Stacks;
-    LinkedList<Integer> s1;
+    private static SortWith3Stacks sortWith3Stacks;
+    private LinkedList<Integer> s1;
 
     @BeforeAll
     static void setInstance() {
@@ -21,7 +22,7 @@ class SortWith3StacksTest {
 
     @BeforeEach
     void setUp() {
-        s1 = new LinkedList<>(Arrays.asList(4, 2, -3, 6, 1));
+        s1 = null;
     }
 
     @AfterEach
@@ -30,7 +31,6 @@ class SortWith3StacksTest {
 
     @Test
     void testNull() {
-        s1 = null;
         sortWith3Stacks.sort(s1);
         assertNull(s1);
     }
@@ -44,8 +44,14 @@ class SortWith3StacksTest {
 
     @Test
     void test() {
+        s1 = new LinkedList<>(Arrays.asList(4, 2, 1, 3));
         sortWith3Stacks.sort(s1);
         int[] result = exportElements(s1);
+        assertArrayEquals(new int[] {1, 2, 3, 4}, result);
+
+        s1 = new LinkedList<>(Arrays.asList(4, 2, -3, 6, 1));
+        sortWith3Stacks.sort(s1);
+        result = exportElements(s1);
         assertArrayEquals(new int[] {-3, 1, 2, 4, 6}, result);
     }
 
