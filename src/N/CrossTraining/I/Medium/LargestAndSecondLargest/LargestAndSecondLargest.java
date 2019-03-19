@@ -1,6 +1,5 @@
 package N.CrossTraining.I.Medium.LargestAndSecondLargest;
 
-import org.jetbrains.annotations.NotNull;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -67,7 +66,7 @@ public class LargestAndSecondLargest {
      * @param left  The index of the first element
      * @param right The index of the second element
      */
-    private void swap(@NotNull int[] array, int left, int right) {
+    private void swap(int[] array, int left, int right) {
         int temp = array[left];
         array[left] = array[right];
         array[right] = temp;

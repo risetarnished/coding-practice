@@ -86,25 +86,32 @@ M\[i] will need to be updated each time because there may be multiple situations
 
 ```java
 public class Solution {
-    public int maxProduct(int length) {
-        // Write your solution here
-        if (length < 2) {
-            return length;
-        }
-        int[] product = new int[length + 1];
-        product[1] = 0;
-        product[2] = 1;
-        for (int i = 3; i <= length; i++) {
-            // For every length of i, we can cut it by sub lengths
-            // from 1 to i - 1
-            for (int j = 1; j < i; j++) {
-                product[i] = Math.max(
-                                product[i],
-                                j * Math.max(product[i - j], i - j));
-            }
-        }
-        return product[length];
+  public int maxProduct(int length) {
+    // Write your solution here
+    if (length <= 1) {
+      return 0;
     }
+    // product[i] represents the maximum product we can get by cutting a rope with a length of i
+    int[] product = new int[length + 1];
+    // Base case: ropes with lengths of 0 or 1 has a max product of 0
+    //            ropes with lengths of 2 has a max product of 1 * 1 = 1
+    product[2] = 1;
+    // Induction rule:
+    // for a rope with a length of i, it can be further cut to sublengths from 1 to i - 1
+    // the max product of them can be determined by calculating
+    // max(product[sublength], sublength) * remaining_length
+    for (int i = 3; i <= length; i++) {
+      // Cut the rope into smaller pieces with lengths from 1 to i - 1
+      for (int j = 1; j < i; j++) {
+        int maxProduct = Math.max(i - j, product[i - j]) * j;
+        // Multiple possibilities exist for a given length
+        // e.g. length = 4, 1 * 4 or 2 * 2
+        // So we need to update it every time
+        product[i] = Math.max(product[i], maxProduct);
+      }
+    }
+    return product[length];
+  }
 }
 ```
 
@@ -140,25 +147,26 @@ In this way, we can decrease the number of iterations from (1 â†’ i - 1) to (1 â
 
 ```java
 public class Solution {
-    public int maxProduct(int length) {
-        // Write your solution here
-        if (length < 2) {
-            return length;
-        }
-        int[] product = new int[length + 1];
-        product[2] = 1;
-        for (int i = 3; i <= length; i++) {
-            // Leave the shorter part as it is and only look for the
-            // max product of the longer part
-            // So, we will only need to run from 1 to i/2
-            for (int j = 1; j <= i / 2; j++) {
-                product[i] = Math.max(
-                                product[i],
-                                j * Math.max(i - j, product[i - j]));
-            }
-        }
-        return product[length];
+  public int maxProduct(int length) {
+    // Write your solution here
+    if (length <= 1) {
+      return 0;
     }
+    int[] product = new int[length + 1];
+    product[2] = 1;
+    for (int i = 3; i <= length; i++) {
+      // Leave the shorter part as it is
+      // Only look for the max product for the longer part
+      // Only need to cut it into sublengths from 1 to i/2
+      for (int j = 1; j <= i / 2; j++) {
+        product[i] = Math.max(
+            product[i],
+            Math.max(i - j, product[i - j]) * j
+        );
+      }
+    }
+    return product[length];
+  }
 }
 ```
 
