@@ -122,6 +122,7 @@ Coding practice problems on [LaiCode](https://www.laicode.io/)
 
 13. [DFS II](src/H/DFS)
     1.  [All Subsets II](src/H/DFS/II/Hard/AllSubsetsII)
+    2.  [All Valid Permutations of Parentheses II](src/H/DFS/II/Hard/AllValidPermutationsOfParenthesesII)
 
 14. [Dynamic Programming I](src/L/DynamicProgramming/I)
     1.  [Longest Ascending SubArray](src/L/DynamicProgramming/I/Easy/LongestAscendingSubArray)
@@ -178,6 +179,10 @@ Coding practice problems on [LaiCode](https://www.laicode.io/)
     7.  [Delete in Binary Search Tree](src/N/CrossTraining/II/Medium/DeleteInBinarySearchTree)
 
 21. [Cross Training III](src/N/CrossTraining/III)
+
+99. [Free Practice](src/Z/FreePractice)
+    1. [Palindrome Permutation](src/Z/FreePractice/Easy/PalindromePermutation)
+    2. [Palindrome Permutation II](src/Z/FreePractice/Medium/PalindromePermutationII)
 
 
 <!-- GD2md-html version 1.0β13 -->
