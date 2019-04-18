@@ -122,6 +122,7 @@ Coding practice problems on [LaiCode](https://www.laicode.io/)
 
 13. [DFS II](src/H/DFS)
     1.  [All Subsets II](src/H/DFS/II/Hard/AllSubsetsII)
+    2.  [All Valid Permutations of Parentheses II](src/H/DFS/II/Hard/AllValidPermutationsOfParenthesesII)
 
 14. [Dynamic Programming I](src/L/DynamicProgramming/I)
     1.  [Longest Ascending SubArray](src/L/DynamicProgramming/I/Easy/LongestAscendingSubArray)
