@@ -104,9 +104,7 @@ public class Solution {
 }
 ```
 
-
-_Alternative method: only difference is the way we handle the DFS process_
-
+_Alternative method: at the current level/index, continue DFS, controlled by the variable "index"_
 
 ```java
 public class Solution {
@@ -126,10 +124,11 @@ public class Solution {
 
   private void findAllUniqueSubsetsAlt(char[] array, StringBuilder subset,
                                        int index, List<String> result) {
+    // Add every legit node in the recursion tree to the result
     result.add(subset.toString());
-    // Pick the characters for the rest positions
+    // From the current level, continue doing DFS
     for (int i = index; i < array.length; i++) {
-      // Only pick the character if it is different from the previous one
+      // Skip duplicate elements
       if (i > index && array[i] == array[i - 1]) {
         continue;
       }

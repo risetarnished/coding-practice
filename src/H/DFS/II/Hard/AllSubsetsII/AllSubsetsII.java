@@ -40,11 +40,12 @@ public class AllSubsetsII {
 
     private void findAllSubsetsAlt(char[] array, StringBuilder subset, int index,
                                    List<String> result) {
+        // Add every legit node in the recursion tree to the result
         result.add(subset.toString());
-        // Pick the characters for the rest of the positions
+        // From the current level, continue doing DFS
         for (int i = index; i < array.length; i++) {
-            // Only pick the character if it is different from the previous one
-            if (i > index && array[i]  == array[i - 1]) {
+            // Skip duplicate elements
+            if (i > index && array[i] == array[i - 1]) {
                 continue;
             }
             subset.append(array[i]);
