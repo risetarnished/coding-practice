@@ -10,4 +10,4 @@
     3.  [Spiral Order Traverse II](II/Medium/SpiralOrderTraverseII)
     4.  [Lowest Common Ancestor I](II/Medium/LowestCommonAncestorI)
     5.  [Lowest Common Ancestor II](II/Medium/LowestCommonAncestorII)
-
+    6.  [Maximum Path Sum Binary Tree III](II/Medium/MaximumPathSumBinaryTreeIII)
