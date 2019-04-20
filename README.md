@@ -160,6 +160,7 @@ Coding practice problems on [LaiCode](https://www.laicode.io/)
     5.  [Lowest Common Ancestor II](src/C/Recursion/II/Medium/LowestCommonAncestorII)
     6.  [Maximum Path Sum Binary Tree III](src/C/Recursion/II/Medium/MaximumPathSumBinaryTreeIII)
     7.  [Maximum Path Sum Binary Tree II](src/C/Recursion/II/Hard/MaximumPathSumBinaryTreeII)
+    8.  [Binary Tree Path Sum to Target III](src/C/Recursion/II/Medium/BinaryTreePathSumToTargetIII)
     
 
 19. [Cross Training I](src/N/CrossTraining/I)

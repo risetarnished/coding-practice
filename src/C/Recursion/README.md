@@ -12,3 +12,4 @@
     5.  [Lowest Common Ancestor II](II/Medium/LowestCommonAncestorII)
     6.  [Maximum Path Sum Binary Tree III](II/Medium/MaximumPathSumBinaryTreeIII)
     7.  [Maximum Path Sum Binary Tree II](II/Hard/MaximumPathSumBinaryTreeII)
+    8.  [Binary Tree Path Sum to Target III](II/Medium/BinaryTreePathSumToTargetIII)
