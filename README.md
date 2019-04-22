@@ -185,6 +185,9 @@ Coding practice problems on [LaiCode](https://www.laicode.io/)
 
 21. [Cross Training III](src/N/CrossTraining/III)
 
+22. [Cross Training IV](src/N/CrossTraining/IV)
+    
+
 99. [Free Practice](src/Z/FreePractice)
     1. [Palindrome Permutation](src/Z/FreePractice/Easy/PalindromePermutation)
     2. [Palindrome Permutation II](src/Z/FreePractice/Medium/PalindromePermutationII)
