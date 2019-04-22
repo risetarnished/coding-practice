@@ -32,3 +32,4 @@
 
 1.  [Kth Smallest in Two Sorted Arrays](IV/Hard/KthSmallestInTwoSortedArrays)
 2.  [Maximum Values of Size K Sliding Windows](IV/Medium/MaximumValuesOfSizeKSlidingWindows)
+3.  [Implement LRU Cache](IV/Medium/ImplementLRUCache)
