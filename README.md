@@ -191,6 +191,13 @@ Coding practice problems on [LaiCode](https://www.laicode.io/)
     3.  [Implement LRU Cache](src/N/CrossTraining/IV/Medium/ImplementLRUCache)
     4.  [First Non-Repeating Character in Stream](src/N/CrossTraining/IV/Medium/FirstNonRepeatingCharacterInStream)
     5.  [Majority Number I](src/N/CrossTraining/IV/Easy/MajorityNumberI)
+    
+23. [Cross Training V](src/N/CrossTraining/V)
+
+
+23. [Cross Training VI](src/N/CrossTraining/VI)
+    1.  [Longest Ascending Subsequence](src/N/CrossTraining/VI/Medium/LongestAscendingSubsequence)
+    
 
 99. [Free Practice](src/Z/FreePractice)
     1. [Palindrome Permutation](src/Z/FreePractice/Easy/PalindromePermutation)

@@ -35,3 +35,11 @@
 3.  [Implement LRU Cache](IV/Medium/ImplementLRUCache)
 4.  [First Non-Repeating Character in Stream](IV/Medium/FirstNonRepeatingCharacterInStream)
 5.  [Majority Number I](IV/Easy/MajorityNumberI)
+
+
+### [Cross Training V](V)
+
+
+### [Cross Training VI](VI)
+
+1.  [Longest Ascending Subsequence](VI/Medium/LongestAscendingSubsequence)
