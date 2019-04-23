@@ -135,24 +135,23 @@ A variable recording the global max will be needed, too.
 
 ```java
 public class Solution {
-    public int longest(int[] array) {
-        // Write your solution here
-        if (array == null || array.length == 0) {
-            return 0;
-        }
-        int[] subarrayLength = new int[array.length];
-        subarrayLength[0] = 1;
-        int maxLength = 1;
-        for (int i = 1; i < array.length; i++) {
-            if (array[i] > array[i - 1]) {
-                subarrayLength[i] = subarrayLength[i - 1] + 1;
-                maxLength = Math.max(maxLength, subarrayLength[i]);
-            } else {
-                subarrayLength[i] = 1;
-            }
-        }
-        return maxLength;
+  public int longest(int[] array) {
+    // Write your solution here
+    if (array == null || array.length == 0) {
+      return 0;
     }
+    int[] subarrayLength = new int[array.length];
+    subarrayLength[0] = 1; int maxLength = 1;
+    for (int i = 1; i < array.length; i++) {
+      if (array[i] > array[i - 1]) {
+        subarrayLength[i] = subarrayLength[i - 1] + 1;
+        maxLength = Math.max(maxLength, subarrayLength[i]);
+      } else {
+        subarrayLength[i] = 1;
+      }
+    }
+    return maxLength;
+  }
 }
 ```
 
@@ -173,29 +172,45 @@ An array recording the maximum length of an ascending subarray up to and includi
 
 ## Optimized Solution
 
+### High-level Idea
+
+- Optimize space
+  - Use two local variables rather than an 1-D array
+  - "length" represents the length of the current ascending subarray
+  - "maxLen" represents the length of the longest ascending subarray
+  - Both can be initialized to 1 because we start from the first element
+- Compare the current element against the previous element
+  - If the subarray is increasing
+    - length++
+    - update maxLen
+  - Otherwise
+    - reset length back to 1
+
 
 ### Code
 
 
 ```java
 public class Solution {
-    public int longest(int[] array) {
-        // Write your solution here
-        if (array == null || array.length == 0) {
-            return 0;
-        }
-        int currentLength = 1;
-        int maxLength = 1;
-        for (int i = 1; i < array.length; i++) {
-            if (array[i] > array[i - 1]) {
-                currentLength++;
-                maxLength = Math.max(maxLength, currentLength);
-            } else {
-                currentLength = 1;
-            }
-        }
-        return maxLength;
+  public int longest(int[] array) {
+    // Write your solution here
+    // Corner cases based on assumptions that
+    // the input array is not null or empty
+    if (array == null || array.length == 0) {
+      return 0;
     }
+    int length = 1;
+    int maxLen = 1;
+    for (int i = 1; i < array.length; i++) {
+      if (array[i] > array[i - 1]) {
+        length++;
+        maxLen = Math.max(maxLen, length);
+      } else {
+        length = 1;
+      }
+    }
+    return maxLen;
+  }
 }
 ```
 
@@ -233,35 +248,35 @@ After one iteration that generates all these values, we just do another iteratio
 
 ```java
 public class Solution {
-    public int[] longestAscendingSubarray(int[] array) {
-        if (array == null || array.length == 0) {
-            return new int[] {};
-        }
-        int currentLength = 1;
-        int maxLength = 1;
-        int currentStart = 0;
-        int maxStart = 0;
-        int maxEnd = 0;
-        // Linear scan & look back: 1 → n
-        for (int i = 1; i < array.length; i++) {
-            if (array[i] > array[i - 1]) {
-                currentLength++;
-                if (currentLength > maxLength) {
-                    maxLength = currentLength;
-                    maxStart = currentStart;
-                    maxEnd = i;
-                }
-            } else {
-                currentLength = 1;
-                currentStart = i;
-            }
-        }
-        int[] result = new int[maxEnd - maxStart + 1];
-        for (int i = 0; i < result.length; i++) {
-            result[i] = array[i + maxStart];
-        }
-        return result;
+  public int[] longestAscendingSubarray(int[] array) {
+    if (array == null || array.length == 0) {
+      return new int[] {};
     }
+    int currentLength = 1;
+    int maxLength = 1;
+    int currentStart = 0;
+    int maxStart = 0;
+    int maxEnd = 0;
+    // Linear scan & look back: 1 → n
+    for (int i = 1; i < array.length; i++) {
+      if (array[i] > array[i - 1]) {
+        currentLength++;
+        if (currentLength > maxLength) {
+          maxLength = currentLength;
+          maxStart = currentStart;
+          maxEnd = i;
+        }
+      } else {
+        currentLength = 1;
+        currentStart = i;
+      }
+    }
+    int[] result = new int[maxEnd - maxStart + 1];
+    for (int i = 0; i < result.length; i++) {
+      result[i] = array[i + maxStart];
+    }
+    return result;
+  }
 }
 ```
 
