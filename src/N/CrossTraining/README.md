@@ -34,3 +34,4 @@
 2.  [Maximum Values of Size K Sliding Windows](IV/Medium/MaximumValuesOfSizeKSlidingWindows)
 3.  [Implement LRU Cache](IV/Medium/ImplementLRUCache)
 4.  [First Non-Repeating Character in Stream](IV/Medium/FirstNonRepeatingCharacterInStream)
+5.  [Majority Number I](IV/Easy/MajorityNumberI)
