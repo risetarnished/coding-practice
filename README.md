@@ -189,6 +189,7 @@ Coding practice problems on [LaiCode](https://www.laicode.io/)
     1.  [Kth Smallest in Two Sorted Arrays](src/N/CrossTraining/IV/Hard/KthSmallestInTwoSortedArrays)
     2.  [Maximum Values of Size K Sliding Windows](src/N/CrossTraining/IV/Medium/MaximumValuesOfSizeKSlidingWindows)
     3.  [Implement LRU Cache](src/N/CrossTraining/IV/Medium/ImplementLRUCache)
+    4.  [First Non-Repeating Character in Stream](src/N/CrossTraining/IV/Medium/FirstNonRepeatingCharacterInStream)
 
 99. [Free Practice](src/Z/FreePractice)
     1. [Palindrome Permutation](src/Z/FreePractice/Easy/PalindromePermutation)
