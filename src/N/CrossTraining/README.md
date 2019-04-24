@@ -43,3 +43,4 @@
 ### [Cross Training VI](VI)
 
 1.  [Longest Ascending Subsequence](VI/Medium/LongestAscendingSubsequence)
+2.  [Longest Common Substring](VI/Medium/LongestCommonSubstring)

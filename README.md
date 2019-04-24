@@ -197,6 +197,7 @@ Coding practice problems on [LaiCode](https://www.laicode.io/)
 
 23. [Cross Training VI](src/N/CrossTraining/VI)
     1.  [Longest Ascending Subsequence](src/N/CrossTraining/VI/Medium/LongestAscendingSubsequence)
+    2.  [Longest Common Substring](src/N/CrossTraining/VI/Medium/LongestCommonSubstring)
     
 
 99. [Free Practice](src/Z/FreePractice)
