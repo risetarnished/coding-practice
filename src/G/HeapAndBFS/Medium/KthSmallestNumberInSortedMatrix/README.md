@@ -70,7 +70,7 @@ Use [Dijkstra's algorithm](https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm)
 
 
 
-1.  Initial state: starting node = matrix[0][0]
+1.  Initial state: starting node = matrix\[0]\[0]
 1.  Data structure: **priority queue**
     1.  min heap of size k
 1.  Node expansion/generation rule:
@@ -190,99 +190,90 @@ Optimization: a hashSet instead of a 2D boolean matrix can be used to store the 
 
 ```java
 public class Solution {
-    public int kthSmallest(int[][] matrix, int k) {
-        // Write your solution here
-        if (matrix == null || matrix[0].length == 0) {
-            return -1;
-        }
-
-        int rows = matrix.length;
-        int cols = matrix[0].length;
-        // Quick check for possible quick exit
-        if (k == 1) {
-            return matrix[0][0];
-        } else if (k == rows * cols) {
-            return matrix[rows - 1][cols - 1];
-        }
-        // Use BFS-II (Best-First Search) and a minHeap
-        // When the minHeap is popped for the k-th time
-        // we get the result
-        PriorityQueue<Cell> minHeap = new PriorityQueue<>(k);
-        Cell first = new Cell(0, 0, matrix[0][0]);
-        minHeap.offer(first);
-        // Use a hashSet to record the usage of Cells
-        Set<Cell> visited = new HashSet<>();
-        visited.add(first);
-        // Do (k - 1) iterations because we have already checked the
-        // first cell
-        for (int i = 0; i < k - 1; i++) {
-            Cell curr = minHeap.poll();
-            // Go down one cell
-            if (curr.row + 1 < rows) {
-                Cell next = new Cell(
-                    curr.row + 1, curr.col, matrix[curr.row + 1][curr.col]
-                );
-                if (!visited.contains(next)) {
-                    minHeap.offer(next);
-                    visited.add(next);
-                }
-            }
-            // Go right one cell
-            if (curr.col + 1 < cols) {
-                Cell next = new Cell(
-                    curr.row, curr.col + 1, matrix[curr.row][curr.col + 1]
-                );
-                if (!visited.contains(next)) {
-                    minHeap.offer(next);
-                    visited.add(next);
-                }
-            }
-        }
-        return minHeap.peek().val;
+  public int kthSmallest(int[][] matrix, int k) {
+    // Corner cases
+    if (matrix == null || matrix.length == 0 ||
+        matrix[0] == null || matrix[0].length == 0) {
+      return Integer.MIN_VALUE;
     }
+    int rows = matrix.length;
+    int cols = matrix[0].length;
+    // Use a min heap to store the the elements being tested so far
+    // such that we can easily get the smallest one in O(log(n)) time
+    // When we poll the heap for the k-th time, we have the k-th smallest
+    // element in the matrix
+    PriorityQueue<Cell> minHeap = new PriorityQueue<>(k);
+    // Use a HashSet to store the cells that have already been added to the heap
+    Set<Cell> added = new HashSet<>();
+    // Add the first cell into the heap and the set
+    Cell first = new Cell(matrix[0][0], 0, 0);
+    minHeap.offer(first);
+    added.add(first);
+    // For the smallest cell in the heap, check its two larger neighbors (left and down)
+    // Add them into the heap
+    // Do this for (k - 1) time and the heap's top is the result
+    for (int i = 0; i < k - 1; i++) {
+      Cell cell = minHeap.poll();
+      if (cell.row + 1 < rows) {
+        Cell next = new Cell(matrix[cell.row + 1][cell.col], cell.row + 1, cell.col);
+        if (!added.contains(next)) {
+          minHeap.offer(next);
+          added.add(next);
+        }
+      }
+      if (cell.col + 1 < cols) {
+        Cell next = new Cell(matrix[cell.row][cell.col + 1], cell.row, cell.col + 1);
+        if (!added.contains(next)) {
+          minHeap.offer(next);
+          added.add(next);
+        }
+      }
+    }
+    return minHeap.peek().val;
+  }
 }
 
 class Cell implements Comparable<Cell> {
-    int row;
-    int col;
-    int val;
-    public Cell(int row, int col, int val) {
-        this.row = row;
-        this.col = col;
-        this.val = val;
+  int val;
+  int row;
+  int col;
+  
+  Cell(int val, int row, int col) {
+    this.val = val;
+    this.row = row;
+    this.col = col;
+  }
+  
+  @Override
+  public int compareTo(Cell another) {
+    if (this.val == another.val) {
+      return 0;
     }
-
-    @Override
-    public int compareTo(Cell another) {
-        // Because the val field is Integer
-        // We can use the Integer.compare method
-        return Integer.compare(this.val, another.val);
+    return this.val < another.val ? -1 : 1;
+  }
+  
+  /**
+   * Override the hashCode() and equals() methods
+   * because we need to use a hash map to avoid duplicates
+   */
+  @Override
+  public boolean equals(Object obj) {
+    if (this == obj) {
+      return true;
     }
-
-    @Override
-    public boolean equals(Object obj) {
-        if (this == obj) {
-            return true;
-        }
-        if (obj == null || getClass() != obj.getClass()) {
-            return false;
-        }
-        Cell cell = (Cell) obj;
-        return this.row == cell.row &&
-               this.col == cell.col &&
-               this.val == cell.val;
+    if (!(obj instanceof Cell)) {
+      return false;
     }
-
-    @Override
-    public int hashCode() {
-        // This does not work on laicode (yet)
-        // return Objects.hash(row, col, val);
-        int hashResult = 17;
-        hashResult = 31 * hashResult + row;
-        hashResult = 31 * hashResult + col;
-        hashResult = 31 * hashResult + val;
-        return hashResult;
-    }
+    Cell another = (Cell) obj;
+    return this.val == another.val &&
+           this.row == another.row &&
+           this.col == another.col;
+  }
+  
+  @Override
+  public int hashCode() {
+    return 31 * 31 * 31 * this.val + 31 * 31 * this.row + 31 * this.col;
+  }
 }
 ```
 
@@ -290,13 +281,14 @@ class Cell implements Comparable<Cell> {
 
 #### Complexity
 
-Time:
-
-(k - 1) iterations. One poll() and two offer() operations in each iteration. In a heap, offer() and poll() cost O(log(n)). In this case, the time complexity is O(k * log(k))
-
-Space:
-
-A min heap of size k and a hash table of size k ⇒ O(k)
+- Time
+  - Offer/poll a heap which has a size of n costs O(log(n))
+  - There are n * m elements in the matrix
+  - Total time is O(k * log(k))
+- Space
+  - The PriorityQueue takes up O(k)
+  - The HashSet may take up to O(k)
+  - Total space is O(k)
 
 
 <!-- GD2md-html version 1.0β13 -->
