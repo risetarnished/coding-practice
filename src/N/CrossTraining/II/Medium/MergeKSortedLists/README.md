@@ -26,36 +26,40 @@ Conversion notes:
 
 Merge K sorted lists into one big sorted list in ascending order.
 
-Assumptions
+**Assumptions**
 
+- ListOfLists is not null, and none of the lists is null.
 
+**Tags**
 
-*   ListOfLists is not null, and none of the lists is null.
-
-Medium
-
-Heap
-
-
+- Medium
+- Heap
 
 
 ## Assumption
 
-The input listOfLists should not be null or empty. At least one of the list of the lists should have something in it.
-
-
-## Algorithm
-
-Similar to the [Merge K Sorted Arrays](../MergeKSortedArrays) problem. We can use the "K way merge" method, which utilizes a minHeap of size k to get a current minimum each time. Everytime a node is polled out of the heap, we feed the heap with its next node if there is one.
-
-
+- Input is a list of linked lists
+- Each one of these lists are sorted in ascending order
+- The expected output is one big linked list sorted in ascending order
 
 
 ## Solution
 
+Similar to the [Merge K Sorted Arrays](../MergeKSortedArrays) problem. We can use the "K way merge" method, which utilizes a minHeap of size k to get a current minimum each time. Everytime a node is polled out of the heap, we feed the heap with its next node if there is one.
+
+### High-level Idea
+
+- To output in one big sorted linked list, we can use a dummy head
+  - Each time when we move the dummy head, we should point the current smallest node in all lists to dummy.next
+- To easily get the smallest node in among the k lists
+  - Use a min heap with a size of k
+    - Initialize the heap with the head of the k lists
+  - Link the min heap's top to dummy.next
+  - Offer its next node in the original list to the heap
+  - Continue until all nodes in the list of linked lists are checked. That is, until the heap becomes empty
+
 
 ### Code
-
 
 ```java
 /**
@@ -68,46 +72,47 @@ Similar to the [Merge K Sorted Arrays](../MergeKSortedArrays) problem. We can us
  *   }
  * }
  */
+
 public class Solution {
   public ListNode merge(List<ListNode> listOfLists) {
-    // Write your solution here/.
+    // Write your solution here
+    // Corner cases check based on the assumption
     if (listOfLists == null || listOfLists.isEmpty()) {
       return null;
     }
-    // Use a min heap
+    int k = listOfLists.size();
+    // Use a min heap to generate the smallest node from the k lists
     PriorityQueue<ListNode> minHeap = new PriorityQueue<>(
-        listOfLists.size(),
-        new Comparator<ListNode>() {
+      	k, new Comparator<ListNode>() {
           @Override
-          public int compare(ListNode one, ListNode two) {
-            if (one.value == two.value) {
+          public int compare(ListNode a, ListNode b) {
+            if (a.value == b.value) {
               return 0;
             }
-            return one.value < two.value ? -1 : 1;
+            return a.value < b.value ? -1 : 1;
           }
         }
     );
-    // Initiate with the head node of each linked list
+    // Initialize the heap with the head nodes of the k linked lists
     for (ListNode head : listOfLists) {
-      // Skip any empty lists
       if (head == null) {
         continue;
       }
       minHeap.offer(head);
     }
-    // Use a dummy node to keep track of the result list
+    // Use a dummy node to store the result
     ListNode result = new ListNode(0);
-    ListNode current = result;
-    // Get the min node from the heap and
-    // fill the spot with its next node each time
+    ListNode curr = result;
+    // Link the smallest node of the k linked lists so far to the result
+    // Offer the next node to the heap
+    // Terminate when the heap becomes empty
     while (!minHeap.isEmpty()) {
       ListNode min = minHeap.poll();
-      current.next = min;
-      // Fill the empty spot
+      curr.next = min;
       if (min.next != null) {
         minHeap.offer(min.next);
       }
-      current = current.next;
+      curr = curr.next;
     }
     return result.next;
   }
@@ -120,13 +125,13 @@ _Of course, the comparator can be implemented using lambda (laicode does not sup
 
 ```java
 PriorityQueue<ListNode> minHeap = new PriorityQueue<>(
-    listOfLists.size(),
-    (one, two) -> {
-      if (one.value == two.value) {
-        return 0;
-      }
-      return one.value < two.value ? -1 : 1;
+  listOfLists.size(),
+  (one, two) -> {
+    if (one.value == two.value) {
+      return 0;
     }
+    return one.value < two.value ? -1 : 1;
+  }
 );
 ```
 
@@ -134,19 +139,14 @@ PriorityQueue<ListNode> minHeap = new PriorityQueue<>(
 
 ### Complexity
 
-
-#### Time
-
-There are n nodes in each one of the k linked lists ⇒ O(n * k)
-
-For every node, we need to offer()/poll() it to/from the heap ⇒ O(log(k))
-
-In total ⇒ O(n*k * log(k))
-
-
-#### Space
-
-A min heap with a size of k is used ⇒ O(k)
+- Time
+  - If there are n nodes in the k linked lists in listOfLists in total
+  - There are k nodes in the min heap
+    - Each offer and poll operation costs O(log(k))
+  - Total time is O(n * k * log(k))
+- Space
+  - A PriorityQueue (minHeap) with a size of k
+  - O(k)
 
 
 <!-- Docs to Markdown version 1.0β14 -->
