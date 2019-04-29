@@ -203,6 +203,7 @@ Coding practice problems on [LaiCode](https://www.laicode.io/)
 99. [Free Practice](src/Z/FreePractice)
     1. [Palindrome Permutation](src/Z/FreePractice/Easy/PalindromePermutation)
     2. [Palindrome Permutation II](src/Z/FreePractice/Medium/PalindromePermutationII)
+    3. [Plus One](src/Z/FreePractice/Easy/PlusOne)
 
 
 <!-- GD2md-html version 1.0β13 -->
