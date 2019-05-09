@@ -84,6 +84,7 @@ Coding practice problems on [LaiCode](https://www.laicode.io/)
     3.  [Bipartite](src/G/HeapAndBFS/Hard/Bipartite)
     4.  [Check if Binary Tree is Completed](src/G/HeapAndBFS/Medium/CheckIfBinaryTreeIsCompleted)
     5.  [Kth Smallest Number in Sorted Matrix](src/G/HeapAndBFS/Medium/KthSmallestNumberInSortedMatrix)
+    6.  [Number of Islands](src/G/HeapAndBFS/Medium/NumberOfIslands)
 
 8.  [DFS](src/H/DFS)
     1.  [All Subsets I](src/H/DFS/I/Medium/AllSubsetsI)
