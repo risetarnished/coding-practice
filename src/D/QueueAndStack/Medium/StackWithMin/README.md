@@ -50,135 +50,123 @@ Stack
 *   The min stack can never be empty if the stack is not empty.
 
 
-## Algorithm
-
-
-
-1.  Method 1: use a helper class to store the size when the element gets added
-    1.  When an element is pushed onto the stack, we also push an object of Element onto the minStack and keep track of the sizes of the two
-    1.  When an element is popped from the stack, we check the stack size and see if it is greater than the minStack's top element's _sizeWhenAdded_ field. If the min value was added when the stack had a smaller size, it suggests that we are not popping the min value off yet. Otherwise, we need to pop the minStack since the min value is being popped from the stack
-1.  Method 2: compare the sizes directly
-    1.  When an element is being popped from the stack, check the size of minStack. The rest of the logic is same as step b in the first method.
-
-
 ## Solution
+
+### High-level Idea
+
+- A direct but naive solution
+  - When pushing a new element onto the stack, check the element against the minStack's top, push whichever is the smaller one on to the minStack
+  - The drawback of this method is that the size of the minStack will be the same as the main stack. Moreover, even if we only push the element onto the minStack when it is smaller than the current min, in the case where there are a lot of duplicate elements, it still takes up a lot of space
+- An improved method
+  - Only push the new element onto the minStack when it is smaller than the minStack's top
+    - Remember the size of the stack when pushing it onto the minStack
+  - If popping the stack makes the stack's size smaller than the size of it when the current min was pushed onto the minStack, also pop the minStack
 
 
 ### Code
 
 
-#### Method 1
+#### Direct method
 
 
 ```java
 public class Solution {
-  private LinkedList<Integer> stack;
-  private LinkedList<Element> minStack;
-
-  // Element class is used to store the min value and the size of the stack when it gets added to the minStack
-  // We can also use a third stack to keep track of the size added
-  // That saves the work for the Element class
-  private class Element {
-    private int val;
-    private int sizeWhenAdded;
-    private Element(int val, int sizeWhenAdded) {
-      this.val = val;
-      this.sizeWhenAdded = sizeWhenAdded;
-    }
-  }
+  
+  private Deque<Integer> stack;
+  private Deque<Integer> minStack;
 
   public Solution() {
     // write your solution here
-    stack = new LinkedList<>();
-    minStack = new LinkedList<>();
+    stack = new ArrayDeque<>();
+    minStack = new ArrayDeque<>();
   }
 
   public int pop() {
     if (stack.isEmpty()) {
       return -1;
     }
-    if (minStack.peek().sizeWhenAdded >= stack.size()) {
-      minStack.pop();
-    }
-    return stack.pop();
+    // Also pop the minStack
+    stack.pollFirst();
+    minStack.pollFirst();
   }
 
   public void push(int element) {
-    if (stack.isEmpty() || element < minStack.peek().val) {
-      minStack.push(new Element(element, stack.size() + 1));
+    stack.offerFirst(x);
+    // Push the new element onto the minStack if it is smaller
+    if (minStack.isEmpty() || x < minStack.peekFirst()) {
+      minStack.offerFirst(x);
+    } else {
+      minStack.offerFirst(minStack.peekFirst());
     }
-    stack.push(element);
   }
 
   public int top() {
-    if (stack.isEmpty()) {
-      return -1;
-    }
-    return stack.peek();
+    return stack.isEmpty() ? Integer.MIN_VALUE : stack.peekFirst();
   }
 
-  public int min() {
-    if (stack.isEmpty()) {
-      return -1;
-    }
-    return minStack.peek().val;
+  public int getMin() {
+    return minStack.isEmpty() ? Integer.MIN_VALUE : minStack.peekFirst();
   }
 }
 ```
 
 
 
-#### Method 2
+#### Improved method
 
 
 ```java
 public class Solution {
-  // This method does not use a helper class to store
-  // extra information of the added elements
+  
   private Deque<Integer> stack;
-  private Deque<Integer> minStack;
-
+  private Deque<Element> minStack;
+  
+  /**
+   * The helper class to represent the pairs of
+   * <element, size of the stack when it gets pushed>
+   */
+  private class Element {
+    int val;
+    int size;
+    private Element(int val, int size) {
+      this.val = val;
+      this.size = size;
+    }
+  }
+  
   public Solution() {
     // write your solution here
-    stack = new LinkedList<>();
-    minStack = new LinkedList<>();
+    stack = new ArrayDeque<>();
+    minStack = new ArrayDeque<>();
   }
-
+  
   public int pop() {
     if (stack.isEmpty()) {
       return -1;
     }
-    // If the sizes of the two stacks are equal, indicating
-    // the element to be popped is the min value of the
-    // current stack, it needs to be popped from the minStack
-    // as well
-    if (minStack.size() >= stack.size()) {
-      minStack.pollLast();
+    // If the size of the stack will become smaller than it used to be when
+    // the current min was pushed, also pop the minStack
+    if (stack.size() == minStack.peekFirst().size) {
+      minStack.pollFirst();
     }
-    return stack.pollLast();
+    return stack.pollFirst();
   }
-
+  
   public void push(int element) {
-    // If this element is less than everything else
-    // add it to the minStack
-    if (stack.isEmpty() || element < minStack.peekLast()) {
-      minStack.offerLast(element);
+    stack.offerFirst(element);
+    // If the element is smaller than the current min,
+    // also push it onto the minStack 
+    if (minStack.isEmpty() || element < minStack.peekFirst().val) {
+      minStack.offerFirst(new Element(element, stack.size()));
     }
-    stack.offerLast(element);
   }
-
+  
   public int top() {
-    if (stack.isEmpty()) {
-      return -1;
-    }
-    return stack.peekLast();
+    return stack.isEmpty() ? -1 : stack.peekFirst();
   }
-
+  
   public int min() {
-    if (minStack.isEmpty()) {
-      return -1;
-    }
-    return minStack.peekLast();
+    return minStack.isEmpty() ? -1 : minStack.peekFirst().val;
   }
 }
 ```
@@ -187,9 +175,20 @@ public class Solution {
 
 ### Complexity
 
-Time: operations (push, pop, etc.) are all native stack operations ⇒ O(1)
+#### Direct method
 
-Space: two stacks are used ⇒ O(n)
+- Time
+  - Each `push()` and `pop()` call takes O(1) time
+- Space
+  - If n elements get pushed onto the stack, there are n elements pushed onto the minStack, as well
+  - O(2n)
 
+#### Improved method
+
+- Time
+  - Each `push()` and `pop()` call takes O(1) time
+- Space
+  - The minStack will take less space than the stack
+  - O(< 2n)
 
 <!-- GD2md-html version 1.0β13 -->
