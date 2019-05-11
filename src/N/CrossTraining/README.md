@@ -13,6 +13,7 @@
 8.  [Get Keys in Binary Tree Layer by Layer Zig-Zag Order](I/Medium/BinaryTreeZigZagTraversal)
 9.  [Rotate Matrix](I/Medium/RotateMatrix)
 10. [Two Sum](I/Easy/TwoSum)
+11. [Two Sum Pair I](I/Medium/TwoSumPairI)
 
 
 ### [Cross Training II](II)
