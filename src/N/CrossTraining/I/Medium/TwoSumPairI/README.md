@@ -1,4 +1,4 @@
-# Two Sum Pair I
+# Two Sum All Pair I
 
 <https://app.laicode.io/app/problem/181>
 
