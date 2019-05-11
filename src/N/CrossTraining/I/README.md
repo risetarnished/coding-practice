@@ -8,3 +8,4 @@
 7.  [Largest and Second Largest](Medium/LargestAndSecondLargest)
 8.  [Get Keys in Binary Tree Layer by Layer Zig-Zag Order](Medium/BinaryTreeZigZagTraversal)
 9.  [Rotate Matrix](Medium/RotateMatrix)
+10. [Two Sum](Easy/TwoSum)
