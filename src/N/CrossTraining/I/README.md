@@ -11,3 +11,4 @@
 10. [Two Sum](Easy/TwoSum)
 11. [Two Sum All Pair I](Medium/TwoSumPairI)
 12. [Two Sum All Pair II](Medium/TwoSumPairII)
+13. [Three Sum](Medium/ThreeSum)

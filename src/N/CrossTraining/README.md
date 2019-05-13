@@ -15,6 +15,7 @@
 10. [Two Sum](I/Easy/TwoSum)
 11. [Two Sum All Pair I](I/Medium/TwoSumPairI)
 12. [Two Sum All Pair II](I/Medium/TwoSumPairII)
+13. [Three Sum](I/Medium/ThreeSum)
 
 
 ### [Cross Training II](II)
