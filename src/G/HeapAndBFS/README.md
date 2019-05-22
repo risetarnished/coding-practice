@@ -6,3 +6,4 @@
 4.  [Check if Binary Tree is Completed](Medium/CheckIfBinaryTreeIsCompleted)
 5.  [Kth Smallest Number in Sorted Matrix](Medium/KthSmallestNumberInSortedMatrix)
 6.  [Number of Islands](Medium/NumberOfIslands)
+7.  [Walls and Gates](Medium/WallsAndGates)
