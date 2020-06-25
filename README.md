@@ -2,13 +2,13 @@ Coding practice problems on [LaiCode](https://www.laicode.io/)
 
 ## Table of Contents
 
-1.  [Sorting Algorithms](src/A/SortingAlgorithms)
+1.  [Sorting Algorithms](docs/sortingalgorithms)
 
-    1.  [Selection Sort](src/A/SortingAlgorithms/Easy/SelectionSort)
-    2.  [Merge Sort](src/A/SortingAlgorithms/Medium/MergeSort)
-    3.  [Quick Sort](src/A/SortingAlgorithms/Medium/QuickSort)
-    4.  [Move 0's to the End I](src/A/SortingAlgorithms/Easy/Move0sToTheEndI)
-    5.  [Rainbow Sort](src/A/SortingAlgorithms/Medium/RainbowSort)
+    1.  [Selection Sort](docs/sortingalgorithms/SelectionSort)
+    2.  [Merge Sort](docs/sortingalgorithms/MergeSort)
+    3.  [Quick Sort](sdocs/sortingalgorithms/QuickSort)
+    4.  [Move 0's to the End I](docs/sortingalgorithms/Move0sToTheEndI)
+    5.  [Rainbow Sort](docs/sortingalgorithms/RainbowSort)
 
 2.  [Binary Search](src/B/BinarySearch)
 

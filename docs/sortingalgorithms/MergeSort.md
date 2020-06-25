@@ -1,28 +1,6 @@
-<!----- Conversion time: 0.753 seconds.
-
-
-Using this Markdown file:
-
-1. Cut and paste this output into your source file.
-2. See the notes and action items below regarding this conversion run.
-3. Check the rendered output (headings, lists, code blocks, tables) for proper
-   formatting and use a linkchecker before you publish this page.
-
-Conversion notes:
-
-* GD2md-html version 1.0β13
-* Tue Jan 15 2019 03:56:26 GMT-0800 (PST)
-* Source doc: https://docs.google.com/open?id=161-7LdwMlq7wLes8j8K0P3x3IXCtocCXK1s6DS_k810
-* This document has images: check for >>>>>  gd2md-html alert:  inline image link in generated source and store images to your server.
------>
-
-
-
-
 # Merge Sort
 
 [https://app.laicode.io/app/problem/9](https://app.laicode.io/app/problem/9)
-
 
 ## Description
 
@@ -30,21 +8,15 @@ Given an array of integers, sort the elements in the array in ascending order. T
 
 Examples
 
-
-
-*   {1} is sorted to {1}
-*   {1, 2, 3} is sorted to {1, 2, 3}
-*   {3, 2, 1} is sorted to {1, 2, 3}
-*   {4, 2, -3, 6, 1} is sorted to {-3, 1, 2, 4, 6}
+- {1} is sorted to {1}
+- {1, 2, 3} is sorted to {1, 2, 3}
+- {3, 2, 1} is sorted to {1, 2, 3}
+- {4, 2, -3, 6, 1} is sorted to {-3, 1, 2, 4, 6}
 
 Corner Cases
 
-
-
-*   What if the given array is null? In this case, we do not need to do anything.
-*   What if the given array is of length zero? In this case, we do not need to do anything.
-
-
+- What if the given array is null? In this case, we do not need to do anything.
+- What if the given array is of length zero? In this case, we do not need to do anything.
 
 Medium
 
@@ -52,28 +24,21 @@ Array
 
 Sort
 
-
 ## Assumption
 
 The input array should not be null or empty
 
-
 ## Algorithm
-
-
 
 ![algorithm](merge_sort.png "merge_sort")
 
-
-
 ## Solution
-
 
 ### Code
 
-
 ```java
 public class Solution {
+
   public int[] quickSort(int[] array) {
     // Write your solution here
     // Corner cases
@@ -98,7 +63,13 @@ public class Solution {
     mergeArray(array, temp, start, mid, end);
   }
 
-  private void mergeArray(int[] array, int[] temp, int start, int mid, int end) {
+  private void mergeArray(
+    int[] array,
+    int[] temp,
+    int start,
+    int mid,
+    int end
+  ) {
     // Copy the array to temp such that we can do comparisons only on the temp array,
     // while operating on the original array to make it like in-place operations
     temp = Arrays.copyOf(array, array.length);
@@ -122,10 +93,7 @@ public class Solution {
 }
 ```
 
-
-
 ### Complexity
-
 
 #### Time
 
@@ -133,10 +101,6 @@ O(nlog(n))
 
 If there are n elements in the array, there will be log(n) levels when we try to divide the array. When we merge the array, it takes n steps to merge the small arrays at every level. Therefore, the time complexity is O(nlog(n))
 
-
 #### Space
 
 O(n)
-
-
-<!-- GD2md-html version 1.0β13 -->

@@ -1,27 +1,6 @@
-<!----- Conversion time: 1.537 seconds.
-
-
-Using this Markdown file:
-
-1. Cut and paste this output into your source file.
-2. See the notes and action items below regarding this conversion run.
-3. Check the rendered output (headings, lists, code blocks, tables) for proper
-   formatting and use a linkchecker before you publish this page.
-
-Conversion notes:
-
-* Docs to Markdown version 1.0β14
-* Mon Feb 11 2019 21:53:51 GMT-0800 (PST)
-* Source doc: https://docs.google.com/open?id=1U35DasWeO2mytBqxH1SFfqnVTWAxktmguNBRFluAABY
-* This document has images: check for >>>>>  gd2md-html alert:  inline image link in generated source and store images to your server.
------>
-
-
-
 # Rainbow Sort
 
 [https://app.laicode.io/app/problem/11](https://app.laicode.io/app/problem/11)
-
 
 ## Description
 
@@ -29,29 +8,21 @@ Given an array of balls, where the color of the balls can only be Red, Green or 
 
 Examples
 
-
-
-*   {0} is sorted to {0}
-*   {1, 0} is sorted to {0, 1}
-*   {1, 0, 1, -1, 0} is sorted to {-1, 0, 0, 1, 1}
+- {0} is sorted to {0}
+- {1, 0} is sorted to {0, 1}
+- {1, 0, 1, -1, 0} is sorted to {-1, 0, 0, 1, 1}
 
 Assumptions
 
-
-
-*   The input array is not null.
+- The input array is not null.
 
 Corner Cases
 
-
-
-*   What if the input array is of length zero? In this case, we should not do anything as well.
-
+- What if the input array is of length zero? In this case, we should not do anything as well.
 
 ## Assumption
 
 The input array should not be null or empty. The tree colors, green, red, and blue, are represented by -1, 0, and 1.
-
 
 ## Algorithm
 
@@ -62,8 +33,6 @@ are 3 different colors.
 
 The three pointers represents:
 
-
-
 1.  Everything to the left of i (array\[0, i]) are all red
 1.  Everything between i and j (array(i, j]) are green
 1.  Everything after k (array\[k, end]) are blue
@@ -71,20 +40,15 @@ The three pointers represents:
 
 Because array(j, k) are the area to explore, we only care about array\[j] each time when checking the possible cases
 
-
-
 ![alt_text](rainbowsort.png "image_tooltip")
-
-
 
 ## Solution
 
-
 ### Code
-
 
 ```java
 public class Solution {
+
   public int[] rainbowSort(int[] array) {
     // Write your solution here
     if (array == null || array.length <= 1) {
@@ -120,19 +84,12 @@ public class Solution {
 }
 ```
 
-
-
 ### Complexity
-
 
 #### Time
 
 One single iteration over the entire array does the job ⇒ O(n)
 
-
 #### Space
 
 Nothing declared on the heap ⇒ O(1)
-
-
-<!-- Docs to Markdown version 1.0β14 -->
