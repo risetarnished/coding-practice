@@ -1,4 +1,6 @@
-.DS_Store
+.vscode/
 out/
 *.class
-.idea/workspace.xml
+*.iml
+node_modules
+package-lock.json

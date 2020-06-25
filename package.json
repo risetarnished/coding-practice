@@ -1,0 +1,35 @@
+{
+  "name": "laicode",
+  "version": "1.0.0",
+  "description": "In depth analysis and solution to the coding problems on LaiCode",
+  "main": "README.md",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/publicclassoverflow/laicode.git"
+  },
+  "author": "MZ",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/publicclassoverflow/laicode/issues"
+  },
+  "homepage": "https://github.com/publicclassoverflow/laicode#readme",
+  "devDependencies": {
+    "husky": "~4.2.5",
+    "lint-staged": "~10.2.11",
+    "prettier": "~2.0.5",
+    "prettier-plugin-java": "~0.8.0",
+    "prettier-plugin-package": "~1.0.0",
+    "prettier-plugin-packagejson": "~2.2.5"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,css,md}": "prettier --write"
+  }
+}
