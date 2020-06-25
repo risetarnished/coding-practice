@@ -1,4 +1,4 @@
-package src.movezerostotheendi;
+package src.sortingalgorithms.movezerostotheendi;
 
 /**
  * https://app.laicode.io/app/problem/258

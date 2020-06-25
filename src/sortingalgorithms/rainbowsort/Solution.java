@@ -1,4 +1,4 @@
-package src.rainbowsort;
+package src.sortingalgorithms.rainbowsort;
 
 /**
  * RainbowSort

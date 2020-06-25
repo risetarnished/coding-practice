@@ -1,4 +1,4 @@
-package src.selectionsort;
+package src.sortingalgorithms.selectionsort;
 
 /**
  * https://app.laicode.io/app/problem/4

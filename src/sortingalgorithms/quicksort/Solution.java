@@ -1,4 +1,4 @@
-package src.quicksort;
+package src.sortingalgorithms.quicksort;
 
 /**
  * https://app.laicode.io/app/problem/10
