@@ -5,6 +5,7 @@ _Currently in the process to change everything to meet the industrial standard, 
 - _Completed:_
   - Sorting Algorithms
   - Binary Search
+  - Recursion
 
 ## Table of Contents
 
