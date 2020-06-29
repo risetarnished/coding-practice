@@ -27,10 +27,10 @@ _Currently in the process to change everything to meet the industrial standard, 
     7.  [Search in Unknown Sized Sorted Array](docs/binarysearchSearch/InUnknownSizedSortedArray.md)
     8.  [Find Minimum in Rotated Sorted Array](docs/binarysearch/FindMinimumInRotatedSortedArray.md)
 
-3.  [Recursion](src/C/Recursion)
+3.  [Recursion](docs/recursion/i)
 
-    1.  [Fibonacci Number](src/C/Recursion/I/Easy/FibonacciNumber)
-    2.  [A to the Power of B](src/C/Recursion/I/Medium/AToThePowerOfB)
+    1.  [Fibonacci Number](docs/recursion/i/FibonacciNumber.md)
+    2.  [A to the Power of B](docs/recursion/i/AToThePowerOfB.md)
 
 4.  [Queue & Stack](src/D/QueueAndStack)
 
@@ -154,16 +154,16 @@ _Currently in the process to change everything to meet the industrial standard, 
     5.  [Median Tracker](src/M/Probability/Medium/MedianTracker)
     6.  [95 Percentile](src/M/Probability/Medium/NinetyFivePercentile)
 
-18. [Recursion II](src/C/Recursion/II)
+18. [Recursion II](docs/recursion/ii)
 
-    1.  [N Queens](src/C/Recursion/II/Medium/NQueens)
-    2.  [Spiral Order Traverse I](src/C/Recursion/II/Medium/SpiralOrderTraverseI)
-    3.  [Spiral Order Traverse II](src/C/Recursion/II/Medium/SpiralOrderTraverseII)
-    4.  [Lowest Common Ancestor I](src/C/Recursion/II/Medium/LowestCommonAncestorI)
-    5.  [Lowest Common Ancestor II](src/C/Recursion/II/Medium/LowestCommonAncestorII)
-    6.  [Maximum Path Sum Binary Tree III](src/C/Recursion/II/Medium/MaximumPathSumBinaryTreeIII)
-    7.  [Maximum Path Sum Binary Tree II](src/C/Recursion/II/Hard/MaximumPathSumBinaryTreeII)
-    8.  [Binary Tree Path Sum to Target III](src/C/Recursion/II/Medium/BinaryTreePathSumToTargetIII)
+    1.  [N Queens](docs/recursion/ii/NQueens.md)
+    2.  [Spiral Order Traverse I](docs/recursion/ii/SpiralOrderTraverseI.md)
+    3.  [Spiral Order Traverse II](docs/recursion/ii/SpiralOrderTraverseII.md)
+    4.  [Lowest Common Ancestor I](docs/recursion/ii/LowestCommonAncestorI.md)
+    5.  [Lowest Common Ancestor II](docs/recursion/ii/LowestCommonAncestorII.md)
+    6.  [Maximum Path Sum Binary Tree III](coollime/src/main/java/coollime/recursion/maximumpathsumbinarytreeiii/Solution.java)
+    7.  [Maximum Path Sum Binary Tree II](docs/recursion/ii/MaximumPathSumBinaryTreeII.md)
+    8.  [Binary Tree Path Sum to Target III](docs/recursion/ii/BinaryTreePathSumToTargetIII.md)
 
 19. [Cross Training I](src/N/CrossTraining/I)
 
