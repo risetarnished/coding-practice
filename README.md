@@ -4,11 +4,11 @@ Coding practice problems on [LaiCode](https://www.laicode.io/)
 
 1.  [Sorting Algorithms](docs/sortingalgorithms)
 
-    1.  [Selection Sort](docs/sortingalgorithms/SelectionSort)
-    2.  [Merge Sort](docs/sortingalgorithms/MergeSort)
-    3.  [Quick Sort](sdocs/sortingalgorithms/QuickSort)
-    4.  [Move 0's to the End I](docs/sortingalgorithms/Move0sToTheEndI)
-    5.  [Rainbow Sort](docs/sortingalgorithms/RainbowSort)
+    1.  [Selection Sort](docs/sortingalgorithms/SelectionSort.md)
+    2.  [Merge Sort](docs/sortingalgorithms/MergeSort.md)
+    3.  [Quick Sort](sdocs/sortingalgorithms/QuickSort.md)
+    4.  [Move 0's to the End I](docs/sortingalgorithms/Move0sToTheEndI.md)
+    5.  [Rainbow Sort](docs/sortingalgorithms/RainbowSort.md)
 
 2.  [Binary Search](src/B/BinarySearch)
 
@@ -34,6 +34,7 @@ Coding practice problems on [LaiCode](https://www.laicode.io/)
     4.  [Sort with 2 Stacks](src/D/QueueAndStack/Medium/SortWith2Stacks)
 
 5.  [Linked List](src/E/LinkedList)
+
     1.  [Reverse Linked List](src/E/LinkedList/Easy/ReverseLinkedList)
     2.  [Middle Node of Linked List](src/E/LinkedList/Easy/MiddleNodeOfLinkedList)
     3.  [Check if Linked List Has a Cycle](src/E/LinkedList/Easy/CheckIfLinkedListHasACycle)
@@ -46,7 +47,8 @@ Coding practice problems on [LaiCode](https://www.laicode.io/)
     10. [Check if Linked List is Palindrome](src/E/LinkedList/Medium/CheckIfLinkedListIsPalindrome)
     11. [Cycle Node in Linked List](src/E/LinkedList/Medium/CycleNodeInLinkedList)
 
-6)  [Binary Tree](src/F/BinaryTree)
+6.  [Binary Tree](src/F/BinaryTree)
+
     1.  [In-order Traversal of Binary Tree](src/F/BinaryTree/Medium/InorderTraversalOfBinaryTree)
     2.  [Pre-order Traversal of Binary Tree](src/F/BinaryTree/Easy/PreorderTraversalOfBinaryTree)
     3.  [Post-order Traversal of Binary Tree](src/F/BinaryTree/Hard/PostorderTraversalOfBinaryTree)
@@ -60,6 +62,7 @@ Coding practice problems on [LaiCode](https://www.laicode.io/)
     11. [Insert in Binary Search Tree](src/F/BinaryTree/Easy/InsertInBinarySearchTree)
 
 7.  [Heap & Graph Search Algorithms I (BFS)](src/G/HeapAndBFS)
+
     1.  [K Smallest in Unsorted Array](src/G/HeapAndBFS/Medium/KSmallestInUnsortedArray)
     2.  [Get Keys in Binary Tree Layer by Layer](src/G/HeapAndBFS/Easy/GetKeysInBinaryTreeLayerByLayer)
     3.  [Bipartite](src/G/HeapAndBFS/Hard/Bipartite)
@@ -68,20 +71,20 @@ Coding practice problems on [LaiCode](https://www.laicode.io/)
     6.  [Number of Islands](src/G/HeapAndBFS/Medium/NumberOfIslands)
     7.  [Walls and Gates](src/G/HeapAndBFS/Medium/WallsAndGates)
 
-8)  [DFS](src/H/DFS)
+8.  [DFS](src/H/DFS)
 
     1.  [All Subsets I](src/H/DFS/I/Medium/AllSubsetsI)
     2.  [All Valid Permutations of Parentheses I](src/H/DFS/I/Medium/AllValidPermutationsOfParenthesesI)
     3.  [Combinations of Coins](src/H/DFS/I/Medium/CombinationsOfCoins)
     4.  [All Permutations I](src/H/DFS/I/Medium/AllPermutationsI)
 
-9)  [HashTable](src/I/HashTable)
+9.  [HashTable](src/I/HashTable)
 
     1.  [Top K Frequent Words](src/I/HashTable/Medium/TopKFrequentWords)
     2.  [Missing Number I](src/I/HashTable/Medium/MissingNumberI)
     3.  [Common Numbers of Two Sorted Arrays](src/I/HashTable/Easy/CommonNumbersOfTwoSortedArrays)
 
-10) [String I](src/J/String/I)
+10. [String I](src/J/String/I)
 
     1.  [Remove Certain Characters](src/J/String/I/Easy/RemoveCertainCharacters)
     2.  [Remove Spaces](src/J/String/I/Easy/RemoveSpaces)
@@ -89,7 +92,7 @@ Coding practice problems on [LaiCode](https://www.laicode.io/)
     4.  [Remove Adjacent Repeated Characters IV](src/J/String/I/Hard/RemoveAdjacentRepeatedCharactersIV)
     5.  [Determine if One String is Another's Substring](src/J/String/I/Medium/DetermineIfOneStringIsAnothersSubstring)
 
-11) [String II](src/J/String/II)
+11. [String II](src/J/String/II)
 
     1.  [Reverse String](src/J/String/II/Easy/ReverseString)
     2.  [Reverse Words in a Sentence I](src/J/String/II/Medium/ReverseWordsInASentenceI)
@@ -101,26 +104,26 @@ Coding practice problems on [LaiCode](https://www.laicode.io/)
     8.  [Longest Substring without Repeating Characters](src/J/String/II/Medium/LongestSubstringWithoutRepeatingCharacters)
     9.  [All Anagrams](src/J/String/II/Medium/AllAnagrams)
 
-12) [Bit Representation & Operation](src/K/Bit)
+12. [Bit Representation & Operation](src/K/Bit)
 
     1.  [Power of Two](src/L/Bit/Easy/PowerOfTwo)
     2.  [Number of Different Bits](src/K/Bit/Medium/NumberOfDifferentBits)
     3.  [All Unique Characters II](src/K/Bit/Medium/AllUniqueCharactersII)
     4.  [Hexadecimal Representation](src/K/Bit/Easy/HexadecimalRepresentation)
 
-13) [DFS II](src/H/DFS)
+13. [DFS II](src/H/DFS)
 
     1.  [All Subsets II](src/H/DFS/II/Hard/AllSubsetsII)
     2.  [All Valid Permutations of Parentheses II](src/H/DFS/II/Hard/AllValidPermutationsOfParenthesesII)
     3.  [All Subsets Size of K](src/H/DFS/II/Medium/AllSubsetsSizeOfK)
 
-14) [Dynamic Programming I](src/L/DynamicProgramming/I)
+14. [Dynamic Programming I](src/L/DynamicProgramming/I)
 
     1.  [Longest Ascending SubArray](src/L/DynamicProgramming/I/Easy/LongestAscendingSubArray)
     2.  [Max Product of Cutting Rope](src/L/DynamicProgramming/I/Medium/MaxProductOfCuttingRope)
     3.  [Array Hopper I](src/L/DynamicProgramming/I/Medium/ArrayHopperI)
 
-15) [Dynamic Programming II](src/L/DynamicProgramming/II)
+15. [Dynamic Programming II](src/L/DynamicProgramming/II)
 
     1.  [Array Hopper II](src/L/DynamicProgramming/II/Medium/ArrayHopperII)
     2.  [Largest SubArray Sum](src/L/DynamicProgramming/II/Medium/LargestSubArraySum)
@@ -128,7 +131,7 @@ Coding practice problems on [LaiCode](https://www.laicode.io/)
     4.  [Edit Distance](src/L/DynamicProgramming/II/Medium/EditDistance)
     5.  [Largest Square of 1's](src/L/DynamicProgramming/II/Hard/LargestSquareOfOnes)
 
-16) [Dynamic Programming III](src/L/DynamicProgramming/III)
+16. [Dynamic Programming III](src/L/DynamicProgramming/III)
 
     1.  [Largest SubArray Sum](src/L/DynamicProgramming/III/Medium/LargestSubarraySum)
     2.  [Longest Consecutive 1's](src/L/DynamicProgramming/III/Easy/LongestConsecutiveOnes)
@@ -136,7 +139,7 @@ Coding practice problems on [LaiCode](https://www.laicode.io/)
     4.  [Largest X of 1's](src/L/DynamicProgramming/III/Hard/LargestXOf1s)
     5.  [Largest SubMatrix Sum](src/L/DynamicProgramming/III/Hard/LargestSubMatrixSum)
 
-17) [Probability, Sampling & Randomization](src/M/Probability)
+17. [Probability, Sampling & Randomization](src/M/Probability)
 
     1.  [Perfect Shuffle](src/M/Probability/Medium/PerfectShuffle)
     2.  [Reservoir Sampling](src/M/Probability/Medium/ReservoirSampling)
@@ -145,7 +148,7 @@ Coding practice problems on [LaiCode](https://www.laicode.io/)
     5.  [Median Tracker](src/M/Probability/Medium/MedianTracker)
     6.  [95 Percentile](src/M/Probability/Medium/NinetyFivePercentile)
 
-18) [Recursion II](src/C/Recursion/II)
+18. [Recursion II](src/C/Recursion/II)
 
     1.  [N Queens](src/C/Recursion/II/Medium/NQueens)
     2.  [Spiral Order Traverse I](src/C/Recursion/II/Medium/SpiralOrderTraverseI)
@@ -194,12 +197,12 @@ Coding practice problems on [LaiCode](https://www.laicode.io/)
 
 23. [Cross Training V](src/N/CrossTraining/V)
 
-23) [Cross Training VI](src/N/CrossTraining/VI)
+24. [Cross Training VI](src/N/CrossTraining/VI)
 
     1.  [Longest Ascending Subsequence](src/N/CrossTraining/VI/Medium/LongestAscendingSubsequence)
     2.  [Longest Common Substring](src/N/CrossTraining/VI/Medium/LongestCommonSubstring)
 
-99. [Free Practice](src/Z/FreePractice)
+25. [Free Practice](src/Z/FreePractice)
     1. [Palindrome Permutation](src/Z/FreePractice/Easy/PalindromePermutation)
     2. [Palindrome Permutation II](src/Z/FreePractice/Medium/PalindromePermutationII)
     3. [Plus One](src/Z/FreePractice/Easy/PlusOne)

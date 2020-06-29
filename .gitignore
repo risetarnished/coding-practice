@@ -1,4 +1,7 @@
 .vscode/
+.settings/
+.classpath
+.project
 out/
 *.class
 *.iml
