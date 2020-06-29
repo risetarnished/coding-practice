@@ -1,5 +1,9 @@
 Coding practice problems on [LaiCode](https://www.laicode.io/)
 
+_Currently in the process to change everything to meet the industrial standard, aka a more legit way_
+
+- _Completed:_ Sorting Algorithms
+
 ## Table of Contents
 
 1.  [Sorting Algorithms](docs/sortingalgorithms)
@@ -10,16 +14,16 @@ Coding practice problems on [LaiCode](https://www.laicode.io/)
     4.  [Move 0's to the End I](docs/sortingalgorithms/Move0sToTheEndI.md)
     5.  [Rainbow Sort](docs/sortingalgorithms/RainbowSort.md)
 
-2.  [Binary Search](src/B/BinarySearch)
+2.  [Binary Search](docs/binarysearch)
 
-    1.  [Classical Binary Search](src/B/BinarySearch/Easy/ClassicalBinarySearch)
-    2.  [Search in Sorted Matrix I](src/B/BinarySearch/Medium/SearchInSortedMatrixI)
-    3.  [Closest in Sorted Array](src/B/BinarySearch/Medium/ClosestInSortedArray)
-    4.  [First Occurrence](src/B/BinarySearch/Medium/FirstOccurrence)
-    5.  [Last Occurrence](src/B/BinarySearch/Medium/LastOccurrence)
-    6.  [K Closest in Sorted Array](src/B/BinarySearch/Medium/KClosestInSortedArray)
-    7.  [Search in Unknown Sized Sorted Array](src/B/BinarySearch/Medium/SearchInUnknownSizedSortedArray)
-    8.  [Find Minimum in Rotated Sorted Array](src/B/BinarySearch/Medium/FindMinimumInRotatedSortedArray)
+    1.  [Classical Binary Search](docs/binarysearch/ClassicalBinarySearch.md)
+    2.  [Search in Sorted Matrix I](docs/binarysearch/SearchInSortedMatrixI.md)
+    3.  [Closest in Sorted Array](docs/binarysearch/ClosestInSortedArray.md)
+    4.  [First Occurrence](docs/binarysearch/FirstOccurrence.md)
+    5.  [Last Occurrence](docs/binarysearch/LastOccurrence.md)
+    6.  [K Closest in Sorted Array](docs/binarysearch/KClosestInSortedArray.md)
+    7.  [Search in Unknown Sized Sorted Array](docs/binarysearchSearch/InUnknownSizedSortedArray.md)
+    8.  [Find Minimum in Rotated Sorted Array](docs/binarysearch/FindMinimumInRotatedSortedArray.md)
 
 3.  [Recursion](src/C/Recursion)
 
