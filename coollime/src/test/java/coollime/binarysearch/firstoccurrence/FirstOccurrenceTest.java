@@ -1,10 +1,10 @@
 package coollime.binarysearch.firstoccurrence;
 
+import static org.junit.jupiter.api.Assertions.*;
+
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 class FirstOccurrenceTest {
   private static Solution sut;
@@ -15,8 +15,7 @@ class FirstOccurrenceTest {
   }
 
   @AfterEach
-  void tearDown() {
-  }
+  void tearDown() {}
 
   @Test
   void shouldNotFindTargetWhenTheInputIsNull() {
