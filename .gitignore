@@ -5,5 +5,11 @@
 out/
 *.class
 *.iml
+*.lst
+*.txt
+*.xml
+*.jar
 node_modules
+coollime/target/
 package-lock.json
+coollime/target/maven-archiver/pom.properties
