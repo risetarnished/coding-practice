@@ -2,7 +2,9 @@ Coding practice problems on [LaiCode](https://www.laicode.io/)
 
 _Currently in the process to change everything to meet the industrial standard, aka a more legit way_
 
-- _Completed:_ Sorting Algorithms
+- _Completed:_
+  - Sorting Algorithms
+  - Binary Search
 
 ## Table of Contents
 
