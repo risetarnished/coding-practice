@@ -14,7 +14,10 @@
   "author": "MZ",
   "main": "README.md",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "cd coollime && mvn install",
+    "clean": "cd coollime && mvn clean",
+    "test": "cd coollime && mvn test",
+    "validate": "cd coollime && mvn validate"
   },
   "husky": {
     "hooks": {
