@@ -1,8 +1,9 @@
 ## Recursion
 
-1.  [Recursion I](I)
-    1.  [Fibonacci Number](I/Easy/FibonacciNumber)
-    2.  [A to the Power of B](I/Medium/AToThePowerOfB)
+1.  [Recursion I](i/README.md)
+
+    1.  [Fibonacci Number](i/FibonacciNumber.md)
+    2.  [A to the Power of B](i/AToThePowerOfB.md)
 
 2.  [Recursion II](II)
     1.  [N Queens](II/Medium/NQueens)
