@@ -1,54 +1,27 @@
-<!----- Conversion time: 0.782 seconds.
-
-
-Using this Markdown file:
-
-1. Cut and paste this output into your source file.
-2. See the notes and action items below regarding this conversion run.
-3. Check the rendered output (headings, lists, code blocks, tables) for proper
-   formatting and use a linkchecker before you publish this page.
-
-Conversion notes:
-
-* GD2md-html version 1.0β13
-* Tue Jan 15 2019 18:45:15 GMT-0800 (PST)
-* Source doc: https://docs.google.com/open?id=1zMmvq3c_hxc5ukBqWWbqzJVK0LgcfJ5R5eNXd4QqnfM
------>
-
-
-
 # Stack With min()
 
 [https://app.laicode.io/app/problem/32](https://app.laicode.io/app/problem/32)
 
-
 ## Description
-
 
     Enhance the stack implementation to support min() operation. min() should return the current minimum value in the stack. If the stack is empty, min() should return -1.
 
 
     pop() - remove and return the top element, if the stack is empty, return -1
 
-
-
-*   push(int element) - push the element to top
-*   top() - return the top element without remove it, if the stack is empty, return -1
-*   min() - return the current min value in the stack.
+- push(int element) - push the element to top
+- top() - return the top element without remove it, if the stack is empty, return -1
+- min() - return the current min value in the stack.
 
 Medium
 
 Stack
 
-
 ## Assumption
 
-
-
-*   All elements in the stack are integers.
-*   The two stacks are not null.
-*   The min stack can never be empty if the stack is not empty.
-
+- All elements in the stack are integers.
+- The two stacks are not null.
+- The min stack can never be empty if the stack is not empty.
 
 ## Solution
 
@@ -62,16 +35,12 @@ Stack
     - Remember the size of the stack when pushing it onto the minStack
   - If popping the stack makes the stack's size smaller than the size of it when the current min was pushed onto the minStack, also pop the minStack
 
-
 ### Code
-
 
 #### Direct method
 
-
 ```java
 public class Solution {
-  
   private Deque<Integer> stack;
   private Deque<Integer> minStack;
 
@@ -110,17 +79,13 @@ public class Solution {
 }
 ```
 
-
-
 #### Improved method
-
 
 ```java
 public class Solution {
-  
   private Deque<Integer> stack;
   private Deque<Element> minStack;
-  
+
   /**
    * The helper class to represent the pairs of
    * <element, size of the stack when it gets pushed>
@@ -128,18 +93,19 @@ public class Solution {
   private class Element {
     int val;
     int size;
+
     private Element(int val, int size) {
       this.val = val;
       this.size = size;
     }
   }
-  
+
   public Solution() {
     // write your solution here
     stack = new ArrayDeque<>();
     minStack = new ArrayDeque<>();
   }
-  
+
   public int pop() {
     if (stack.isEmpty()) {
       return -1;
@@ -151,27 +117,25 @@ public class Solution {
     }
     return stack.pollFirst();
   }
-  
+
   public void push(int element) {
     stack.offerFirst(element);
     // If the element is smaller than the current min,
-    // also push it onto the minStack 
+    // also push it onto the minStack
     if (minStack.isEmpty() || element < minStack.peekFirst().val) {
       minStack.offerFirst(new Element(element, stack.size()));
     }
   }
-  
+
   public int top() {
     return stack.isEmpty() ? -1 : stack.peekFirst();
   }
-  
+
   public int min() {
     return minStack.isEmpty() ? -1 : minStack.peekFirst().val;
   }
 }
 ```
-
-
 
 ### Complexity
 
@@ -190,5 +154,3 @@ public class Solution {
 - Space
   - The minStack will take less space than the stack
   - O(< 2n)
-
-<!-- GD2md-html version 1.0β13 -->

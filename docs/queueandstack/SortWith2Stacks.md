@@ -1,26 +1,6 @@
-<!----- Conversion time: 0.882 seconds.
-
-
-Using this Markdown file:
-
-1. Cut and paste this output into your source file.
-2. See the notes and action items below regarding this conversion run.
-3. Check the rendered output (headings, lists, code blocks, tables) for proper
-   formatting and use a linkchecker before you publish this page.
-
-Conversion notes:
-
-* Docs to Markdown version 1.0β14
-* Wed Feb 13 2019 17:48:45 GMT-0800 (PST)
-* Source doc: https://docs.google.com/open?id=1ThKYTC6nRdLo98721LNTnL17k4VIOXYdv_pNPbhSZ5s
------>
-
-
-
 # Sort with 2 Stacks
 
 [https://app.laicode.io/app/problem/280](https://app.laicode.io/app/problem/280)
-
 
 ## Description
 
@@ -30,25 +10,19 @@ After sorting the original stack should contain the sorted integers and from top
 
 Assumptions:
 
-
-
-*   The given stack is not null.
+- The given stack is not null.
 
 Requirements:
 
-
-
-*   No additional memory, time complexity = O(n ^ 2).
+- No additional memory, time complexity = O(n ^ 2).
 
 Medium
 
 Stack
 
-
 ## Assumption
 
 The given stack is not null.
-
 
 ## Algorithm
 
@@ -56,8 +30,6 @@ The high level idea of this problem is to use an extra stack to sort the element
 algorithm can be implemented with this helper stack just like what is done in the
 [Sort with 3 Stack](../SortWith3Stacks) problem. In this problem, however, s2 can be used as both the buffer and storing
 the result.
-
-
 
 1.  Just like selection sort, we pop all elements from s1 and push them onto s2 while looking for the min value among them
 1.  Pop all elements from s2 back to s1 while keeping the sorted elements
@@ -67,15 +39,13 @@ the result.
 1.  Push all instances of the current min onto s2 for result
 1.  Transfer all elements from s2 back to s1 such that the elements in s1 will be sorted in ascending order from top to bottom
 
-
 ## Solution
-
 
 ### Code
 
-
 ```java
 public class Solution {
+
   public void sort(LinkedList<Integer> s1) {
     LinkedList<Integer> s2 = new LinkedList<Integer>();
     // Write your solution here.
@@ -128,19 +98,12 @@ public class Solution {
 }
 ```
 
-
-
 ### Complexity
-
 
 #### Time
 
 In total, there are n elements in s1 to sort. We can only use s2 as the buffer to find and sort the min value among all remaining elements in s1 each time. Therefore, the total time complexity is O(n^2) which is the same as selection sort of an array.
 
-
 #### Space
 
 An extra stack, s2, is used as buffer and also temporarily storing the result (we need to transfer all elements back to s1 because they are sorted in descending order from top to bottom in s2 at the end). Other than that, all variables created are constant spaces. Therefore, the total space complexity is O(n).
-
-
-<!-- Docs to Markdown version 1.0β14 -->
