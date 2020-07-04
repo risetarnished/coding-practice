@@ -6,6 +6,7 @@ _Currently in the process to change everything to meet the industrial standard, 
   - Sorting Algorithms
   - Binary Search
   - Recursion
+  - Queue & Stack
 
 ## Table of Contents
 
@@ -33,12 +34,12 @@ _Currently in the process to change everything to meet the industrial standard, 
     1.  [Fibonacci Number](docs/recursion/i/FibonacciNumber.md)
     2.  [A to the Power of B](docs/recursion/i/AToThePowerOfB.md)
 
-4.  [Queue & Stack](src/D/QueueAndStack)
+4.  [Queue & Stack](docs/queueandstack)
 
-    1.  [Sort with 3 Stacks](src/D/QueueAndStack/Medium/SortWith3Stacks)
-    2.  [Queue by Two Stacks](src/D/QueueAndStack/Medium/QueueByTwoStacks)
-    3.  [Stack with min()](src/D/QueueAndStack/Medium/StackWithMin)
-    4.  [Sort with 2 Stacks](src/D/QueueAndStack/Medium/SortWith2Stacks)
+    1.  [Sort with 3 Stacks](docs/queueandstack/SortWith3Stacks.md)
+    2.  [Queue by Two Stacks](docs/queueandstack/QueueByTwoStacks.md)
+    3.  [Stack with min()](docs/queueandstack/StackWithMin.md)
+    4.  [Sort with 2 Stacks](docs/queueandstack/SortWith2Stacks.md)
 
 5.  [Linked List](src/E/LinkedList)
 

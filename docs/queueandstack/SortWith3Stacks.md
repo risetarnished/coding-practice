@@ -1,26 +1,6 @@
-<!----- Conversion time: 0.934 seconds.
-
-
-Using this Markdown file:
-
-1. Cut and paste this output into your source file.
-2. See the notes and action items below regarding this conversion run.
-3. Check the rendered output (headings, lists, code blocks, tables) for proper
-   formatting and use a linkchecker before you publish this page.
-
-Conversion notes:
-
-* Docs to Markdown version 1.0β15
-* Mon Feb 18 2019 01:48:32 GMT-0800 (PST)
-* Source doc: https://docs.google.com/open?id=1ELPhj-_WkciX_ICXoxFScv9sq47bFRYe6AnjiVwE-Ng
------>
-
-
-
 # Sort with 3 Stacks
 
 [https://app.laicode.io/app/problem/279](https://app.laicode.io/app/problem/279)
-
 
 ## Description
 
@@ -30,15 +10,11 @@ After sorting the original stack should contain the sorted integers and from top
 
 Assumptions:
 
-
-
-*   The given stack is not null.
+- The given stack is not null.
 
 Requirements:
 
-
-
-*   No additional memory, time complexity = O(nlog(n)).
+- No additional memory, time complexity = O(nlog(n)).
 
 Medium
 
@@ -46,48 +22,41 @@ Recursion
 
 Stack
 
-
 ## Assumption
 
 The stacks should not be null.
 
-
 ## Algorithm
 
-
-
 1. Selection sort: given elements in stack s1, use two additional stacks, s2 and s3 respectively, recursively sort the elements in s1. S2 functions as a buffer to hold the elements temporarily while s3 is used to store the results temporarily in descending order from top to bottom
-    1. Look for the min value among the current elements in s1
-    2. Push the min to s3 and all others to s2
-    3. Swap s2 and s1 and repeat the previous steps
-    4. In the end, s3 will have all elements in descending order
-    5. s1.push(s3.pop()) will transfer all elements back to s1 and eventually in ascending order
+   1. Look for the min value among the current elements in s1
+   2. Push the min to s3 and all others to s2
+   3. Swap s2 and s1 and repeat the previous steps
+   4. In the end, s3 will have all elements in descending order
+   5. s1.push(s3.pop()) will transfer all elements back to s1 and eventually in ascending order
 2. Merge sort: given elements in stack s1, use s2 as buffer and s3 as temporary storage for the results, implement a merge sort method to sort the elements in s1 such that s1 has all elements sorted in ascending order from top to bottom
-    6. Divide the input stack into two
-        1. determined by the specified number of elements to sort in s1
-        2. half = # to sort / 2
-        3. transfer half of the elements from s1 to s2
-        4. s1 are left with # to sort - half amount of elements
-    7. Sort the elements left in s1
-    8. Sort the elements transferred to s2
-    9. Merge the sorted part of s1 and s2 into s3
-        5. s3.push(smaller(s1.peek(), s2.peek()))
-        6. by doing this, s3 will have all elements sorted in descending order from top to bottom
-    10. Transfer the sorted part from s3 back to s1
-        7. s1 will have the specified number of elements sorted in ascending order from top to bottom
-
+   1. Divide the input stack into two
+      1. determined by the specified number of elements to sort in s1
+      2. half = # to sort / 2
+      3. transfer half of the elements from s1 to s2
+      4. s1 are left with # to sort - half amount of elements
+   2. Sort the elements left in s1
+   3. Sort the elements transferred to s2
+   4. Merge the sorted part of s1 and s2 into s3
+      1. s3.push(smaller(s1.peek(), s2.peek()))
+      2. by doing this, s3 will have all elements sorted in descending order from top to bottom
+   5. Transfer the sorted part from s3 back to s1
+      1. s1 will have the specified number of elements sorted in ascending order from top to bottom
 
 ## Solution
 
-
 ### Method 1: Selection Sort
-
 
 #### Code
 
-
 ```java
 public class Solution {
+
   public void sort(LinkedList<Integer> s1) {
     if (s1 == null || s1.isEmpty()) {
       return;
@@ -106,8 +75,11 @@ public class Solution {
     transferStack(s3, s1);
   }
 
-  private void sort(LinkedList<Integer> s1, LinkedList<Integer> s2,
-                    LinkedList<Integer> s3) {
+  private void sort(
+    LinkedList<Integer> s1,
+    LinkedList<Integer> s2,
+    LinkedList<Integer> s3
+  ) {
     // Base case: when all the elements on s1 have been sorted
     if (s1.isEmpty()) {
       return;
@@ -133,8 +105,10 @@ public class Solution {
     sort(s2, s1, s3);
   }
 
-  private void transferStack(LinkedList<Integer> stackOne,
-                             LinkedList<Integer> stackTwo) {
+  private void transferStack(
+    LinkedList<Integer> stackOne,
+    LinkedList<Integer> stackTwo
+  ) {
     if (stackOne == null || stackTwo == null) {
       return;
     }
@@ -145,10 +119,7 @@ public class Solution {
 }
 ```
 
-
-
 #### Complexity
-
 
 ##### Time
 
@@ -156,22 +127,19 @@ There are n levels in the recursion tree. In each level, we need to check n elem
 
 This is basically like a selection sort.
 
-
 ##### Space
 
 Two stacks are used ⇒ O(n)
 
 n levels in the recursion tree ⇒ O(n)
 
-
 ### Method 2: Merge Sort
-
 
 #### Code
 
-
 ```java
 public class Solution {
+
   public void sort(LinkedList<Integer> s1) {
     LinkedList<Integer> s2 = new LinkedList<Integer>();
     LinkedList<Integer> s3 = new LinkedList<Integer>();
@@ -186,10 +154,12 @@ public class Solution {
     sortStack(s1, s2, s3, s1.size());
   }
 
-  private void sortStack(LinkedList<Integer> s1,
-                         LinkedList<Integer> s2,
-                         LinkedList<Integer> s3,
-                         int length) {
+  private void sortStack(
+    LinkedList<Integer> s1,
+    LinkedList<Integer> s2,
+    LinkedList<Integer> s3,
+    int length
+  ) {
     // Base case: when there are only one element left to be sorted
     if (length == 1) {
       return;
@@ -210,10 +180,13 @@ public class Solution {
     transferStacks(s3, s1, length);
   }
 
-  private void mergeStacks(LinkedList<Integer> s1,
-                           LinkedList<Integer> s2,
-                           LinkedList<Integer> s3,
-                           int lengthOne, int lengthTwo) {
+  private void mergeStacks(
+    LinkedList<Integer> s1,
+    LinkedList<Integer> s2,
+    LinkedList<Integer> s3,
+    int lengthOne,
+    int lengthTwo
+  ) {
     // Put the smaller number in s1 and s2 into s3 first
     // Such that s3 will have the elements sorted in
     // descending order from top to bottom
@@ -238,9 +211,11 @@ public class Solution {
     }
   }
 
-  private void transferStacks(LinkedList<Integer> s1,
-                             LinkedList<Integer> s2,
-                             int length) {
+  private void transferStacks(
+    LinkedList<Integer> s1,
+    LinkedList<Integer> s2,
+    int length
+  ) {
     for (int i = 0; i < length; i++) {
       s2.offerFirst(s1.pollFirst());
     }
@@ -248,19 +223,12 @@ public class Solution {
 }
 ```
 
-
-
 #### Complexity
-
 
 ##### Time
 
 There are n elements in s1 and the recursion tree has log(n) levels. The merge process takes O(n) time in each level. So does the transfer of stacks. Therefore, the total time complexity is O(n log(n))
 
-
 ##### Space
 
 The recursion tree reaches its max number levels when we reach the base case of dividing the input stacks (when the elements left to be sorted become 1). The max number of levels is log(n). Therefore, the space complexity is O(log(n)). However, if we take the two extra stacks used, it is O(n).
-
-
-<!-- Docs to Markdown version 1.0β15 -->
