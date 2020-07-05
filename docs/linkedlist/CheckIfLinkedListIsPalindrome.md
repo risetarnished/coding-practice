@@ -45,7 +45,7 @@ The high level idea is to implement a method that does what the definition of a 
             1. 1st half = 1 → 2 → 3 → null
             2. 2nd half = 1 → 2 → 3 → null
       2. if there are **even** number of nodes in the list, e.g., 1 → 2 → 3 → 4 → 2 → 1
-         2. reverse(mid) and mid.next = null such that
+         1. reverse(mid) and mid.next = null such that
             1. 1st half = 1 → 2 → 3 → null
             2. 2nd half = 1 → 2 → 4 → 3 → null
    3. Compare each node of the first half and the reversed second half
