@@ -17,17 +17,18 @@ import helper.ListNode.ListNode;
  */
 
 public class MiddleNodeOfLinkedList {
-    public ListNode middleNode(ListNode head) {
-        // Write your solution here
-        if (head == null || head.next == null) {
-            return head;
-        }
-        ListNode slow = head;
-        ListNode fast = head.next;
-        while (fast != null && fast.next != null) {
-            slow = slow.next;
-            fast = fast.next.next;
-        }
-        return slow;
+
+  public ListNode middleNode(ListNode head) {
+    // Write your solution here
+    if (head == null || head.next == null) {
+      return head;
     }
+    ListNode slow = head;
+    ListNode fast = head.next;
+    while (fast != null && fast.next != null) {
+      slow = slow.next;
+      fast = fast.next.next;
+    }
+    return slow;
+  }
 }
