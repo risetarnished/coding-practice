@@ -1,20 +1,3 @@
-<!----- Conversion time: 0.846 seconds.
-
-
-Using this Markdown file:
-
-1. Cut and paste this output into your source file.
-2. See the notes and action items below regarding this conversion run.
-3. Check the rendered output (headings, lists, code blocks, tables) for proper
-   formatting and use a linkchecker before you publish this page.
-
-Conversion notes:
-
-* GD2md-html version 1.0β13
-* Tue Jan 15 2019 19:49:44 GMT-0800 (PST)
-* Source doc: https://docs.google.com/open?id=1Hp2EhM63LheqAf8z9xWDrlwQqQEkOq9Jd-1heOEvFDc
------>
-
 # Reverse Linked List
 
 [https://app.laicode.io/app/problem/34](https://app.laicode.io/app/problem/34)
@@ -135,5 +118,3 @@ public class Solution {
 Time: n levels in the recursion tree and O(1) operations in each level ⇒ O(n).
 
 Space: n levels in the recursion tree ⇒ O(n).
-
-<!-- GD2md-html version 1.0β13 -->

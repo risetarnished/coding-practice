@@ -1,28 +1,23 @@
-package E.LinkedList.Easy.ReverseLinkedList;
+package coollime.linkedlist.reverselinkedlist;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
-import helper.ListNode.ListNode;
+import coollime.helper.ListNode;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 class ReverseLinkedListTest {
-  private static ReverseLinkedList reverseLinkedList;
+  private static Solution sut;
   private ListNode head;
-
-  @BeforeAll
-  static void setInstance() {
-    reverseLinkedList = new ReverseLinkedList();
-  }
 
   @BeforeEach
   void setUp() {
+    sut = new Solution();
     head = null;
   }
 
@@ -30,27 +25,38 @@ class ReverseLinkedListTest {
   void tearDown() {}
 
   @Test
-  void testNull() {
-    ListNode result = reverseLinkedList.reverse(head);
-    assertEquals(head, result);
+  void shouldNotReverseWhenTheListIsEmpty() {
+    ListNode iterativeResult = sut.reverse(head);
+    assertEquals(head, iterativeResult);
+
+    ListNode recursiveResult = sut.reverseRecursively(head);
+    assertEquals(head, recursiveResult);
   }
 
   @Test
-  void testOneNode() {
+  void shouldNotReverseWhenThereIsOnlyOneNode() {
     head = new ListNode(0);
-    ListNode result = reverseLinkedList.reverse(head);
-    assertEquals(head, result);
+    ListNode iterativeResult = sut.reverse(head);
+    assertEquals(head, iterativeResult);
+
+    ListNode recursiveResult = sut.reverseRecursively(head);
+    assertEquals(head, recursiveResult);
   }
 
   @Test
-  void test() {
+  void shouldReverseTheLinkedList() {
     List<Integer> nodes = new ArrayList<>(Arrays.asList(1, 2, 3, 4, 5));
     head = ListNode.buildList(nodes);
-    ListNode reversed = reverseLinkedList.reverse(head);
-    //        List<Integer> result = ListNode.listToArray(reversed);
-    //        assertEquals(new ArrayList<>(Arrays.asList(5, 4, 3, 2, 1)), result);
     Collections.reverse(nodes);
     ListNode expected = ListNode.buildList(nodes);
-    assertEquals(expected, reversed);
+
+    ListNode iterativeResult = sut.reverse(head);
+    assertEquals(expected, iterativeResult);
+
+    // Restore the nodes and build it again to retain to original linked list
+    Collections.reverse(nodes);
+    head = ListNode.buildList(nodes);
+    ListNode recursiveResult = sut.reverseRecursively(head);
+    assertEquals(expected, recursiveResult);
   }
 }
