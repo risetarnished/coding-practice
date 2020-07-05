@@ -15,36 +15,28 @@ Conversion notes:
 * Source doc: https://docs.google.com/open?id=13Fh7-TKLnq93StUsBUreAIiOJWgZ5_ytSgnsrcLTxto
 ----->
 
-
-
 # Merge Two Sorted Linked Lists
 
 [https://app.laicode.io/app/problem/40](https://app.laicode.io/app/problem/40)
 
-
 ## Description
-
 
     Merge two sorted lists into one large sorted list.
 
 
     Examples
 
-
-
-*   L1 = 1 -> 4 -> 6 -> null, L2 = 2 -> 5 -> null, merge L1 and L2 to 1 -> 2 -> 4 -> 5 -> 6 -> null
-*   L1 = null, L2 = 1 -> 2 -> null, merge L1 and L2 to 1 -> 2 -> null
-*   L1 = null, L2 = null, merge L1 and L2 to null
+- L1 = 1 -> 4 -> 6 -> null, L2 = 2 -> 5 -> null, merge L1 and L2 to 1 -> 2 -> 4 -> 5 -> 6 -> null
+- L1 = null, L2 = 1 -> 2 -> null, merge L1 and L2 to 1 -> 2 -> null
+- L1 = null, L2 = null, merge L1 and L2 to null
 
 Easy
 
 Linked List
 
-
 ## Assumption
 
 The input nodes/lists should not be null or empty.
-
 
 ## Algorithm
 
@@ -58,11 +50,7 @@ ListNode curr = dummy;
 
 Create a dummy node, use the dummy node/pointer and do the merging process like the merge section in merge sort (_move the smaller pointer_).
 
-
-
-
 ## Solution
-
 
 ```java
 /**
@@ -76,6 +64,7 @@ Create a dummy node, use the dummy node/pointer and do the merging process like 
  * }
  */
 public class Solution {
+
   public ListNode merge(ListNode one, ListNode two) {
     // Write your solution here
     if (one == null) {
@@ -109,13 +98,10 @@ public class Solution {
 }
 ```
 
-
-
 ## Complexity
 
 Time: traversing both lists and check every single node ⇒ O(2n) ⇒ O(n).
 
 Space: only dummy and helper nodes are created ⇒ O(1).
-
 
 <!-- GD2md-html version 1.0β13 -->
