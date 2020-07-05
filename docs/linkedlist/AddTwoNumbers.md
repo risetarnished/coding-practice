@@ -15,14 +15,11 @@ Conversion notes:
 * Source doc: https://docs.google.com/open?id=1rcnY3rZUR1BOpA0MI3l4IgEzX-wCCCTjVWJGUAfLYzg
 ----->
 
-
-
 # Add Two Numbers
 
 [https://app.laicode.io/app/problem/223](https://app.laicode.io/app/problem/223)
 
 [https://leetcode.com/problems/add-two-numbers/](https://leetcode.com/problems/add-two-numbers/)
-
 
 ## Description
 
@@ -38,11 +35,9 @@ Medium
 
 Linked List
 
-
 ## Assumption
 
 The list should be a singly linked list with no cycles. When the last two nodes add up to an integer that is greater than 10, an extra node is needed for the carried next digit.
-
 
 ## Algorithm
 
@@ -50,12 +45,9 @@ The two linked lists will move at the same pace such that we can always add the 
 
 Special care should be taken when the two linked lists are different in length.
 
-
 ## Solution
 
-
 ### Code
-
 
 ```java
 /**
@@ -69,6 +61,7 @@ Special care should be taken when the two linked lists are different in length.
  * }
  */
 public class Solution {
+
   public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
     // Write your solution here
     if (l1 == null) {
@@ -131,19 +124,14 @@ public class Solution {
 }
 ```
 
-
-
 ### Complexity
-
 
 #### Time
 
 We need to iterate over the entire linked lists exactly once ⇒ O(n)
 
-
 #### Space
 
 Only variables with constant space get created ⇒ O(1)
-
 
 <!-- Docs to Markdown version 1.0β14 -->
