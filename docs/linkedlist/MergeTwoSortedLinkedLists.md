@@ -1,20 +1,3 @@
-<!----- Conversion time: 0.835 seconds.
-
-
-Using this Markdown file:
-
-1. Cut and paste this output into your source file.
-2. See the notes and action items below regarding this conversion run.
-3. Check the rendered output (headings, lists, code blocks, tables) for proper
-   formatting and use a linkchecker before you publish this page.
-
-Conversion notes:
-
-* GD2md-html version 1.0β13
-* Tue Jan 15 2019 19:56:51 GMT-0800 (PST)
-* Source doc: https://docs.google.com/open?id=13Fh7-TKLnq93StUsBUreAIiOJWgZ5_ytSgnsrcLTxto
------>
-
 # Merge Two Sorted Linked Lists
 
 [https://app.laicode.io/app/problem/40](https://app.laicode.io/app/problem/40)
@@ -103,5 +86,3 @@ public class Solution {
 Time: traversing both lists and check every single node ⇒ O(2n) ⇒ O(n).
 
 Space: only dummy and helper nodes are created ⇒ O(1).
-
-<!-- GD2md-html version 1.0β13 -->

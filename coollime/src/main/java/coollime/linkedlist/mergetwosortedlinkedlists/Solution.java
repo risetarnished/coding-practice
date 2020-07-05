@@ -1,23 +1,10 @@
-package E.LinkedList.Easy.MergeTwoSortedLinkedLists;
+package coollime.linkedlist.mergetwosortedlinkedlists;
 
-import helper.ListNode.ListNode;
+import coollime.helper.ListNode;
 
-/**
- * https://app.laicode.io/app/problem/40
- * Description
- * Merge two sorted lists into one large sorted list.
- *
- * Examples
- *
- * L1 = 1 -> 4 -> 6 -> null, L2 = 2 -> 5 -> null, merge L1 and L2 to 1 -> 2 -> 4 -> 5 -> 6 -> null
- * L1 = null, L2 = 1 -> 2 -> null, merge L1 and L2 to 1 -> 2 -> null
- * L1 = null, L2 = null, merge L1 and L2 to null
- */
-
-public class MergeTwoSortedLinkedLists {
+public class Solution {
 
   public ListNode merge(ListNode one, ListNode two) {
-    // Write your solution here
     if (one == null) {
       return two;
     } else if (two == null) {
@@ -47,7 +34,3 @@ public class MergeTwoSortedLinkedLists {
     return head.next;
   }
 }
-/**
- * Time complexity: check every single node in both lists ==> O(2n) ==> O(n).
- * Space complexity: dummy nodes created ==> O(1).
- */
