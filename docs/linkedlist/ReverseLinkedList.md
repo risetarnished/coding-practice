@@ -15,12 +15,9 @@ Conversion notes:
 * Source doc: https://docs.google.com/open?id=1Hp2EhM63LheqAf8z9xWDrlwQqQEkOq9Jd-1heOEvFDc
 ----->
 
-
-
 # Reverse Linked List
 
 [https://app.laicode.io/app/problem/34](https://app.laicode.io/app/problem/34)
-
 
 ## Description
 
@@ -28,12 +25,9 @@ Reverse a singly-linked list.
 
 Examples
 
-
-
-*   L = null, return null
-*   L = 1 -> null, return 1 -> null
-*   L = 1 -> 2 -> 3 -> null, return 3 -> 2 -> 1 -> null
-
+- L = null, return null
+- L = 1 -> null, return 1 -> null
+- L = 1 -> 2 -> 3 -> null, return 3 -> 2 -> 1 -> null
 
 ## Assumption
 
@@ -41,10 +35,7 @@ The input linked list should not be null.
 
 The ListNode class is provided.
 
-
 ## Algorithm
-
-
 
 1.  Iteration
     1.  set prevNode → currNode → nextNode → … → tailNode → null
@@ -59,15 +50,11 @@ The ListNode class is provided.
     1.  cut curr's link to its original next node
     1.  The result of the subproblems AND this problem should be the new head node of the reversed list
 
-
 ## Solution
-
 
 ### Method 1: iteration
 
-
 #### Code
-
 
 ```java
 /**
@@ -82,6 +69,7 @@ The ListNode class is provided.
  */
 
 public class Solution {
+
   public ListNode reverse(ListNode head) {
     // Write your solution here
     if (head == null || head.next == null) {
@@ -100,20 +88,15 @@ public class Solution {
 }
 ```
 
-
-
 #### Complexity
 
 Time: n nodes to check and reverse ⇒ O(n).
 
 Space: constant space ⇒ O(1).
 
-
 ### Method 2: recursion
 
-
 #### Code
-
 
 ```java
 /**
@@ -127,6 +110,7 @@ Space: constant space ⇒ O(1).
  * }
  */
 public class Solution {
+
   public ListNode reverse(ListNode head) {
     // Write your solution here
     /* Recursion method */
@@ -146,13 +130,10 @@ public class Solution {
 }
 ```
 
-
-
 #### Complexity
 
 Time: n levels in the recursion tree and O(1) operations in each level ⇒ O(n).
 
 Space: n levels in the recursion tree ⇒ O(n).
-
 
 <!-- GD2md-html version 1.0β13 -->

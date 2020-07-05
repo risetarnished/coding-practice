@@ -14,11 +14,12 @@ import helper.ListNode.ListNode;
  * L = 1 -> 2 -> 3 -> null, return 3 -> 2 -> 1 -> null
  */
 
-public class ReverseLinkedList {
-    public ListNode reverse(ListNode head) {
-        // Write your solution here
-        /* Method 1: iteration */
-        /*
+public class Solution {
+
+  public ListNode reverse(ListNode head) {
+    // Write your solution here
+    /* Method 1: iteration */
+    /*
         if (head == null || head.next == null) {
             return head;
         }
@@ -33,23 +34,22 @@ public class ReverseLinkedList {
         return previous;
         */
 
-        /* Method 2: recursion */
-        // Base case: when we reach the last node in the original order
-        if (head == null || head.next == null) {
-            // The real case happens only when head.next == null
-            return head;
-        }
-        ListNode current = head;
-        ListNode next = current.next;
-        ListNode newHead = reverse(next);
-        // Link the nodes in the reversed order: null <-- current <-- next <-- ... <-- newHead
-        // We also need to cut the link between current and its previous node
-        next.next = current;
-        current.next = null;
-        return newHead;
+    /* Method 2: recursion */
+    // Base case: when we reach the last node in the original order
+    if (head == null || head.next == null) {
+      // The real case happens only when head.next == null
+      return head;
     }
+    ListNode current = head;
+    ListNode next = current.next;
+    ListNode newHead = reverse(next);
+    // Link the nodes in the reversed order: null <-- current <-- next <-- ... <-- newHead
+    // We also need to cut the link between current and its previous node
+    next.next = current;
+    current.next = null;
+    return newHead;
+  }
 }
-
 /**
  * Iteration
  * Time complexity:
