@@ -1,20 +1,3 @@
-<!----- Conversion time: 0.72 seconds.
-
-
-Using this Markdown file:
-
-1. Cut and paste this output into your source file.
-2. See the notes and action items below regarding this conversion run.
-3. Check the rendered output (headings, lists, code blocks, tables) for proper
-   formatting and use a linkchecker before you publish this page.
-
-Conversion notes:
-
-* GD2md-html version 1.0β13
-* Tue Jan 15 2019 19:50:58 GMT-0800 (PST)
-* Source doc: https://docs.google.com/open?id=1clXbTROoX1eImLApW5sq538ZO_yjc6Jq5s5JsloDaR4
------>
-
 # Middle Node of Linked List
 
 [https://app.laicode.io/app/problem/36](https://app.laicode.io/app/problem/36)
@@ -79,9 +62,9 @@ public class Solution {
 }
 ```
 
-****If we'd like the second node to be returned if there are two middle nodes, we could start the fast pointer from the same node pointed to by slow.****
+**If we'd like the second node to be returned if there are two middle nodes, we could start the fast pointer from the same node pointed to by slow.**
 **For example, 1 -> 2 -> 3 -> 4, if we want node 3 to be returned.**
-**This is the requirement on the same problem on [LeetCode](https://leetcode.com/problems/middle-of-the-linked-list/description/)**
+**This is the requirement of [the same problem on LeetCode](https://leetcode.com/problems/middle-of-the-linked-list/description/)**
 
 ```java
 public class Solution {
@@ -106,5 +89,3 @@ public class Solution {
 Time: there are n nodes in the linked list and we need to traverse the whole list. The fast node moves two steps at a time ⇒ O(n/2) ⇒ O(n).
 
 Space: two ListNode objects ⇒ O(1).
-
-<!-- GD2md-html version 1.0β13 -->

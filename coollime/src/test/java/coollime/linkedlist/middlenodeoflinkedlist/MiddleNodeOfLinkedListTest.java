@@ -1,26 +1,21 @@
-package E.LinkedList.Easy.MiddleNodeOfLinkedList;
+package coollime.linkedlist.middlenodeoflinkedlist;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
-import helper.ListNode.ListNode;
+import coollime.helper.ListNode;
 import java.util.ArrayList;
 import java.util.Arrays;
 import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 class MiddleNodeOfLinkedListTest {
-  private static MiddleNodeOfLinkedList middleNodeOfLinkedList;
+  private static Solution sut;
   private ListNode head;
-
-  @BeforeAll
-  private static void setInstance() {
-    middleNodeOfLinkedList = new MiddleNodeOfLinkedList();
-  }
 
   @BeforeEach
   void setUp() {
+    sut = new Solution();
     head = null;
   }
 
@@ -28,37 +23,34 @@ class MiddleNodeOfLinkedListTest {
   void tearDown() {}
 
   @Test
-  void testNull() {
-    ListNode result = middleNodeOfLinkedList.middleNode(head);
+  void shouldReturnNullWhenTheListIsEmpty() {
+    ListNode result = sut.middleNode(head);
     assertEquals(null, result);
   }
 
   @Test
-  void testOneNode() {
+  void shouldReturnTheHeadWhenThereIsOnlyOneNode() {
     head = new ListNode(0);
-    ListNode result = middleNodeOfLinkedList.middleNode(head);
+    ListNode result = sut.middleNode(head);
     assertEquals(head, result);
   }
 
   @Test
-  void testTwoNodes() {
+  void shouldReturnTheFirstMiddleNodeWhenThereAreEvenNumberOfNodes() {
     head = ListNode.buildList(new ArrayList<>(Arrays.asList(1, 2)));
-    ListNode middle = middleNodeOfLinkedList.middleNode(head);
+    ListNode middle = sut.middleNode(head);
     assertEquals(head, middle);
-  }
 
-  @Test
-  void testThreeNodes() {
-    head = ListNode.buildList(new ArrayList<>(Arrays.asList(1, 2, 3)));
-    ListNode middle = middleNodeOfLinkedList.middleNode(head);
-    assertEquals(head.next, middle);
-  }
-
-  @Test
-  void test() {
     head = ListNode.buildList(new ArrayList<>(Arrays.asList(5, 4, 3, 2, 1, 0)));
-    ListNode middle = middleNodeOfLinkedList.middleNode(head);
+    middle = sut.middleNode(head);
     // Expected output ==> node3
     assertEquals(head.next.next, middle);
+  }
+
+  @Test
+  void shouldReturnTheMiddleNodeWhenThereAreOddNumberOfNodes() {
+    head = ListNode.buildList(new ArrayList<>(Arrays.asList(1, 2, 3)));
+    ListNode middle = sut.middleNode(head);
+    assertEquals(head.next, middle);
   }
 }
