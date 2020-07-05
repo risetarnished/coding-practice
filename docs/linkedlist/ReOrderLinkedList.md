@@ -15,12 +15,9 @@ Conversion notes:
 * Source doc: https://docs.google.com/open?id=1Ys6WATXiRy9Ni2eTrTCCJ5m7UMIWvXkWzDyIaECQ91Q
 ----->
 
-
-
 # Reorder Linked List
 
 [https://app.laicode.io/app/problem/41](https://app.laicode.io/app/problem/41)
-
 
 ## Description
 
@@ -28,30 +25,22 @@ Reorder the given singly-linked list N1 -> N2 -> N3 -> N4 -> … -> Nn -> null t
 
 Examples
 
-
-
-*   L = null, is reordered to null
-*   L = 1 -> null, is reordered to 1 -> null
-*   L = 1 -> 2 -> 3 -> 4 -> null, is reordered to 1 -> 4 -> 2 -> 3 -> null
-*   L = 1 -> 2 -> 3 -> null, is reordred to 1 -> 3 -> 2 -> null
-
-
+- L = null, is reordered to null
+- L = 1 -> null, is reordered to 1 -> null
+- L = 1 -> 2 -> 3 -> 4 -> null, is reordered to 1 -> 4 -> 2 -> 3 -> null
+- L = 1 -> 2 -> 3 -> null, is reordred to 1 -> 3 -> 2 -> null
 
 Hard
 
 Linked List
 
-
 ## Assumption
 
 The input linked list should not be null or empty.
 
-
 ## Algorithm
 
 The algorithm can be divided into three steps:
-
-
 
 1.  Find the middle node of the list
     1.  slow/fast pointer algorithm in [Middle Node of Linked List](../../Easy/MiddleNodeOfLinkedList)
@@ -67,14 +56,9 @@ The algorithm can be divided into three steps:
     1.  similar to _move the smaller pointer_ method in [Merge Two Sorted Linked Lists](../../Easy/MergeTwoSortedLinkedLists)
     1.  result looks like **head → tail → … → null**
 
-
-
-
 ## Solution
 
-
 ### Code
-
 
 ```java
 /**
@@ -89,6 +73,7 @@ The algorithm can be divided into three steps:
  */
 
 public class Solution {
+
   public ListNode reorder(ListNode head) {
     // Write your solution here
     if (head == null || head.next == null) {
@@ -177,13 +162,10 @@ public class Solution {
 }
 ```
 
-
-
 ### Complexity
 
 Time: all 3 steps need to check every node in the list ⇒ O(n).
 
 Space: steps 1 & 3 use constant space; step two uses constant space if using iterative method, but O(n) space if using recursive method. ⇒ O(1) or O(n).
-
 
 <!-- GD2md-html version 1.0β13 -->
