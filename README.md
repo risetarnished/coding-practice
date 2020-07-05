@@ -2,11 +2,16 @@ Coding practice problems on [LaiCode](https://www.laicode.io/)
 
 _Currently in the process to change everything to meet the industrial standard, aka a more legit way_
 
+- Use npm to utilize useful packages such as [prettier](https://www.npmjs.com/package/prettier), [husky](https://www.npmjs.com/package/husky), [git-branch-is](https://www.npmjs.com/package/git-branch-is), etc if you like to
+
+- Build the project with Maven (locally as well as [GitHub Action](https://github.com/publicclassoverflow/laicode/actions?query=workflow%3A%22Java+CI+with+Maven%22))
+
 - _Completed:_
   - Sorting Algorithms
   - Binary Search
   - Recursion
   - Queue & Stack
+  - Linked List
 
 ## Table of Contents
 
@@ -41,19 +46,19 @@ _Currently in the process to change everything to meet the industrial standard, 
     3.  [Stack with min()](docs/queueandstack/StackWithMin.md)
     4.  [Sort with 2 Stacks](docs/queueandstack/SortWith2Stacks.md)
 
-5.  [Linked List](src/E/LinkedList)
+5.  [Linked List](docs/linkedlist)
 
-    1.  [Reverse Linked List](src/E/LinkedList/Easy/ReverseLinkedList)
-    2.  [Middle Node of Linked List](src/E/LinkedList/Easy/MiddleNodeOfLinkedList)
-    3.  [Check if Linked List Has a Cycle](src/E/LinkedList/Easy/CheckIfLinkedListHasACycle)
-    4.  [Insert in Sorted Linked List](src/E/LinkedList/Easy/InsertInSortedLinkedList)
-    5.  [Merge Two Sorted Linked Lists](src/E/LinkedList/Easy/MergeTwoSortedLinkedLists)
-    6.  [Reorder Linked List](src/E/LinkedList/Hard/ReOrderLinkedList)
-    7.  [Partition Linked List](src/E/LinkedList/Medium/PartitionLinkedList)
-    8.  [Add Two Numbers](src/E/LinkedList/Medium/AddTwoNumbers)
-    9.  [Merge Sort Linked List](src/E/LinkedList/Medium/MergeSortLinkedList)
-    10. [Check if Linked List is Palindrome](src/E/LinkedList/Medium/CheckIfLinkedListIsPalindrome)
-    11. [Cycle Node in Linked List](src/E/LinkedList/Medium/CycleNodeInLinkedList)
+    1.  [Reverse Linked List](docs/linkedlist/ReverseLinkedList.md)
+    2.  [Middle Node of Linked List](docs/linkedlist/MiddleNodeOfLinkedList.md)
+    3.  [Check if Linked List Has a Cycle](docs/linkedlist/CheckIfLinkedListHasACycle.md)
+    4.  [Insert in Sorted Linked List](docs/linkedlist/InsertInSortedLinkedList.md)
+    5.  [Merge Two Sorted Linked Lists](docs/linkedlist/MergeTwoSortedLinkedLists.md)
+    6.  [Reorder Linked List](docs/linkedlist/ReOrderLinkedList.md)
+    7.  [Partition Linked List](docs/linkedlist/PartitionLinkedList.md)
+    8.  [Add Two Numbers](docs/linkedlist/AddTwoNumbers.md)
+    9.  [Merge Sort Linked List](docs/linkedlist/MergeSortLinkedList.md)
+    10. [Check if Linked List is Palindrome](docs/linkedlist/CheckIfLinkedListIsPalindrome.md)
+    11. [Cycle Node in Linked List](docs/linkedlist/CycleNodeInLinkedList.md)
 
 6.  [Binary Tree](src/F/BinaryTree)
 
