@@ -1,20 +1,3 @@
-<!----- Conversion time: 0.941 seconds.
-
-
-Using this Markdown file:
-
-1. Cut and paste this output into your source file.
-2. See the notes and action items below regarding this conversion run.
-3. Check the rendered output (headings, lists, code blocks, tables) for proper
-   formatting and use a linkchecker before you publish this page.
-
-Conversion notes:
-
-* Docs to Markdown version 1.0β14
-* Sun Feb 10 2019 23:44:55 GMT-0800 (PST)
-* Source doc: https://docs.google.com/open?id=1rcnY3rZUR1BOpA0MI3l4IgEzX-wCCCTjVWJGUAfLYzg
------>
-
 # Add Two Numbers
 
 [https://app.laicode.io/app/problem/223](https://app.laicode.io/app/problem/223)
@@ -124,6 +107,8 @@ public class Solution {
 }
 ```
 
+_A refactored solution (cleaner separate method to do the addition) can be found in the src. Caution: it uses a boolean[] to keep the flag updated, which raises questions whether it is that "clean"_
+
 ### Complexity
 
 #### Time
@@ -133,5 +118,3 @@ We need to iterate over the entire linked lists exactly once ⇒ O(n)
 #### Space
 
 Only variables with constant space get created ⇒ O(1)
-
-<!-- Docs to Markdown version 1.0β14 -->
