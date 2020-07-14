@@ -68,7 +68,7 @@ class GetKeysInBinarySearchTreeInGivenRangeTest {
     root = TreeNode.buildTree(Arrays.asList(5, 3, 8, 1, 4, null, 11));
     min = 2;
     max = 5;
-    expected = new ArrayList<>(Arrays.asList(3, 4, 5));
+    expected = Arrays.asList(3, 4, 5);
     assertEquals(expected, sut.getRange(root, min, max));
     assertEquals(expected, sut.getRangeRecursively(root, min, max));
   }
