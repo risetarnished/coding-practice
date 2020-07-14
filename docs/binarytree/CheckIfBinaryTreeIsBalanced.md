@@ -1,26 +1,6 @@
-<!----- Conversion time: 1.196 seconds.
-
-
-Using this Markdown file:
-
-1. Cut and paste this output into your source file.
-2. See the notes and action items below regarding this conversion run.
-3. Check the rendered output (headings, lists, code blocks, tables) for proper
-   formatting and use a linkchecker before you publish this page.
-
-Conversion notes:
-
-* GD2md-html version 1.0β13
-* Sat Jan 05 2019 00:11:27 GMT-0800 (PST)
-* Source doc: https://docs.google.com/open?id=1uaqhUx-VIFLQ-jUJxt6fkf3LFftnGwCW4vzTP5MxoFU
------>
-
-
-
 ## Check if Binary Tree is Balanced
 
 [https://app.laicode.io/app/problem/46](https://app.laicode.io/app/problem/46)
-
 
 ## Description
 
@@ -54,9 +34,7 @@ is not balanced binary tree.
 
 Corner Cases
 
-
-
-*   What if the binary tree is null? Return true in this case.
+- What if the binary tree is null? Return true in this case.
 
 How is the binary tree represented?
 
@@ -80,37 +58,27 @@ Medium
 
 Binary Tree
 
-
 ## Assumption
 
 The tree is not null or empty.
 
-
 ## Algorithm
-
-
 
 1.  According to the definition of a _balanced binary tree_
     1.  the depth of the left and right subtrees of every node differ by only 1 or less
-    1.  recursively calculate the depth of every node in each subtree
-    1.  compare the difference between the depths of left and right subtree at that node
-1.  Avoid redundant depth calculations
+    2.  recursively calculate the depth of every node in each subtree
+    3.  compare the difference between the depths of left and right subtree at that node
+2.  Avoid redundant depth calculations
     1.  there are a lot of duplicated computations in the first method
-    1.  we can use a helper function which calculates the depth of the tree to avoid it
-    1.  return -1 denotes the fact that the tree is not balanced
-    1.  return the depth if it is balanced
-
-
-
+    2.  we can use a helper function which calculates the depth of the tree to avoid it
+    3.  return -1 denotes the fact that the tree is not balanced
+    4.  return the depth if it is balanced
 
 ## Solution
 
-
 ### Method 1
 
-
 #### Code
-
 
 ```java
 /**
@@ -124,31 +92,35 @@ The tree is not null or empty.
  * }
  */
 public class Solution {
+
   public boolean isBalanced(TreeNode root) {
     // Write your solution here
     // Recursively check
-    // Base case
+    // Base case: an empty tree or a leaf node is balanced
     if (root == null) {
       return true;
     }
+    // Recursive rule:
+    // Recursively compute and compare the height of the left and right subtree
     int leftHeight = getHeight(root.left);
     int rightHeight = getHeight(root.right);
     if (Math.abs(leftHeight - rightHeight) > 1) {
       return false;
     }
+    // Tail recursion
     return isBalanced(root.left) && isBalanced(root.right);
   }
 
   private int getHeight(TreeNode root) {
+    // Base case: null ==> 0 height
     if (root == null) {
       return 0;
     }
+    // Take the max value between left and right subtree height and plus 1 (this level)
     return Math.max(getHeight(root.left), getHeight(root.right)) + 1;
   }
 }
 ```
-
-
 
 #### Complexity
 
@@ -156,14 +128,9 @@ Time: n nodes in the tree ⇒ log(n) levels, O(n) operation in each level ⇒ O(
 
 Space: log(n) levels ⇒ O(log(n)) or O(height)
 
-
-
-
 ### Method 2
 
-
 #### Code
-
 
 ```java
 /**
@@ -177,32 +144,53 @@ Space: log(n) levels ⇒ O(log(n)) or O(height)
  * }
  */
 public class Solution {
+
   public boolean isBalanced(TreeNode root) {
     // Write your solution here
     return maxDepth(root) != -1;
   }
 
   private int maxDepth(TreeNode root) {
+    // Base case: null ==> 0 height
     if (root == null) {
       return 0;
     }
+    // If either left or right subtree is not balanced or the height difference
+    // is greater than 1
     int left = maxDepth(root.left);
     int right = maxDepth(root.right);
     if (left == -1 || right == -1 || Math.abs(left - right) > 1) {
       return -1;
     }
+    // Return the height at the current level
     return Math.max(left, right) + 1;
+  }
+
+  // An even cleaner way
+  private int height(TreeNode root) {
+    if (root == null) {
+      return 0;
+    }
+    int leftHeight = height(root.left);
+    if (leftHeight == -1) {
+      return -1;
+    }
+    int rightHeight = height(root.right);
+    if (rightHeight == -1) {
+      return -1;
+    }
+    // If both subtrees are balanced, check the height difference
+    if (Math.abs(leftHeight - rightHeight) > 1) {
+      return -1;
+    }
+    // Otherwise, return the height at this level
+    return Math.max(leftHeight, rightHeight) + 1;
   }
 }
 ```
-
-
 
 #### Complexity
 
 Time: log(n) levels in the tree and O(n) operation ⇒ O(n log(n))
 
 Space: O(height)
-
-
-<!-- GD2md-html version 1.0β13 -->

@@ -1,27 +1,6 @@
-<!----- Conversion time: 1.143 seconds.
-
-
-Using this Markdown file:
-
-1. Cut and paste this output into your source file.
-2. See the notes and action items below regarding this conversion run.
-3. Check the rendered output (headings, lists, code blocks, tables) for proper
-   formatting and use a linkchecker before you publish this page.
-
-Conversion notes:
-
-* GD2md-html version 1.0β13
-* Sat Jan 05 2019 02:47:56 GMT-0800 (PST)
-* Source doc: https://docs.google.com/open?id=1g_xuziexA36NzNXB79_uVewaXkMzF7Yhjxs__iw7jbU
-* This document has images: check for >>>>>  gd2md-html alert:  inline image link in generated source and store images to your server.
------>
-
-
-
 ## Tweaked Identical Binary Trees
 
 [https://app.laicode.io/app/problem/50](https://app.laicode.io/app/problem/50)
-
 
 ## Description
 
@@ -75,11 +54,9 @@ Medium
 
 Binary Tree
 
-
 ## Assumption
 
 The tree is not null or empty
-
 
 ## Algorithm
 
@@ -87,30 +64,21 @@ Similar to the [Symmetric Binary Tree](../../Easy/SymmetricBinaryTree) problem.
 
 Instead of just comparing
 
-
-
 1.  the left child of the left subtree with the right child of the right subtree
-1.  the right child of the left subtree with the left child of the right subtree
+2.  the right child of the left subtree with the left child of the right subtree
 
 We need to check:
 
-
-
-1.  the _left child_ of the _left subtree_ with the _right child _of the _right subtree_
-1.  the _right child _of the _left subtree_ with the _left child _of the _right subtree_
-1.  the _left child_ of the _left subtree_ with the _left child _of the _right subtree_
-1.  the _right child _of the _left subtree _with the _right child _of the _right subtree_
+1.  the _left child_ of the _left subtree_ with the _right child \_of the \_right subtree_
+2.  the _right child_ of the _left subtree_ with the _left child_ of the _right subtree_
+3.  the _left child_ of the _left subtree_ with the _left child_ of the _right subtree_
+4.  the _right child_ of the _left subtree_ with the _right child_ of the _right subtree_
 
 (1 && 2) || (3 && 4) ⇒ true
 
-
-
-
 ## Solution
 
-
 ### Code
-
 
 ```java
 /**
@@ -124,6 +92,7 @@ We need to check:
  * }
  */
 public class Solution {
+
   public boolean isTweakedIdentical(TreeNode one, TreeNode two) {
     // Write your solution here
     // Case 1: if both of the nodes are null ==> identical
@@ -140,13 +109,15 @@ public class Solution {
     // 1. left.left == right.right && left.right == right.left
     //    ||
     // 2. left.left == right.left && left.right == right.right
-    return isTweakedIdentical(one.left, two.right) && isTweakedIdentical(one.right, two.left) ||
-        isTweakedIdentical(one.left, two.left) && isTweakedIdentical(one.right, two.right);
+    return (
+      isTweakedIdentical(one.left, two.right) &&
+      isTweakedIdentical(one.right, two.left) ||
+      isTweakedIdentical(one.left, two.left) &&
+      isTweakedIdentical(one.right, two.right)
+    );
   }
 }
 ```
-
-
 
 ### Complexity
 
@@ -154,11 +125,6 @@ Time: we need to check all n nodes ⇒ O(n)
 
 Space: recursion tree depends on the height of the tree ⇒ O(height)
 
-
 ## Additional Notes
 
-![alt_text](images/Tweaked-Identical0.png "image_tooltip")
-
-
-
-<!-- GD2md-html version 1.0β13 -->
+![alt_text](Tweaked-Identical0.png "image_tooltip")
