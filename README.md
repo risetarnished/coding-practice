@@ -12,6 +12,7 @@ _Currently in the process to change everything to meet the industrial standard, 
   - Recursion
   - Queue & Stack
   - Linked List
+  - Binary Tree
 
 ## Table of Contents
 
@@ -60,19 +61,19 @@ _Currently in the process to change everything to meet the industrial standard, 
     10. [Check if Linked List is Palindrome](docs/linkedlist/CheckIfLinkedListIsPalindrome.md)
     11. [Cycle Node in Linked List](docs/linkedlist/CycleNodeInLinkedList.md)
 
-6.  [Binary Tree](src/F/BinaryTree)
+6.  [Binary Tree](docs/binarytree)
 
-    1.  [In-order Traversal of Binary Tree](src/F/BinaryTree/Medium/InorderTraversalOfBinaryTree)
-    2.  [Pre-order Traversal of Binary Tree](src/F/BinaryTree/Easy/PreorderTraversalOfBinaryTree)
-    3.  [Post-order Traversal of Binary Tree](src/F/BinaryTree/Hard/PostorderTraversalOfBinaryTree)
-    4.  [Check if Binary Tree is Balanced](src/F/BinaryTree/Medium/CheckIfBinaryTreeIsBalanced)
-    5.  [Symmetric Binary Tree](src/F/BinaryTree/Easy/SymmetricBinaryTree)
-    6.  [Tweaked Identical Binary Tree](src/F/BinaryTree/Medium/TweakedIdenticalBinaryTree)
-    7.  [Is Binary Search Tree or Not](src/F/BinaryTree/Medium/IsBinarySearchTreeOrNot)
-    8.  [Get Keys in Binary Search Tree in Given Range](src/F/BinaryTree/Easy/GetKeysInBinarySearchTreeInGivenRange)
-    9.  [Binary Tree Path Sum to Target I](src/F/BinaryTree/Easy/BinaryTreePathSumToTargetI)
-    10. [Search in Binary Search Tree](src/F/BinaryTree/Easy/SearchInBinarySearchTree)
-    11. [Insert in Binary Search Tree](src/F/BinaryTree/Easy/InsertInBinarySearchTree)
+    1.  [In-order Traversal of Binary Tree](docs/binarytree/InorderTraversalOfBinaryTree)
+    2.  [Pre-order Traversal of Binary Tree](docs/binarytree/PreorderTraversalOfBinaryTree)
+    3.  [Post-order Traversal of Binary Tree](docs/binarytree/PostorderTraversalOfBinaryTree)
+    4.  [Check if Binary Tree is Balanced](docs/binarytree/CheckIfBinaryTreeIsBalanced)
+    5.  [Symmetric Binary Tree](docs/binarytree/SymmetricBinaryTree)
+    6.  [Tweaked Identical Binary Trees](docs/binarytree/TweakedIdenticalBinaryTrees)
+    7.  [Is Binary Search Tree or Not](docs/binarytree/IsBinarySearchTreeOrNot)
+    8.  [Get Keys in Binary Search Tree in Given Range](docs/binarytree/GetKeysInBinarySearchTreeInGivenRange)
+    9.  [Binary Tree Path Sum to Target I](docs/binarytree/BinaryTreePathSumToTargetI)
+    10. [Search in Binary Search Tree](docs/binarytree/SearchInBinarySearchTree)
+    11. [Insert in Binary Search Tree](docs/binarytree/InsertInBinarySearchTree)
 
 7.  [Heap & Graph Search Algorithms I (BFS)](src/G/HeapAndBFS)
 
