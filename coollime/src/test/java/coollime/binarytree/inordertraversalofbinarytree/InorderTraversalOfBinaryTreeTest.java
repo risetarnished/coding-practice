@@ -3,7 +3,6 @@ package coollime.binarytree.inordertraversalofbinarytree;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import coollime.helper.TreeNode;
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
@@ -22,8 +21,8 @@ class InorderTraversalOfBinaryTreeTest {
 
   @Test
   void shouldNotTraverseWhenTheTreeIsEmpty() {
-    assertEquals(new ArrayList<>(), sut.inOrder(root));
-    assertEquals(new ArrayList<>(), sut.iterativeInOrder(root));
+    assertEquals(Collections.emptyList(), sut.inOrder(root));
+    assertEquals(Collections.emptyList(), sut.iterativeInOrder(root));
   }
 
   @Test

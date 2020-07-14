@@ -3,7 +3,6 @@ package coollime.binarytree.postordertraversalofbinarytree;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import coollime.helper.TreeNode;
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
@@ -22,8 +21,8 @@ class PostorderTraversalOfBinaryTreeTest {
 
   @Test
   void shouldReturnEmptyListWhenTheTreeIsEmpty() {
-    assertEquals(new ArrayList<>(), sut.postOrder(root));
-    assertEquals(new ArrayList<>(), sut.recursivePostOrder(root));
+    assertEquals(Collections.emptyList(), sut.postOrder(root));
+    assertEquals(Collections.emptyList(), sut.recursivePostOrder(root));
   }
 
   @Test

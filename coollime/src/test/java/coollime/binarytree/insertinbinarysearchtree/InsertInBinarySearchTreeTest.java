@@ -3,7 +3,6 @@ package coollime.binarytree.insertinbinarysearchtree;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import coollime.helper.TreeNode;
-import java.util.ArrayList;
 import java.util.Arrays;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -29,18 +28,13 @@ class InsertInBinarySearchTreeTest {
   @Test
   void shouldInsertTheNode() {
     root = new TreeNode(-1);
-    TreeNode expected = TreeNode.buildTree(
-      new ArrayList<>(Arrays.asList(-1, null, 0))
-    );
+    TreeNode expected = TreeNode.buildTree(Arrays.asList(-1, null, 0));
     assertEquals(expected, sut.recursiveInsert(root, key));
     assertEquals(expected, sut.iterativeInsert(root, key));
 
-    root = TreeNode.buildTree(new ArrayList<>(Arrays.asList(5, 3, 8, 1, 4)));
+    root = TreeNode.buildTree(Arrays.asList(5, 3, 8, 1, 4));
     key = 11;
-    expected =
-      TreeNode.buildTree(
-        new ArrayList<>(Arrays.asList(5, 3, 8, 1, 4, null, 11))
-      );
+    expected = TreeNode.buildTree(Arrays.asList(5, 3, 8, 1, 4, null, 11));
     assertEquals(expected, sut.recursiveInsert(root, key));
     assertEquals(expected, sut.iterativeInsert(root, key));
   }

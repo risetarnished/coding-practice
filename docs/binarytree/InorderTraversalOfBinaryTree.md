@@ -69,8 +69,8 @@ The root is the top element in the stack, so we could use a helper node to store
 Cases:
 
 1.  when helper is not null: traversal to the left subtree of the current root; push helper and go left
-1.  when helper is null: traversal to the left subtree has finished; the current root is the top element in the stack; deal with the top and let helper = top.right
-1.  repeat 1 & 2 until helper is null and there are no more nodes left in the stack
+2.  when helper is null: traversal to the left subtree has finished; the current root is the top element in the tack; deal with the top and let helper = top.right
+3.  repeat 1 & 2 until helper is null and there are no more nodes left in the stack
 
 
     	          5

@@ -4,7 +4,6 @@ import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import coollime.helper.TreeNode;
-import java.util.ArrayList;
 import java.util.Arrays;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -30,9 +29,7 @@ class BinaryTreePathSumToTargetITest {
   void shouldReturnFalseIfThereAreNoSuchPaths() {
     root =
       TreeNode.buildTree(
-        new ArrayList<>(
-          Arrays.asList(5, 4, 8, 1, null, 3, 4, 7, 2, null, null, null, 1)
-        )
+        Arrays.asList(5, 4, 8, 1, null, 3, 4, 7, 2, null, null, null, 1)
       );
 
     target = 9;
@@ -46,9 +43,7 @@ class BinaryTreePathSumToTargetITest {
 
     root =
       TreeNode.buildTree(
-        new ArrayList<>(
-          Arrays.asList(5, 4, 8, 1, null, 3, 4, 7, 2, null, null, null, 1)
-        )
+        Arrays.asList(5, 4, 8, 1, null, 3, 4, 7, 2, null, null, null, 1)
       );
     target = 12;
     assertTrue(sut.exist(root, target));
@@ -58,9 +53,7 @@ class BinaryTreePathSumToTargetITest {
 
     root =
       TreeNode.buildTree(
-        new ArrayList<>(
-          Arrays.asList(3, -8, 9, 4, 10, 2, -5, 1, -2, null, null, -3)
-        )
+        Arrays.asList(3, -8, 9, 4, 10, 2, -5, 1, -2, null, null, -3)
       );
     target = 11;
     assertTrue(sut.exist(root, target));

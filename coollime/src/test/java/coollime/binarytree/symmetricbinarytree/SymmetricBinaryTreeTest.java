@@ -4,7 +4,6 @@ import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import coollime.helper.TreeNode;
-import java.util.ArrayList;
 import java.util.Arrays;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -42,8 +41,7 @@ class SymmetricBinaryTreeTest {
     // / \ / \
     //
     // 1 4 4 1
-    root =
-      TreeNode.buildTree(new ArrayList<>(Arrays.asList(5, 3, 3, 1, 4, 4, 1)));
+    root = TreeNode.buildTree(Arrays.asList(5, 3, 3, 1, 4, 4, 1));
     assertTrue(sut.isSymmetric(root));
   }
 
@@ -59,8 +57,7 @@ class SymmetricBinaryTreeTest {
     // / \ / \
     //
     // 1 4 1 4
-    root =
-      TreeNode.buildTree(new ArrayList<>(Arrays.asList(5, 3, 3, 1, 4, 1, 4)));
+    root = TreeNode.buildTree(Arrays.asList(5, 3, 3, 1, 4, 1, 4));
     assertFalse(sut.isSymmetric(root));
   }
 }

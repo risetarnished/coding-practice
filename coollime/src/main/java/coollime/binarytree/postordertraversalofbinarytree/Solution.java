@@ -19,6 +19,7 @@ public class Solution {
     stack.offerFirst(root);
     while (!stack.isEmpty()) {
       TreeNode current = stack.peekFirst();
+      // TODO: try to refactor and simplify the logic
       if (
         previous == null ||
         current == previous.left ||
