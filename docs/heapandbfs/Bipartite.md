@@ -1,26 +1,6 @@
-<!----- Conversion time: 0.782 seconds.
-
-
-Using this Markdown file:
-
-1. Cut and paste this output into your source file.
-2. See the notes and action items below regarding this conversion run.
-3. Check the rendered output (headings, lists, code blocks, tables) for proper
-   formatting and use a linkchecker before you publish this page.
-
-Conversion notes:
-
-* GD2md-html version 1.0β13
-* Sun Jan 06 2019 04:33:13 GMT-0800 (PST)
-* Source doc: https://docs.google.com/open?id=1mQCg5qtlCYm1gR1gB1GPvbVWwLm8kvpH3i0fMlWhWFo
------>
-
-
-
 # Bipartite
 
 [https://app.laicode.io/app/problem/56](https://app.laicode.io/app/problem/56)
-
 
 ## Description
 
@@ -38,7 +18,7 @@ is bipartite (1, 3 in group 1 and 2, 4 in group 2).
 
     1  --   2
 
-	    /   |
+        /   |
 
     3  --   4
 
@@ -46,13 +26,7 @@ is not bipartite.
 
 Assumptions
 
-
-
-*   The graph is represented by a list of nodes, and the list of nodes is not null.
-
-
-
-
+- The graph is represented by a list of nodes, and the list of nodes is not null.
 
 Hard
 
@@ -60,32 +34,21 @@ Breadth First Search
 
 Depth First Search
 
-
-
-
 ## Assumption
 
 The graph should not be empty and it should be undirected.
-
 
 ## Algorithm
 
 Start from the first node, do BFS. Any node that has not been assigned a group number can be assigned into either group. Then, generate all its neighbors and see which group they belong to.
 
-
-
 1.  If any of the neighbors does not have a group number yet, assign the other group number to it.
-1.  If the neighbor has the same group number as the node, return false.
-1.  If the neighbor has a different group number as the node, continue
-
-
-
+2.  If the neighbor has the same group number as the node, return false.
+3.  If the neighbor has a different group number as the node, continue
 
 ## Solution
 
-
 ### Code
-
 
 ```java
 /**
@@ -100,6 +63,7 @@ Start from the first node, do BFS. Any node that has not been assigned a group n
  */
 
 public class Solution {
+
   public boolean isBipartite(List<GraphNode> graph) {
     // Write your solution here
     // Corner case according to our assumption
@@ -120,8 +84,10 @@ public class Solution {
     return true;
   }
 
-  private boolean isValidBipartite(GraphNode node,
-                                   HashMap<GraphNode, Integer> groups) {
+  private boolean isValidBipartite(
+    GraphNode node,
+    HashMap<GraphNode, Integer> groups
+  ) {
     // Starting from the first node in the graph, all of its neighbors
     // will be labeled with their corresponding group numbers.
     // Do the same for the rest of the nodes.
@@ -160,15 +126,8 @@ public class Solution {
 }
 ```
 
-
-
-
-
 ### Complexity
 
 Time: BFS time ⇒ for each node, we need to check all of its neighbors ⇒ O(n^2)
 
 Space: a HashMap (O(n)), n nodes in the graph ⇒ n calls on the call-stack, each node's BFS process has a FIFO queue ⇒ O(n). Therefore, the total space complexity is O(n) + O(n^2) ⇒ O(n^2)
-
-
-<!-- GD2md-html version 1.0β13 -->
