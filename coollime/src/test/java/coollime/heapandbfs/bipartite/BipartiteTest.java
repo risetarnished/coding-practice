@@ -8,7 +8,6 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 class BipartiteTest {
@@ -32,7 +31,6 @@ class BipartiteTest {
     assertTrue(sut.isBipartite(graph));
   }
 
-  @Disabled("The hashCode() method in the GraphNode class needs to be fixed")
   @Test
   void shouldReturnTrueWhenTheGraphIsBipartite() {
     // Example graph:
@@ -57,7 +55,6 @@ class BipartiteTest {
     assertTrue(sut.isBipartite(graph));
   }
 
-  @Disabled("The hashCode() method in the GraphNode class needs to be fixed")
   @Test
   void shouldReturnFalseWhenTheGraphIsNotBipartite() {
     // Example graph:
