@@ -75,11 +75,11 @@ _Currently in the process to change everything to meet the industrial standard, 
     10. [Search in Binary Search Tree](docs/binarytree/SearchInBinarySearchTree)
     11. [Insert in Binary Search Tree](docs/binarytree/InsertInBinarySearchTree)
 
-7.  [Heap & Graph Search Algorithms I (BFS)](src/G/HeapAndBFS)
+7.  [Heap & Graph Search Algorithms I (BFS)](docs/heapandbfs)
 
     1.  [K Smallest in Unsorted Array](src/G/HeapAndBFS/Medium/KSmallestInUnsortedArray)
-    2.  [Get Keys in Binary Tree Layer by Layer](src/G/HeapAndBFS/Easy/GetKeysInBinaryTreeLayerByLayer)
-    3.  [Bipartite](src/G/HeapAndBFS/Hard/Bipartite)
+    2.  [Get Keys in Binary Tree Layer by Layer](docs/heapandbfs/GetKeysInBinaryTreeLayerByLayer)
+    3.  [Bipartite](docs/heapandbfs/Bipartite)
     4.  [Check if Binary Tree is Completed](src/G/HeapAndBFS/Medium/CheckIfBinaryTreeIsCompleted)
     5.  [Kth Smallest Number in Sorted Matrix](src/G/HeapAndBFS/Medium/KthSmallestNumberInSortedMatrix)
     6.  [Number of Islands](src/G/HeapAndBFS/Medium/NumberOfIslands)
