@@ -1,6 +1,6 @@
 package coollime.recursion.maximumpathsumbinarytreeii;
 
-import coollime.helper.TreeNode;
+import coollime.common.objects.TreeNode;
 
 public class Solution {
 

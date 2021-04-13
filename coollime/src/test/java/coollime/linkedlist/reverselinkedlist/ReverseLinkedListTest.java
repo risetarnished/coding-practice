@@ -2,7 +2,7 @@ package coollime.linkedlist.reverselinkedlist;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-import coollime.helper.ListNode;
+import coollime.common.objects.ListNode;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
@@ -12,6 +12,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 class ReverseLinkedListTest {
+
   private static Solution sut;
   private ListNode head;
 

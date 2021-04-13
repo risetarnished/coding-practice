@@ -3,13 +3,14 @@ package coollime.linkedlist.cyclenodeinlinkedlist;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNull;
 
-import coollime.helper.ListNode;
+import coollime.common.objects.ListNode;
 import java.util.ArrayList;
 import java.util.Arrays;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 class CycleNodeInLinkedListTest {
+
   private static Solution sut;
   private ListNode head;
 

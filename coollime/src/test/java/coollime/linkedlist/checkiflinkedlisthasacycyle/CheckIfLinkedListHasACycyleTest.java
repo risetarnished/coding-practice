@@ -3,12 +3,13 @@ package coollime.linkedlist.checkiflinkedlisthasacycyle;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-import coollime.helper.ListNode;
+import coollime.common.objects.ListNode;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 class CheckIfLinkedListHasACycyleTest {
+
   private static Solution sut;
   private ListNode head;
 

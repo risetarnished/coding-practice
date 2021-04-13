@@ -2,13 +2,14 @@ package coollime.linkedlist.addtwonumbers;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-import coollime.helper.ListNode;
+import coollime.common.objects.ListNode;
 import java.util.ArrayList;
 import java.util.Arrays;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 class AddTwoNumbersTest {
+
   private static Solution sut;
   private ListNode l1, l2;
 

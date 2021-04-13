@@ -1,6 +1,6 @@
 package coollime.linkedlist.mergetwosortedlinkedlists;
 
-import coollime.helper.ListNode;
+import coollime.common.objects.ListNode;
 
 public class Solution {
 

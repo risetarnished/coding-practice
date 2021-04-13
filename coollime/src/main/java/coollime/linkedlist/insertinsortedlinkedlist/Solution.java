@@ -1,6 +1,6 @@
 package coollime.linkedlist.insertinsortedlinkedlist;
 
-import coollime.helper.ListNode;
+import coollime.common.objects.ListNode;
 
 public class Solution {
 
@@ -17,7 +17,8 @@ public class Solution {
     while (current.next != null && current.next.value < value) {
       current = current.next;
     }
-    // current is either the tail or smaller than next, insert the new node after current
+    // current is either the tail or smaller than next, insert the new node after
+    // current
     newNode.next = current.next;
     current.next = newNode;
     return head;

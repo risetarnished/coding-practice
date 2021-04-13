@@ -1,6 +1,6 @@
 package coollime.linkedlist.partitionlinkedlist;
 
-import coollime.helper.ListNode;
+import coollime.common.objects.ListNode;
 
 public class Solution {
 
@@ -13,7 +13,8 @@ public class Solution {
     ListNode largeDummy = new ListNode(0);
     ListNode largeCurr = largeDummy;
     ListNode current = head;
-    // Compare the node values to the target and move the smaller pointer like what is done in quick sort
+    // Compare the node values to the target and move the smaller pointer like what
+    // is done in quick sort
     while (current != null) {
       if (current.value < target) {
         smallCurr.next = current;
