@@ -1,13 +1,12 @@
 package coollime.common.objects;
 
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Deque;
 import java.util.LinkedList;
 import java.util.List;
-import java.util.Objects;
 import java.util.Queue;
+import lombok.EqualsAndHashCode;
 
+@EqualsAndHashCode
 public class TreeNode {
 
   public int key;
@@ -16,23 +15,6 @@ public class TreeNode {
 
   public TreeNode(int key) {
     this.key = key;
-  }
-
-  @Override
-  public boolean equals(Object o) {
-    if (this == o) return true;
-    if (!(o instanceof TreeNode)) return false;
-    TreeNode treeNode = (TreeNode) o;
-    return (
-      key == treeNode.key &&
-      Objects.equals(left, treeNode.left) &&
-      Objects.equals(right, treeNode.right)
-    );
-  }
-
-  @Override
-  public int hashCode() {
-    return Objects.hash(key, left, right);
   }
 
   /* Method to build a tree from a list of integer key values */
@@ -118,10 +100,5 @@ public class TreeNode {
       }
     }
     return null;
-  }
-
-  // Test
-  public static void main(String[] args) {
-    buildTree(new ArrayList<>(Arrays.asList(1, 2, 3, null, null, 4)));
   }
 }

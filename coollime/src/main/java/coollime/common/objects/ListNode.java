@@ -2,8 +2,9 @@ package coollime.common.objects;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Objects;
+import lombok.EqualsAndHashCode;
 
+@EqualsAndHashCode
 public class ListNode {
 
   public int value;
@@ -76,22 +77,5 @@ public class ListNode {
       current = current.next;
     }
     return result;
-  }
-
-  @Override
-  public boolean equals(Object o) {
-    if (this == o) {
-      return true;
-    }
-    if (!(o instanceof ListNode)) {
-      return false;
-    }
-    ListNode listNode = (ListNode) o;
-    return value == listNode.value && Objects.equals(next, listNode.next);
-  }
-
-  @Override
-  public int hashCode() {
-    return Objects.hash(value, next);
   }
 }

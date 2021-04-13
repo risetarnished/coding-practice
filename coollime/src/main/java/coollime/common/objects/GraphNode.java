@@ -2,8 +2,9 @@ package coollime.common.objects;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Objects;
+import lombok.EqualsAndHashCode;
 
+@EqualsAndHashCode
 public class GraphNode {
 
   public int key;
@@ -35,7 +36,6 @@ public class GraphNode {
     // a map or set)
     List<GraphNode> graph = new ArrayList<>();
     if (nodeKeys == null || nodeKeys.isEmpty()) {
-      // return graph;
       throw new IllegalArgumentException("Invalid keys of node");
     }
     // Build the GraphNode list first
@@ -47,24 +47,5 @@ public class GraphNode {
       graph.get(i).neighbors = new ArrayList<>(adjacencyList.get(i));
     }
     return graph;
-  }
-
-  @Override
-  public boolean equals(Object o) {
-    if (this == o) {
-      return true;
-    }
-    if (!(o instanceof GraphNode)) {
-      return false;
-    }
-    GraphNode graphNode = (GraphNode) o;
-    return (
-      key == graphNode.key && Objects.equals(neighbors, graphNode.neighbors)
-    );
-  }
-
-  @Override
-  public int hashCode() {
-    return Objects.hash(key, neighbors);
   }
 }
