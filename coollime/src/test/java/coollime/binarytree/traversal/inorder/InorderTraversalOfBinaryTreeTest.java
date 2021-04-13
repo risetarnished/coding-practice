@@ -1,4 +1,4 @@
-package coollime.binarytree.inordertraversalofbinarytree;
+package coollime.binarytree.traversal.inorder;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
@@ -10,6 +10,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 class InorderTraversalOfBinaryTreeTest {
+
   private static Solution sut;
   private TreeNode root;
 

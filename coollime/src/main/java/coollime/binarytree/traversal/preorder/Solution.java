@@ -1,4 +1,4 @@
-package coollime.binarytree.preordertraversalofbinarytree;
+package coollime.binarytree.traversal.preorder;
 
 import coollime.helper.TreeNode;
 import java.util.ArrayList;
