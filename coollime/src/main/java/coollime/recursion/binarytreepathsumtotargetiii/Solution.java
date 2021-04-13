@@ -1,6 +1,6 @@
 package coollime.recursion.binarytreepathsumtotargetiii;
 
-import coollime.helper.TreeNode;
+import coollime.common.objects.TreeNode;
 import java.util.HashSet;
 import java.util.Set;
 

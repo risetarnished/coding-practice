@@ -1,14 +1,14 @@
 package coollime.linkedlist.mergesortlinkedlist;
 
-import coollime.helper.ListNode;
+import coollime.common.objects.ListNode;
 
 public class Solution {
 
   /**
    * Sort a linked list into ascending order using merge sort
    *
-   * @param head  The head node of the input linked list
-   * @return      The linked list sorted into ascending order
+   * @param head The head node of the input linked list
+   * @return The linked list sorted into ascending order
    */
   public ListNode sortList(ListNode head) {
     if (head == null || head.next == null) {
@@ -24,16 +24,13 @@ public class Solution {
   }
 
   /**
-   * Find the middle node of a given linked list
-   * If the length of the linked list is even, return the first
-   * of the two middle nodes. For example,
-   * 1 -> 2 -> 3 -> 4
-   * Two middle nodes are 2 and 3
-   * In this case, return 2 because even if we need node 3 sometime
-   * later, we still have access to it
+   * Find the middle node of a given linked list If the length of the linked list
+   * is even, return the first of the two middle nodes. For example, 1 -> 2 -> 3
+   * -> 4 Two middle nodes are 2 and 3 In this case, return 2 because even if we
+   * need node 3 sometime later, we still have access to it
    *
-   * @param head  The head node of the given linked list
-   * @return      The middle node of the linked list
+   * @param head The head node of the given linked list
+   * @return The middle node of the linked list
    */
   private ListNode findMiddleNode(ListNode head) {
     if (head == null || head.next == null) {
@@ -51,9 +48,9 @@ public class Solution {
   /**
    * Merge two linked lists together into ascending order
    *
-   * @param one  The first linked list
-   * @param two  The second linked list
-   * @return     A linked list of all nodes from one and two sorted in ascending order
+   * @param one The first linked list
+   * @param two The second linked list
+   * @return A linked list of all nodes from one and two sorted in ascending order
    */
   private ListNode mergeLists(ListNode one, ListNode two) {
     // Create a new linked list to store the result

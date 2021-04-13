@@ -1,11 +1,12 @@
 package coollime.linkedlist.reverselinkedlist;
 
-import coollime.helper.ListNode;
+import coollime.common.objects.ListNode;
 
 public class Solution {
 
   /**
    * Reverse a linked list iteratively
+   *
    * @param head - the head node of the linked list
    * @return the head of the reversed linked list
    */
@@ -26,6 +27,7 @@ public class Solution {
 
   /**
    * Reverse a linked list recursively
+   *
    * @param head - the head node of the linked list
    * @return - the head of the reversed linked list
    */

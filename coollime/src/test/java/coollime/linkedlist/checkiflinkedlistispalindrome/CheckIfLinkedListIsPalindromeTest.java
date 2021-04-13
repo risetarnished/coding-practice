@@ -3,13 +3,14 @@ package coollime.linkedlist.checkiflinkedlistispalindrome;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-import coollime.helper.ListNode;
+import coollime.common.objects.ListNode;
 import java.util.ArrayList;
 import java.util.Arrays;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 class CheckIfLinkedListIsPalindromeTest {
+
   private static Solution sut;
   private ListNode head;
 

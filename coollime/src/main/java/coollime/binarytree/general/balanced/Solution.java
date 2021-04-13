@@ -1,6 +1,6 @@
 package coollime.binarytree.general.balanced;
 
-import coollime.helper.TreeNode;
+import coollime.common.objects.TreeNode;
 
 public class Solution {
 

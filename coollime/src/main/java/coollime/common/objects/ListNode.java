@@ -1,10 +1,11 @@
-package coollime.helper;
+package coollime.common.objects;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
 public class ListNode {
+
   public int value;
   public ListNode next;
 
@@ -16,8 +17,8 @@ public class ListNode {
   /**
    * Build a linked list according to an input list of integers
    *
-   * @param nodes  A list of node's keys used to build a linked list sequentially
-   * @return       A linked list
+   * @param nodes A list of node's keys used to build a linked list sequentially
+   * @return A linked list
    */
   public static ListNode buildList(List<Integer> nodes) {
     if (nodes == null || nodes.isEmpty()) {
@@ -35,8 +36,8 @@ public class ListNode {
   /**
    * Build a linked list with a cycle at a given index
    *
-   * @param nodes  A list of node's keys used to build a linked list sequentially
-   * @param index  The starting point of the cycle
+   * @param nodes A list of node's keys used to build a linked list sequentially
+   * @param index The starting point of the cycle
    */
   public static ListNode buildCycleList(List<Integer> nodes, int index) {
     if (nodes == null || nodes.isEmpty()) {
@@ -61,8 +62,8 @@ public class ListNode {
   /**
    * Output a linked list in the form of a list of integers
    *
-   * @param head  The head node of the linked list
-   * @return      A list of all the node's keys
+   * @param head The head node of the linked list
+   * @return A list of all the node's keys
    */
   public static List<Integer> listToArray(ListNode head) {
     List<Integer> result = new ArrayList<>();

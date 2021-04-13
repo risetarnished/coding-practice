@@ -1,14 +1,14 @@
 package coollime.linkedlist.cyclenodeinlinkedlist;
 
-import coollime.helper.ListNode;
+import coollime.common.objects.ListNode;
 
 public class Solution {
 
   /**
    * Find the start of the cycle in a linked list
    *
-   * @param head  The head of the given linked list
-   * @return      The starting node of the cycle in the list
+   * @param head The head of the given linked list
+   * @return The starting node of the cycle in the list
    */
   public ListNode cycleNode(ListNode head) {
     if (head == null || head.next == null) {
@@ -31,7 +31,7 @@ public class Solution {
     }
     // distance(head, start) == distance(meet, start)
     // So, let slow moves one step at a time from the head
-    //     let fast moves one step at a time from the meeting point
+    // let fast moves one step at a time from the meeting point
     // They will meet at the starting point of the cycle
     slow = head;
     while (slow != fast) {

@@ -2,7 +2,7 @@ package coollime.recursion.lowestcommonancestori;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-import coollime.helper.TreeNode;
+import coollime.common.objects.TreeNode;
 import java.util.ArrayList;
 import java.util.Arrays;
 import org.junit.jupiter.api.AfterEach;
@@ -11,6 +11,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 class LowestCommonAncestorITest {
+
   private static Solution sut;
   private TreeNode root, one, two;
 
@@ -37,15 +38,15 @@ class LowestCommonAncestorITest {
   @Test
   void shouldFindTheLowestCommonAncestor() {
     // Binary Tree:
-    //         5
+    // 5
     //
-    //      /   \
+    // / \
     //
-    //     9     12
+    // 9 12
     //
-    //   /  \      \
+    // / \ \
     //
-    //  2    3      14
+    // 2 3 14
     // 1. Look for LCA of node 2 and 14
     // 2. Look for LCA of node 2 and 9
     // 3. Look for LCA of node 2 and 3

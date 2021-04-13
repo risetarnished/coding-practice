@@ -1,6 +1,6 @@
 package coollime.recursion.lowestcommonancestori;
 
-import coollime.helper.TreeNode;
+import coollime.common.objects.TreeNode;
 
 /**
  * LowestCommonAncestorI
@@ -11,13 +11,13 @@ import coollime.helper.TreeNode;
 public class Solution {
 
   /**
-   * Find the lowest common ancestor of node one and two
-   * under current binary tree node root
+   * Find the lowest common ancestor of node one and two under current binary tree
+   * node root
    *
-   * @param root  the root of the tree
-   * @param one   the first child node
-   * @param two   the second child node
-   * @return      the lowest common ancestor of one and two
+   * @param root the root of the tree
+   * @param one  the first child node
+   * @param two  the second child node
+   * @return the lowest common ancestor of one and two
    */
   public TreeNode lowestCommonAncestor(
     TreeNode root,

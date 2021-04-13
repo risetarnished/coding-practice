@@ -1,8 +1,15 @@
-package coollime.helper;
+package coollime.common.objects;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Deque;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Objects;
+import java.util.Queue;
 
 public class TreeNode {
+
   public int key;
   public TreeNode left;
   public TreeNode right;
@@ -30,21 +37,19 @@ public class TreeNode {
 
   /* Method to build a tree from a list of integer key values */
   /**
-   *               0  1  2  3  4  5
-   * The sequence [1, 2, 3, #, #, 4] represents the following binary tree:
-   * # symbol is used to represent null
-   *     1
+   * 0 1 2 3 4 5 The sequence [1, 2, 3, #, #, 4] represents the following binary
+   * tree: # symbol is used to represent null 1
    *
-   *   /   \
+   * / \
    *
-   *  2     3
+   * 2 3
    *
-   *       /
+   * /
    *
-   *     4
+   * 4
    *
-   * @param keys  The keys of the nodes in in-order sequence
-   * @return      A binary tree based on the in-order sequence of node's keys
+   * @param keys The keys of the nodes in in-order sequence
+   * @return A binary tree based on the in-order sequence of node's keys
    */
   public static TreeNode buildTree(List<Integer> keys) {
     if (keys == null || keys.isEmpty()) {
@@ -87,12 +92,11 @@ public class TreeNode {
   }
 
   /**
-   * Find the node with a given key in a binary tree
-   * with no duplicate keys
+   * Find the node with a given key in a binary tree with no duplicate keys
    *
-   * @param root  The root of the binary tree
-   * @param key   The key to look for
-   * @return      A TreeNode which has a key == key
+   * @param root The root of the binary tree
+   * @param key  The key to look for
+   * @return A TreeNode which has a key == key
    */
   public static TreeNode getNode(TreeNode root, Integer key) {
     if (root == null || root.key == key) {

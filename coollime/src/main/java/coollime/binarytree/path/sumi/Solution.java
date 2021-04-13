@@ -1,6 +1,6 @@
 package coollime.binarytree.path.sumi;
 
-import coollime.helper.TreeNode;
+import coollime.common.objects.TreeNode;
 
 public class Solution {
 

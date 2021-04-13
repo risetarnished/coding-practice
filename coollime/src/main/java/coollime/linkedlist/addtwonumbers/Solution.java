@@ -1,15 +1,15 @@
 package coollime.linkedlist.addtwonumbers;
 
-import coollime.helper.ListNode;
+import coollime.common.objects.ListNode;
 
 public class Solution {
 
   /**
    * Add each digit up in two linked lists
    *
-   * @param l1  The first linked list
-   * @param l2  The second linked list
-   * @return    A linked list with all corresponding digits added up
+   * @param l1 The first linked list
+   * @param l2 The second linked list
+   * @return A linked list with all corresponding digits added up
    */
   public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
     if (l1 == null) {
