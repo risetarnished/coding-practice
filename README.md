@@ -1,10 +1,10 @@
-Coding practice problems on [LaiCode](https://www.laicode.io/)
+Coding practice problems on [LeetCode](https://www.leetcode.com) and [LaiCode](https://www.laicode.io/)
 
 _Currently in the process to change everything to meet the industrial standard, aka a more legit way_
 
-- Use npm to utilize useful packages such as [prettier](https://www.npmjs.com/package/prettier), [husky](https://www.npmjs.com/package/husky), [git-branch-is](https://www.npmjs.com/package/git-branch-is), etc if you like to
+- Manage and build the project with Maven both locally and with [GitHub Action](https://github.com/publicclassoverflow/laicode/actions?query=workflow%3A%22Java+CI+with+Maven%22).
 
-- Build the project with Maven (locally as well as [GitHub Action](https://github.com/publicclassoverflow/laicode/actions?query=workflow%3A%22Java+CI+with+Maven%22))
+- Not a redundant but enhanced layer: use npm to utilize useful packages such as [prettier](https://www.npmjs.com/package/prettier), [husky](https://www.npmjs.com/package/husky), [git-branch-is](https://www.npmjs.com/package/git-branch-is), _etc_. if you like to. It may be also managed by Maven, but since they are not required and it is more natural for me to use npm, I decide to add this extra layer.
 
 - _Completed:_
   - Sorting Algorithms

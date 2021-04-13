@@ -1,14 +1,14 @@
 {
-  "name": "laicode",
-  "version": "1.0.0",
-  "description": "In depth analysis and solution to the coding problems on LaiCode",
-  "homepage": "https://github.com/publicclassoverflow/laicode#readme",
+  "name": "coding-practice",
+  "version": "1.1.0",
+  "description": "In depth analysis and solution to the coding problems on coding practice and challenge websites",
+  "homepage": "https://github.com/publicclassoverflow/coding-practice#readme",
   "bugs": {
-    "url": "https://github.com/publicclassoverflow/laicode/issues"
+    "url": "https://github.com/publicclassoverflow/coding-practice/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/publicclassoverflow/laicode.git"
+    "url": "git+https://github.com/publicclassoverflow/coding-practice.git"
   },
   "license": "MIT",
   "author": "MZ",
