@@ -9,6 +9,7 @@ out/
 *.txt
 *.xml
 *.jar
+*.log
 node_modules
 coollime/target/
 coollime/target/maven-archiver/pom.properties
