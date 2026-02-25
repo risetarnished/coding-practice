@@ -1,15 +1,28 @@
+# IDE
 .vscode/
 .settings/
 .classpath
 .project
+.idea/
+*.iml
+
+# Build output
 out/
 *.class
-*.iml
-*.lst
-*.txt
-*.xml
 *.jar
 *.log
-node_modules
+
+# Maven
 coollime/target/
-coollime/target/maven-archiver/pom.properties
+
+# Node (removed - no longer used)
+node_modules/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Keep important files (override above patterns)
+!**/pom.xml
+!**/README.md
+!docs/**/*.md

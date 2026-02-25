@@ -1,0 +1,29 @@
+#!/bin/bash
+# Pre-commit hook for coding-practice
+# This hook runs before each commit to ensure code quality
+
+# Get the current branch name
+branch=$(git rev-parse --abbrev-ref HEAD)
+
+# Prevent direct commits to master/main branches
+if [ "$branch" = "master" ] || [ "$branch" = "main" ]; then
+  echo "❌ Direct commits to $branch branch are not allowed."
+  echo "Please create a feature branch:"
+  echo "  git checkout -b feature/your-feature-name"
+  exit 1
+fi
+
+# Run Spotless check to ensure code is properly formatted
+echo "Running Spotless code formatting check..."
+cd coollime && mvn spotless:check -q
+
+if [ $? -ne 0 ]; then
+  echo ""
+  echo "❌ Code formatting issues found!"
+  echo "Please run the following command to fix formatting:"
+  echo "  cd coollime && mvn spotless:apply"
+  exit 1
+fi
+
+echo "✓ Pre-commit checks passed!"
+exit 0

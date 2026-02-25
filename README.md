@@ -1,10 +1,58 @@
 Coding practice problems on [LeetCode](https://www.leetcode.com) and [LaiCode](https://www.laicode.io/)
 
-_Currently in the process to change everything to meet the industrial standard, aka a more legit way_
+A collection of algorithm and data structure solutions implemented in Java 11, built with Maven.
 
-- Manage and build the project with Maven both locally and with [GitHub Action](https://github.com/publicclassoverflow/laicode/actions?query=workflow%3A%22Java+CI+with+Maven%22).
+## Project Structure
 
-- Not a redundant but enhanced layer: use npm to utilize useful packages such as [prettier](https://www.npmjs.com/package/prettier), [husky](https://www.npmjs.com/package/husky), [git-branch-is](https://www.npmjs.com/package/git-branch-is), _etc_. if you like to. It may be also managed by Maven, but since they are not required and it is more natural for me to use npm, I decide to add this extra layer.
+```
+coding-practice/
+├── coollime/                 # Maven project
+│   ├── src/
+│   │   ├── main/java/        # Solution implementations
+│   │   └── test/java/        # Unit tests
+│   └── pom.xml               # Maven configuration
+├── docs/                     # Documentation for each algorithm
+└── scripts/                  # Git hooks setup scripts
+```
+
+## Getting Started
+
+### Prerequisites
+
+- Java 11 or higher
+- Maven 3.6+
+
+### Setup
+
+1. Clone the repository
+2. Install git hooks (optional but recommended):
+   ```bash
+   ./scripts/setup-git-hooks.sh
+   ```
+
+### Build & Test
+
+```bash
+# Build the project
+cd coollime && mvn clean install
+
+# Run tests
+mvn test
+
+# Format code
+mvn spotless:apply
+
+# Check code quality
+mvn verify
+```
+
+## Code Quality Tools
+
+This project uses the following Maven plugins for code quality:
+
+- **Spotless** - Code formatting (Google Java Format, AOSP style)
+- **Checkstyle** - Code style enforcement (Google checks)
+- **SpotBugs** - Static analysis for bug detection
 
 - _Completed:_
   - Sorting Algorithms

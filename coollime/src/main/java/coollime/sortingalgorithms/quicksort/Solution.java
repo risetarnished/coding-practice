@@ -20,7 +20,7 @@ public class Solution {
   }
 
   private int partitionArray(int[] array, int start, int end) {
-    int pivotIndex = (int) Math.random() * (end - start + 1) + start;
+    int pivotIndex = start + (int) (Math.random() * (end - start + 1));
     int pivot = array[pivotIndex];
     swap(array, pivotIndex, end);
     int left = start;
